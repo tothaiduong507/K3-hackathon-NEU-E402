@@ -1,0 +1,340 @@
+{
+  "dataset_id": "smart_literature_review_ranking_v0",
+  "created_at": "2026-07-30T10:24:33.165422+00:00",
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "pass_rate": 1.0,
+    "quality_bar": 0.8
+  },
+  "results": [
+    {
+      "id": "RK01_rag",
+      "passed": true,
+      "expected_top": "rag",
+      "actual_top": "rag",
+      "ranking": [
+        {
+          "paper_id": "rag",
+          "score": 90.32,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 25.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 1.32,
+            "recency_signal": 4.0
+          }
+        },
+        {
+          "paper_id": "vision",
+          "score": 22.7,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 15.0,
+            "citation_signal": 2.7,
+            "recency_signal": 5.0
+          }
+        },
+        {
+          "paper_id": "graph",
+          "score": 10.99,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 5.0,
+            "citation_signal": 1.49,
+            "recency_signal": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "RK02_cv",
+      "passed": true,
+      "expected_top": "detection",
+      "actual_top": "detection",
+      "ranking": [
+        {
+          "paper_id": "detection",
+          "score": 89.7,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 25.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 1.2,
+            "recency_signal": 3.5
+          }
+        },
+        {
+          "paper_id": "nlp",
+          "score": 22.9,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 15.0,
+            "citation_signal": 2.9,
+            "recency_signal": 5.0
+          }
+        },
+        {
+          "paper_id": "planning",
+          "score": 10.91,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 5.0,
+            "citation_signal": 1.41,
+            "recency_signal": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "RK03_data_mining",
+      "passed": true,
+      "expected_top": "recsys",
+      "actual_top": "recsys",
+      "ranking": [
+        {
+          "paper_id": "recsys",
+          "score": 95.71,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 25.0,
+            "source_api_rank": 15.0,
+            "citation_signal": 1.71,
+            "recency_signal": 4.0
+          }
+        },
+        {
+          "paper_id": "speech",
+          "score": 18.0,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 3.0,
+            "recency_signal": 5.0
+          }
+        },
+        {
+          "paper_id": "robot",
+          "score": 10.54,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 5.0,
+            "citation_signal": 1.04,
+            "recency_signal": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "RK04_multilingual",
+      "passed": true,
+      "expected_top": "mt",
+      "actual_top": "mt",
+      "ranking": [
+        {
+          "paper_id": "mt",
+          "score": 95.0,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 25.0,
+            "source_api_rank": 15.0,
+            "citation_signal": 1.0,
+            "recency_signal": 4.0
+          }
+        },
+        {
+          "paper_id": "optimization",
+          "score": 16.98,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 2.48,
+            "recency_signal": 4.5
+          }
+        },
+        {
+          "paper_id": "vision",
+          "score": 11.79,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 5.0,
+            "citation_signal": 1.79,
+            "recency_signal": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "RK05_learning_theory",
+      "passed": true,
+      "expected_top": "theory",
+      "actual_top": "theory",
+      "ranking": [
+        {
+          "paper_id": "theory",
+          "score": 87.53,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 18.75,
+            "source_api_rank": 15.0,
+            "citation_signal": 0.78,
+            "recency_signal": 3.0
+          }
+        },
+        {
+          "paper_id": "chat",
+          "score": 17.7,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 2.7,
+            "recency_signal": 5.0
+          }
+        },
+        {
+          "paper_id": "image",
+          "score": 11.9,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 5.0,
+            "citation_signal": 2.4,
+            "recency_signal": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "RK06_ai_planning",
+      "passed": true,
+      "expected_top": "kr",
+      "actual_top": "kr",
+      "ranking": [
+        {
+          "paper_id": "kr",
+          "score": 94.61,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 25.0,
+            "source_api_rank": 15.0,
+            "citation_signal": 1.11,
+            "recency_signal": 3.5
+          }
+        },
+        {
+          "paper_id": "nlp",
+          "score": 17.78,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 2.78,
+            "recency_signal": 5.0
+          }
+        },
+        {
+          "paper_id": "cv",
+          "score": 12.1,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 5.0,
+            "citation_signal": 2.6,
+            "recency_signal": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "RK07_relevance_over_citations",
+      "passed": true,
+      "expected_top": "fair",
+      "actual_top": "fair",
+      "ranking": [
+        {
+          "paper_id": "fair",
+          "score": 89.6,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 25.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 0.6,
+            "recency_signal": 4.0
+          }
+        },
+        {
+          "paper_id": "old-famous",
+          "score": 22.0,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 15.0,
+            "citation_signal": 5.0,
+            "recency_signal": 2.0
+          }
+        },
+        {
+          "paper_id": "robotics",
+          "score": 11.71,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 5.0,
+            "citation_signal": 1.71,
+            "recency_signal": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "RK08_vision_language",
+      "passed": true,
+      "expected_top": "vlm",
+      "actual_top": "vlm",
+      "ranking": [
+        {
+          "paper_id": "vlm",
+          "score": 96.0,
+          "breakdown": {
+            "title_overlap": 50.0,
+            "abstract_overlap": 25.0,
+            "source_api_rank": 15.0,
+            "citation_signal": 2.0,
+            "recency_signal": 4.0
+          }
+        },
+        {
+          "paper_id": "speech",
+          "score": 30.55,
+          "breakdown": {
+            "title_overlap": 12.5,
+            "abstract_overlap": 6.25,
+            "source_api_rank": 5.0,
+            "citation_signal": 2.3,
+            "recency_signal": 4.5
+          }
+        },
+        {
+          "paper_id": "graph",
+          "score": 18.0,
+          "breakdown": {
+            "title_overlap": 0.0,
+            "abstract_overlap": 0.0,
+            "source_api_rank": 10.0,
+            "citation_signal": 3.0,
+            "recency_signal": 5.0
+          }
+        }
+      ]
+    }
+  ]
+}

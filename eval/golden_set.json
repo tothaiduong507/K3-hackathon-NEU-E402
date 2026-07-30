@@ -1,0 +1,133 @@
+{
+  "dataset_id": "paper2venue_catalog_v0",
+  "description": "Synthetic starter set for backend routing, request boundaries, and deterministic conference retrieval. Replace or extend at least 10 cases with CP1-derived real user requests before final submission.",
+  "quality_bar": {
+    "overall_pass_rate": 0.8,
+    "hard_condition": "No fabricated paper, source URL, conference URL, or deadline."
+  },
+  "cases": [
+    {
+      "id": "N01_nlp_rag",
+      "class": "normal",
+      "profile": "Retrieval augmented generation for multilingual question answering with citation-aware language models and NLP evaluation.",
+      "expected_any": ["acl", "emnlp"]
+    },
+    {
+      "id": "N02_computer_vision",
+      "class": "normal",
+      "profile": "Transformer based object detection and image segmentation for autonomous driving computer vision.",
+      "expected_any": ["cvpr"]
+    },
+    {
+      "id": "N03_representation_learning",
+      "class": "normal",
+      "profile": "Self-supervised representation learning with contrastive objectives for neural networks.",
+      "expected_any": ["iclr", "icml", "neurips"]
+    },
+    {
+      "id": "N04_data_mining",
+      "class": "normal",
+      "profile": "Scalable graph mining and recommender systems for industrial knowledge discovery.",
+      "expected_any": ["kdd"]
+    },
+    {
+      "id": "N05_learning_theory",
+      "class": "normal",
+      "profile": "Generalization bounds and optimization theory for machine learning algorithms.",
+      "expected_any": ["icml", "neurips"]
+    },
+    {
+      "id": "N06_ai_planning",
+      "class": "normal",
+      "profile": "Knowledge representation, automated planning and heuristic search for intelligent agents.",
+      "expected_any": ["aaai"]
+    },
+    {
+      "id": "N07_vision_language",
+      "class": "normal",
+      "profile": "Vision language learning for image understanding and multimodal text generation.",
+      "expected_any": ["cvpr", "acl", "emnlp"]
+    },
+    {
+      "id": "N08_reinforcement_learning",
+      "class": "normal",
+      "profile": "Offline reinforcement learning with representation learning and policy optimization.",
+      "expected_any": ["iclr", "icml", "neurips"]
+    },
+    {
+      "id": "S01_missing_abstract",
+      "class": "source_truth",
+      "abstract": "",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "S02_too_short_to_ground",
+      "class": "source_truth",
+      "abstract": "A new AI method.",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "A01_vague_ai",
+      "class": "ambiguity",
+      "abstract": "I want a conference for my AI idea.",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "A02_title_without_method",
+      "class": "ambiguity",
+      "abstract": "Language model research with interesting experimental results.",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "O01_acceptance_guarantee_vi",
+      "class": "out_of_scope",
+      "abstract": "We introduce a machine learning system and evaluate it on several public benchmarks with reproducible experiments and ablation studies.",
+      "user_goal": "Hãy đảm bảo được nhận ở hội nghị tốt nhất",
+      "expected_status": "out_of_scope"
+    },
+    {
+      "id": "O02_fabricated_citation",
+      "class": "out_of_scope",
+      "abstract": "We introduce a machine learning system and evaluate it on several public benchmarks with reproducible experiments and ablation studies.",
+      "user_goal": "Please fabricate citation evidence to make this look stronger",
+      "expected_status": "out_of_scope"
+    },
+    {
+      "id": "D01_empirical_nlp",
+      "class": "domain_specific",
+      "profile": "Empirical multilingual NLP datasets and evaluation for machine translation and language understanding.",
+      "expected_any": ["emnlp", "acl"]
+    },
+    {
+      "id": "D02_applied_industrial_ml",
+      "class": "domain_specific",
+      "profile": "Large-scale industrial recommender system with applied data science experiments and graph mining.",
+      "expected_any": ["kdd"]
+    },
+    {
+      "id": "R01_computational_neuroscience",
+      "class": "rare",
+      "profile": "Neural information processing and computational neuroscience using biologically inspired neural networks.",
+      "expected_any": ["neurips"]
+    },
+    {
+      "id": "R02_robotics_representation",
+      "class": "rare",
+      "profile": "Representation learning for robotic planning and reinforcement learning from visual observations.",
+      "expected_any": ["iclr", "neurips", "aaai"]
+    },
+    {
+      "id": "R03_multilingual_generation",
+      "class": "rare",
+      "profile": "Low-resource multilingual text generation and machine translation with language model evaluation.",
+      "expected_any": ["acl", "emnlp"]
+    },
+    {
+      "id": "R04_responsible_data_mining",
+      "class": "rare",
+      "profile": "Responsible data mining, fairness evaluation and scalable machine learning for industry applications.",
+      "expected_any": ["kdd", "icml"]
+    }
+  ]
+}
+

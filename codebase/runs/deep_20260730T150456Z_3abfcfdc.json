@@ -1,0 +1,222 @@
+{
+  "status": "completed",
+  "run_type": "deep_paper_summary",
+  "run_id": "deep_20260730T150456Z_3abfcfdc",
+  "created_at": "2026-07-30T15:04:56.967157+00:00",
+  "model": "gpt-4o-mini",
+  "language": "vi",
+  "paper": {
+    "paper_id": "ARXIV:1706.03762v7",
+    "title": "Attention Is All You Need",
+    "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "Lukasz Kaiser",
+      "Illia Polosukhin"
+    ],
+    "year": 2017,
+    "citation_count": null,
+    "venue": "arXiv",
+    "url": "http://arxiv.org/abs/1706.03762v7",
+    "external_ids": {
+      "ArXiv": "1706.03762v7"
+    },
+    "fields_of_study": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "open_access_pdf_url": "https://arxiv.org/pdf/1706.03762v7.pdf"
+  },
+  "pdf": {
+    "attempted": true,
+    "used": true,
+    "arxiv_id": "1706.03762v7",
+    "total_pages": 15,
+    "extracted_pages": 15,
+    "extracted_characters": 39594,
+    "coverage_percent": 100.0
+  },
+  "deep_summary": {
+    "executive_summary": "Bài báo này giới thiệu mô hình Transformer, một kiến trúc hoàn toàn dựa trên cơ chế chú ý, loại bỏ hoàn toàn các mạng nơ-ron hồi tiếp và tích chập. Các thí nghiệm cho thấy mô hình này vượt trội về chất lượng dịch máy và có khả năng song song hóa tốt hơn, yêu cầu thời gian huấn luyện ít hơn đáng kể.",
+    "research_problem": "Mô hình hóa chuỗi và dịch máy thường sử dụng các mạng nơ-ron hồi tiếp, nhưng chúng gặp khó khăn trong việc song song hóa và hiệu suất với các chuỗi dài.",
+    "motivation": "Cần một kiến trúc mới có thể cải thiện chất lượng dịch máy và khả năng song song hóa trong huấn luyện.",
+    "contributions": [
+      {
+        "contribution": "Đề xuất mô hình Transformer hoàn toàn dựa trên cơ chế chú ý.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "contribution": "Chứng minh rằng Transformer có thể đạt được chất lượng dịch tốt hơn với thời gian huấn luyện ngắn hơn.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "contribution": "Áp dụng Transformer cho các nhiệm vụ khác ngoài dịch máy, như phân tích cấu trúc câu.",
+        "source_refs": [
+          "p.1"
+        ]
+      }
+    ],
+    "methodology": {
+      "overview": "Sử dụng mô hình Transformer cho các tác vụ dịch máy với các bước huấn luyện và tối ưu hóa cụ thể.",
+      "steps": [
+        "Huấn luyện trên tập dữ liệu WMT 2014 với cặp câu tiếng Anh-Đức và tiếng Anh-Pháp.",
+        "Sử dụng byte-pair encoding để mã hóa câu.",
+        "Sử dụng Adam optimizer với điều chỉnh learning rate theo công thức cụ thể.",
+        "Áp dụng dropout cho các lớp con và các mã nhúng."
+      ],
+      "components": [
+        "Mô hình Transformer",
+        "Tập dữ liệu WMT 2014",
+        "GPU NVIDIA P100",
+        "Bộ tối ưu Adam",
+        "Regularization techniques"
+      ]
+    },
+    "data_and_experiments": {
+      "datasets": [
+        "Tập dữ liệu WMT 2014 với 4.5 triệu cặp câu cho tiếng Anh-Đức và 36 triệu câu cho tiếng Anh-Pháp."
+      ],
+      "experimental_setup": [
+        "Sử dụng 8 GPU NVIDIA P100 cho quá trình huấn luyện.",
+        "Thời gian huấn luyện cho mô hình cơ bản là 100,000 bước (12 giờ) và cho mô hình lớn là 300,000 bước (3.5 ngày)."
+      ],
+      "metrics": [
+        "Điểm BLEU",
+        "F1 score"
+      ],
+      "baselines": [
+        "Các mô hình hồi tiếp và tích chập hiện có."
+      ]
+    },
+    "results": [
+      {
+        "finding": "Mô hình Transformer (mô hình lớn) đạt điểm BLEU 28.4 cho tiếng Anh-Đức và 41.0 cho tiếng Anh-Pháp, vượt qua các mô hình trước đó.",
+        "source_refs": [
+          "p.8"
+        ]
+      },
+      {
+        "finding": "Transformer đạt kết quả tốt nhất trong các nhiệm vụ dịch thuật tiếng Anh-Đức và tiếng Anh-Pháp WMT 2014.",
+        "source_refs": [
+          "p.10"
+        ]
+      }
+    ],
+    "ablation_studies": [
+      {
+        "finding": "Việc sử dụng dropout và label smoothing cải thiện độ chính xác và điểm BLEU của mô hình.",
+        "source_refs": [
+          "p.8"
+        ]
+      }
+    ],
+    "limitations": {
+      "author_stated": [
+        "Mô hình hồi tiếp vẫn có những hạn chế trong việc song song hóa và hiệu suất với các chuỗi dài.",
+        "Chưa điều tra sâu về việc giới hạn self-attention chỉ trong một khu vực lân cận."
+      ],
+      "analyst_observations": [
+        "Cần thêm nghiên cứu để cải thiện khả năng giải thích của các mô hình."
+      ]
+    },
+    "section_summaries": [
+      {
+        "section": "Abstract",
+        "summary": "Mô hình chuyển đổi chuỗi chủ yếu dựa trên các mạng nơ-ron hồi tiếp hoặc tích chập phức tạp bao gồm một bộ mã hóa và một bộ giải mã. Các mô hình hoạt động tốt nhất cũng kết nối bộ mã hóa và bộ giải mã thông qua cơ chế chú ý. Chúng tôi đề xuất một kiến trúc mạng mới, Transformer, hoàn toàn dựa trên các cơ chế chú ý, loại bỏ hoàn toàn sự hồi tiếp và tích chập. Các thí nghiệm trên hai nhiệm vụ dịch máy cho thấy các mô hình này vượt trội về chất lượng trong khi có khả năng song song hóa tốt hơn và yêu cầu thời gian huấn luyện ít hơn đáng kể. Mô hình của chúng tôi đạt được 28.4 BLEU trên nhiệm vụ dịch tiếng Anh sang tiếng Đức WMT 2014, cải thiện hơn 2 BLEU so với các kết quả tốt nhất hiện có, bao gồm cả các mô hình tổ hợp. Trên nhiệm vụ dịch tiếng Anh sang tiếng Pháp WMT 2014, mô hình của chúng tôi thiết lập một điểm BLEU mới cho mô hình đơn là 41.8 sau 3.5 ngày huấn luyện trên tám GPU, một phần nhỏ trong chi phí huấn luyện của các mô hình tốt nhất từ tài liệu. Chúng tôi cho thấy Transformer tổng quát tốt cho các nhiệm vụ khác bằng cách áp dụng thành công nó vào phân tích cấu trúc câu tiếng Anh với cả dữ liệu huấn luyện lớn và hạn chế.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "section": "Introduction",
+        "summary": "Mạng nơ-ron hồi tiếp, đặc biệt là mạng nơ-ron bộ nhớ dài ngắn (LSTM) và mạng nơ-ron hồi tiếp có cổng, đã được xác định là các phương pháp hàng đầu trong mô hình hóa chuỗi và các vấn đề chuyển đổi như mô hình ngôn ngữ và dịch máy. Các mô hình hồi tiếp thường tính toán theo vị trí ký tự của các chuỗi đầu vào và đầu ra, điều này hạn chế khả năng song song trong quá trình huấn luyện, đặc biệt là với các chuỗi dài. Cơ chế chú ý đã trở thành một phần không thể thiếu trong các mô hình mô hình hóa chuỗi, cho phép mô hình hóa các phụ thuộc mà không cần quan tâm đến khoảng cách của chúng trong chuỗi đầu vào hoặc đầu ra. Tuy nhiên, trong hầu hết các trường hợp, các cơ chế chú ý này được sử dụng kết hợp với mạng hồi tiếp. Trong nghiên cứu này, chúng tôi đề xuất Transformer, một kiến trúc mô hình không sử dụng hồi tiếp mà hoàn toàn dựa vào cơ chế chú ý để tạo ra các phụ thuộc toàn cầu giữa đầu vào và đầu ra. Transformer cho phép song song hóa nhiều hơn và có thể đạt được chất lượng dịch tốt hơn sau khi được huấn luyện trong vòng mười hai giờ trên tám GPU P100.",
+        "source_refs": [
+          "p.2"
+        ]
+      },
+      {
+        "section": "Methodology",
+        "summary": "Phương pháp nghiên cứu trong bài báo này bao gồm việc sử dụng mô hình Transformer cho các tác vụ dịch máy, với các bước huấn luyện và tối ưu hóa cụ thể.",
+        "source_refs": [
+          "p.7"
+        ]
+      },
+      {
+        "section": "Conclusion",
+        "summary": "Trong nghiên cứu này, chúng tôi đã trình bày Transformer, mô hình chuyển đổi chuỗi đầu tiên hoàn toàn dựa trên sự chú ý, thay thế các lớp hồi tiếp thường được sử dụng trong kiến trúc mã hóa-giải mã bằng sự chú ý tự động đa đầu. Đối với các nhiệm vụ dịch thuật, Transformer có thể được đào tạo nhanh hơn đáng kể so với các kiến trúc dựa trên lớp hồi tiếp hoặc tích chập. Trong cả hai nhiệm vụ dịch thuật tiếng Anh-Đức và tiếng Anh-Pháp WMT 2014, chúng tôi đạt được kết quả tốt nhất từ trước đến nay. Trong nhiệm vụ trước, mô hình tốt nhất của chúng tôi vượt trội hơn cả các bộ mô hình đã được báo cáo trước đó. Chúng tôi rất hào hứng về tương lai của các mô hình dựa trên sự chú ý và dự định áp dụng chúng cho các nhiệm vụ khác. Chúng tôi dự định mở rộng Transformer cho các vấn đề liên quan đến các phương thức đầu vào và đầu ra khác ngoài văn bản và điều tra các cơ chế chú ý cục bộ, hạn chế để xử lý hiệu quả các đầu vào và đầu ra lớn như hình ảnh, âm thanh và video. Một mục tiêu nghiên cứu khác của chúng tôi là làm cho quá trình sinh ra ít tuần tự hơn.",
+        "source_refs": [
+          "p.10"
+        ]
+      }
+    ],
+    "key_takeaways": [
+      {
+        "takeaway": "Transformer là mô hình chuyển đổi chuỗi đầu tiên hoàn toàn dựa trên sự chú ý.",
+        "source_refs": [
+          "p.10"
+        ]
+      },
+      {
+        "takeaway": "Transformer có thể được đào tạo nhanh hơn đáng kể so với các kiến trúc dựa trên lớp hồi tiếp hoặc tích chập.",
+        "source_refs": [
+          "p.10"
+        ]
+      }
+    ],
+    "glossary": [
+      {
+        "term": "BLEU",
+        "explanation": "Một chỉ số đánh giá chất lượng dịch máy, đo lường độ tương đồng giữa bản dịch tự động và bản dịch tham khảo.",
+        "source_refs": [
+          "p.8"
+        ]
+      },
+      {
+        "term": "dropout",
+        "explanation": "Kỹ thuật regularization nhằm giảm thiểu hiện tượng overfitting trong quá trình huấn luyện mô hình.",
+        "source_refs": [
+          "p.8"
+        ]
+      }
+    ],
+    "source_level": "full_text",
+    "source_labels": [
+      "p.1",
+      "p.2",
+      "p.3",
+      "p.4",
+      "p.5",
+      "p.6",
+      "p.7",
+      "p.8",
+      "p.9",
+      "p.10",
+      "p.11",
+      "p.12",
+      "p.13",
+      "p.14",
+      "p.15"
+    ],
+    "section_chunk_count": 4,
+    "prompt_version": "deep-summary-v1"
+  },
+  "cache": {
+    "hit": false,
+    "key": "915d60675dde4ff24035d9ad3bbd88cf9ac6f34e1737d3f0d19ee554791c1bb1",
+    "prompt_version": "deep-summary-v1"
+  },
+  "guardrails": {
+    "source_level": "full_text",
+    "page_references_required": true,
+    "disclaimer": "This summary is generated from extracted PDF text. Equations, figures, and complex tables may not be fully represented; verify critical claims against the cited pages in the original paper."
+  }
+}

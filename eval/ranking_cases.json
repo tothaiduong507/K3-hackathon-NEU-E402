@@ -1,0 +1,88 @@
+{
+  "dataset_id": "smart_literature_review_ranking_v0",
+  "description": "Synthetic deterministic ranking checks. Replace or extend with CP1-derived user queries before final submission.",
+  "quality_bar": 0.8,
+  "cases": [
+    {
+      "id": "RK01_rag",
+      "query": "retrieval augmented generation",
+      "expected_top": "rag",
+      "papers": [
+        {"paper_id": "vision", "title": "Image segmentation systems", "abstract": "Computer vision segmentation for medical images with neural networks.", "year": 2026, "citation_count": 500},
+        {"paper_id": "rag", "title": "Retrieval augmented generation for factual language models", "abstract": "Retrieval augmented generation combines document retrieval and language generation.", "year": 2024, "citation_count": 20},
+        {"paper_id": "graph", "title": "Scalable graph mining", "abstract": "Graph mining and recommender systems for industry.", "year": 2025, "citation_count": 30}
+      ]
+    },
+    {
+      "id": "RK02_cv",
+      "query": "object detection computer vision",
+      "expected_top": "detection",
+      "papers": [
+        {"paper_id": "nlp", "title": "Language model evaluation", "abstract": "Evaluation of language generation systems.", "year": 2026, "citation_count": 800},
+        {"paper_id": "detection", "title": "Object detection for computer vision", "abstract": "A computer vision architecture for accurate object detection.", "year": 2023, "citation_count": 15},
+        {"paper_id": "planning", "title": "Automated planning agents", "abstract": "Search and reasoning for autonomous agents.", "year": 2025, "citation_count": 25}
+      ]
+    },
+    {
+      "id": "RK03_data_mining",
+      "query": "graph mining recommender systems",
+      "expected_top": "recsys",
+      "papers": [
+        {"paper_id": "recsys", "title": "Graph mining for recommender systems", "abstract": "Scalable graph mining improves industrial recommender systems.", "year": 2024, "citation_count": 50},
+        {"paper_id": "speech", "title": "Speech recognition", "abstract": "End to end audio and speech recognition.", "year": 2026, "citation_count": 1000},
+        {"paper_id": "robot", "title": "Robot control", "abstract": "Reinforcement learning for robot control.", "year": 2025, "citation_count": 10}
+      ]
+    },
+    {
+      "id": "RK04_multilingual",
+      "query": "multilingual machine translation",
+      "expected_top": "mt",
+      "papers": [
+        {"paper_id": "mt", "title": "Multilingual machine translation", "abstract": "A multilingual machine translation system for low resource languages.", "year": 2024, "citation_count": 9},
+        {"paper_id": "optimization", "title": "Convex optimization", "abstract": "Optimization theory for learning algorithms.", "year": 2025, "citation_count": 300},
+        {"paper_id": "vision", "title": "Video understanding", "abstract": "Video understanding using transformers.", "year": 2026, "citation_count": 60}
+      ]
+    },
+    {
+      "id": "RK05_learning_theory",
+      "query": "machine learning generalization bounds",
+      "expected_top": "theory",
+      "papers": [
+        {"paper_id": "theory", "title": "Generalization bounds for machine learning", "abstract": "Learning theory analysis of generalization bounds.", "year": 2022, "citation_count": 5},
+        {"paper_id": "chat", "title": "Dialogue systems", "abstract": "Conversational response generation.", "year": 2026, "citation_count": 500},
+        {"paper_id": "image", "title": "Image generation", "abstract": "Diffusion models for visual generation.", "year": 2025, "citation_count": 250}
+      ]
+    },
+    {
+      "id": "RK06_ai_planning",
+      "query": "knowledge representation automated planning",
+      "expected_top": "kr",
+      "papers": [
+        {"paper_id": "kr", "title": "Knowledge representation for automated planning", "abstract": "Reasoning and knowledge representation improve automated planning.", "year": 2023, "citation_count": 12},
+        {"paper_id": "nlp", "title": "Text classification", "abstract": "Classification of text documents.", "year": 2026, "citation_count": 600},
+        {"paper_id": "cv", "title": "Image recognition", "abstract": "Recognition of visual categories.", "year": 2025, "citation_count": 400}
+      ]
+    },
+    {
+      "id": "RK07_relevance_over_citations",
+      "query": "responsible data mining fairness",
+      "expected_top": "fair",
+      "papers": [
+        {"paper_id": "old-famous", "title": "Neural network optimization", "abstract": "Optimization for large neural networks.", "year": 2020, "citation_count": 100000},
+        {"paper_id": "fair", "title": "Responsible data mining and fairness", "abstract": "Fairness evaluation for responsible data mining systems.", "year": 2024, "citation_count": 3},
+        {"paper_id": "robotics", "title": "Robotics navigation", "abstract": "Navigation and control for robots.", "year": 2026, "citation_count": 50}
+      ]
+    },
+    {
+      "id": "RK08_vision_language",
+      "query": "vision language image understanding",
+      "expected_top": "vlm",
+      "papers": [
+        {"paper_id": "vlm", "title": "Vision language models for image understanding", "abstract": "Vision language learning connects images and text for image understanding.", "year": 2024, "citation_count": 100},
+        {"paper_id": "graph", "title": "Graph neural networks", "abstract": "Message passing for graphs.", "year": 2026, "citation_count": 1000},
+        {"paper_id": "speech", "title": "Speech language processing", "abstract": "Speech recognition with language models.", "year": 2025, "citation_count": 200}
+      ]
+    }
+  ]
+}
+

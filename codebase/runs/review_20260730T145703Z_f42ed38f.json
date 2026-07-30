@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "run_type": "smart_literature_review",
+  "run_id": "review_20260730T145703Z_f42ed38f",
+  "created_at": "2026-07-30T14:57:03.295248+00:00",
+  "model": "gpt-4o-mini",
+  "query": "attention in NLP",
+  "search": {
+    "source": "arxiv",
+    "primary_error": "HTTPError: 403 Client Error: Forbidden for url: https://api.semanticscholar.org/graph/v1/paper/search?query=attention+in+NLP&limit=10&fields=paperId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CcitationCount%2Cvenue%2Curl%2CexternalIds%2CfieldsOfStudy%2CopenAccessPdf&year=2022-",
+    "result_count": 4,
+    "filtered_count": 4,
+    "filters": {
+      "min_year": 2022,
+      "min_citations": 0
+    },
+    "ranked_papers": [
+      {
+        "source_rank": 2,
+        "paper": {
+          "paper_id": "ARXIV:2501.15630v2",
+          "title": "Quantum-Enhanced Attention Mechanism in NLP: A Hybrid Classical-Quantum Approach",
+          "abstract": "Recent advances in quantum computing have opened new pathways for enhancing deep learning architectures, particularly in domains characterized by high-dimensional and context-rich data such as natural language processing (NLP). In this work, we present a hybrid classical-quantum Transformer model that integrates a quantum-enhanced attention mechanism into the standard classical architecture. By embedding token representations into a quantum Hilbert space via parameterized variational circuits and exploiting entanglement-aware kernel similarities, the model captures complex semantic relationships beyond the reach of conventional dot-product attention. We demonstrate the effectiveness of this approach across diverse NLP benchmarks, showing improvements in both efficiency and representational capacity. The results section reveal that the quantum attention layer yields globally coherent attention maps and more separable latent features, while requiring comparatively fewer parameters than classical counterparts. These findings highlight the potential of quantum-classical hybrid models to serve as a powerful and resource-efficient alternative to existing attention mechanisms in NLP.",
+          "authors": [
+            "S. M. Yousuf Iqbal Tomal",
+            "Abdullah Al Shafin",
+            "Debojit Bhattacharjee",
+            "MD. Khairul Amin",
+            "Rafiad Sadat Shahir"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2501.15630v2",
+          "external_ids": {
+            "ArXiv": "2501.15630v2"
+          },
+          "fields_of_study": [
+            "cs.CL",
+            "quant-ph"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2501.15630v2.pdf"
+        },
+        "relevance_score": 90.75,
+        "matched_query_terms": [
+          "attention",
+          "nlp"
+        ],
+        "score_breakdown": {
+          "title_overlap": 50.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 11.25,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 1
+      },
+      {
+        "source_rank": 3,
+        "paper": {
+          "paper_id": "ARXIV:2304.08453v3",
+          "title": "Improving Autoregressive NLP Tasks via Modular Linearized Attention",
+          "abstract": "Various natural language processing (NLP) tasks necessitate models that are efficient and small based on their ultimate application at the edge or in other resource-constrained environments. While prior research has reduced the size of these models, increasing computational efficiency without considerable performance impacts remains difficult, especially for autoregressive tasks. This paper proposes modular linearized attention (MLA), which combines multiple efficient attention mechanisms, including cosFormer, to maximize inference quality while achieving notable speedups. We validate this approach on several autoregressive NLP tasks, including speech-to-text neural machine translation (S2T NMT), speech-to-text simultaneous translation (SimulST), and autoregressive text-to-spectrogram, noting efficiency gains on TTS and competitive performance for NMT and SimulST during training and inference.",
+          "authors": [
+            "Victor Agostinelli",
+            "Lizhong Chen"
+          ],
+          "year": 2023,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2304.08453v3",
+          "external_ids": {
+            "ArXiv": "2304.08453v3"
+          },
+          "fields_of_study": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2304.08453v3.pdf"
+        },
+        "relevance_score": 86.0,
+        "matched_query_terms": [
+          "attention",
+          "nlp"
+        ],
+        "score_breakdown": {
+          "title_overlap": 50.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 7.5,
+          "citation_signal": 0.0,
+          "recency_signal": 3.5
+        },
+        "rank": 2
+      },
+      {
+        "source_rank": 4,
+        "paper": {
+          "paper_id": "ARXIV:2506.06329v1",
+          "title": "The Hype Index: an NLP-driven Measure of Market News Attention",
+          "abstract": "This paper introduces the Hype Index as a novel metric to quantify media attention toward large-cap equities, leveraging advances in Natural Language Processing (NLP) for extracting predictive signals from financial news. Using the S&P 100 as the focus universe, we first construct a News Count-Based Hype Index, which measures relative media exposure by computing the share of news articles referencing each stock or sector. We then extend it to the Capitalization Adjusted Hype Index, adjusts for economic size by taking the ratio of a stock's or sector's media weight to its market capitalization weight within its industry or sector. We compute both versions of the Hype Index at the stock and sector levels, and evaluate them through multiple lenses: (1) their classification into different hype groups, (2) their associations with returns, volatility, and VIX index at various lags, (3) their signaling power for short-term market movements, and (4) their empirical properties including correlations, samplings, and trends. Our findings suggest that the Hype Index family provides a valuable set of tools for stock volatility analysis, market signaling, and NLP extensions in Finance.",
+          "authors": [
+            "Zheng Cao",
+            "Wanchaloem Wunkaew",
+            "Helyette Geman"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2506.06329v1",
+          "external_ids": {
+            "ArXiv": "2506.06329v1"
+          },
+          "fields_of_study": [
+            "q-fin.ST",
+            "cs.CE",
+            "cs.CL"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2506.06329v1.pdf"
+        },
+        "relevance_score": 83.25,
+        "matched_query_terms": [
+          "attention",
+          "nlp"
+        ],
+        "score_breakdown": {
+          "title_overlap": 50.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 3.75,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 3
+      },
+      {
+        "source_rank": 1,
+        "paper": {
+          "paper_id": "ARXIV:2405.06499v1",
+          "title": "Aspect-based Sentiment Evaluation of Chess Moves (ASSESS): an NLP-based Method for Evaluating Chess Strategies from Textbooks",
+          "abstract": "The chess domain is well-suited for creating an artificial intelligence (AI) system that mimics real-world challenges, including decision-making. Throughout the years, minimal attention has been paid to investigating insights derived from unstructured chess data sources. In this study, we examine the complicated relationships between multiple referenced moves in a chess-teaching textbook, and propose a novel method designed to encapsulate chess knowledge derived from move-action phrases. This study investigates the feasibility of using a modified sentiment analysis method as a means for evaluating chess moves based on text. Our proposed Aspect-Based Sentiment Analysis (ABSA) method represents an advancement in evaluating the sentiment associated with referenced chess moves. By extracting insights from move-action phrases, our approach aims to provide a more fine-grained and contextually aware `chess move'-based sentiment classification. Through empirical experiments and analysis, we evaluate the performance of our fine-tuned ABSA model, presenting results that confirm the efficiency of our approach in advancing aspect-based sentiment classification within the chess domain. This research contributes to the area of game-playing by machines and shows the practical applicability of leveraging NLP techniques to understand the context of strategic games.",
+          "authors": [
+            "Haifa Alrdahi",
+            "Riza Batista-Navarro"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2405.06499v1",
+          "external_ids": {
+            "ArXiv": "2405.06499v1"
+          },
+          "fields_of_study": [
+            "cs.CL"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2405.06499v1.pdf"
+        },
+        "relevance_score": 69.0,
+        "matched_query_terms": [
+          "attention",
+          "nlp"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 15.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 4
+      }
+    ],
+    "selected_paper_ids": [
+      "ARXIV:2501.15630v2",
+      "ARXIV:2304.08453v3",
+      "ARXIV:2506.06329v1"
+    ]
+  },
+  "literature_review": {
+    "paper_summaries": [
+      {
+        "paper_id": "ARXIV:2501.15630v2",
+        "problem": "Enhancing deep learning architectures in NLP using quantum computing.",
+        "method": "Hybrid classical-quantum Transformer model with quantum-enhanced attention mechanism.",
+        "key_findings": [
+          "Improvements in efficiency and representational capacity in NLP tasks.",
+          "Quantum attention layer yields globally coherent attention maps.",
+          "Requires fewer parameters than classical attention mechanisms."
+        ],
+        "limitations": [
+          "Abstract does not specify the types of NLP benchmarks used."
+        ],
+        "relevance_explanation": "This paper explores a novel approach to attention mechanisms in NLP, integrating quantum computing, which could significantly impact future research in the field.",
+        "source_refs": [
+          "paper:ARXIV:2501.15630v2:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2304.08453v3",
+        "problem": "Need for efficient and small models for autoregressive NLP tasks in resource-constrained environments.",
+        "method": "Modular linearized attention (MLA) combining multiple efficient attention mechanisms.",
+        "key_findings": [
+          "Achieves notable speedups in inference quality for autoregressive tasks.",
+          "Competitive performance for tasks like speech-to-text neural machine translation and simultaneous translation."
+        ],
+        "limitations": [
+          "Abstract does not provide specific performance metrics or comparisons with baseline models."
+        ],
+        "relevance_explanation": "This paper addresses the efficiency of attention mechanisms in NLP, which is crucial for practical applications in constrained environments.",
+        "source_refs": [
+          "paper:ARXIV:2304.08453v3:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2506.06329v1",
+        "problem": "Quantifying media attention toward large-cap equities using NLP.",
+        "method": "Introduction of the Hype Index to measure media exposure and its predictive signals.",
+        "key_findings": [
+          "Provides tools for stock volatility analysis and market signaling.",
+          "Demonstrates associations with market returns and volatility."
+        ],
+        "limitations": [
+          "Abstract does not detail the NLP techniques used for extracting signals from financial news."
+        ],
+        "relevance_explanation": "This paper applies NLP to finance, showcasing the versatility of attention mechanisms in analyzing market news and its implications.",
+        "source_refs": [
+          "paper:ARXIV:2506.06329v1:abstract"
+        ]
+      }
+    ],
+    "comparison": {
+      "common_themes": [
+        "Focus on enhancing attention mechanisms in NLP.",
+        "Emphasis on efficiency and performance improvements.",
+        "Application of novel methodologies to traditional NLP tasks."
+      ],
+      "methodological_differences": [
+        "ARXIV:2501.15630v2 uses a quantum-classical hybrid approach, while ARXIV:2304.08453v3 focuses on modular linearized attention.",
+        "ARXIV:2506.06329v1 applies NLP techniques to financial news rather than traditional NLP tasks."
+      ],
+      "evidence_gaps": [
+        "Lack of detailed performance metrics in ARXIV:2304.08453v3 and ARXIV:2506.06329v1.",
+        "Insufficient specification of NLP benchmarks in ARXIV:2501.15630v2."
+      ],
+      "suggested_reading_order": [
+        "ARXIV:2501.15630v2",
+        "ARXIV:2304.08453v3",
+        "ARXIV:2506.06329v1"
+      ]
+    },
+    "topic_profile": {
+      "keywords": [
+        "attention mechanisms",
+        "NLP",
+        "quantum computing",
+        "efficiency",
+        "financial news"
+      ],
+      "fields": [
+        "Natural Language Processing",
+        "Quantum Computing",
+        "Finance"
+      ],
+      "venue_fit_description": "The selected papers fit well within the domains of NLP and its applications, including innovative methodologies and practical implications."
+    },
+    "source_level": "abstract_only",
+    "source_labels": [
+      "paper:ARXIV:2304.08453v3:abstract",
+      "paper:ARXIV:2501.15630v2:abstract",
+      "paper:ARXIV:2506.06329v1:abstract"
+    ],
+    "analysis_mode": "cross_paper_review"
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "emnlp",
+      "acronym": "EMNLP",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "fit_score": 90,
+      "confidence": "high",
+      "reasons": [
+        "Strong focus on empirical methods in natural language processing, which aligns with the papers' emphasis on enhancing NLP tasks.",
+        "The papers discuss novel methodologies in NLP, making EMNLP a suitable venue for their presentation."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "natural language processing",
+        "empirical NLP",
+        "language models"
+      ],
+      "official_url": "https://www.aclweb.org/portal/",
+      "scope_source_url": "https://www.aclweb.org/portal/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "acl",
+      "acronym": "ACL",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "fit_score": 85,
+      "confidence": "high",
+      "reasons": [
+        "Covers a broad range of topics in natural language processing, including language modeling and evaluation, which are relevant to the papers.",
+        "The integration of innovative methodologies in NLP aligns well with the conference's scope."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "natural language processing",
+        "computational linguistics",
+        "language models"
+      ],
+      "official_url": "https://www.aclweb.org/portal/acl",
+      "scope_source_url": "https://www.aclweb.org/portal/acl",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "iclr",
+      "acronym": "ICLR",
+      "name": "International Conference on Learning Representations",
+      "fit_score": 80,
+      "confidence": "medium",
+      "reasons": [
+        "Focus on deep learning and representation learning, which is relevant given the papers' exploration of attention mechanisms in NLP.",
+        "The hybrid approaches discussed in the papers may attract interest in the context of representation learning."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "deep learning",
+        "natural language processing",
+        "neural networks"
+      ],
+      "official_url": "https://iclr.cc/",
+      "scope_source_url": "https://iclr.cc/",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "summary_source_level": "abstract_only",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "The comparison is based on abstracts, not full papers. Conference results are topical-fit suggestions only. Verify scope and deadlines on official conference sites."
+  }
+}

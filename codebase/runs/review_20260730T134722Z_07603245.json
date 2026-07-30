@@ -1,0 +1,576 @@
+{
+  "status": "completed",
+  "run_type": "smart_literature_review",
+  "run_id": "review_20260730T134722Z_07603245",
+  "created_at": "2026-07-30T13:47:22.911480+00:00",
+  "model": "gpt-4o-mini",
+  "query": "Graph Neural Network for Multi-omics Classification",
+  "search": {
+    "source": "arxiv",
+    "primary_error": "HTTPError: 403 Client Error: Forbidden for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Graph+Neural+Network+for+Multi-omics+Classification&limit=10&fields=paperId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CcitationCount%2Cvenue%2Curl%2CexternalIds%2CfieldsOfStudy%2CopenAccessPdf&year=2022-",
+    "result_count": 9,
+    "filtered_count": 9,
+    "filters": {
+      "min_year": 2022,
+      "min_citations": 0
+    },
+    "ranked_papers": [
+      {
+        "source_rank": 6,
+        "paper": {
+          "paper_id": "ARXIV:2509.16301v2",
+          "title": "TF-DWGNet: A Directed Weighted Graph Neural Network with Tensor Fusion for Multi-Omics Cancer Subtype Classification",
+          "abstract": "Integration and analysis of multi-omics data provide valuable insights for improving cancer subtype classification. However, such data are inherently heterogeneous, high-dimensional, and exhibit complex intra- and inter-modality dependencies. Graph neural networks (GNNs) offer a principled framework for modeling these structures, but existing approaches often rely on prior knowledge or predefined similarity networks that produce undirected or unweighted graphs and fail to capture task-specific directionality and interaction strength. Interpretability at both the modality and feature levels also remains limited. To address these challenges, we propose TF-DWGNet, a novel Graph Neural Network framework that combines tree-based Directed Weighted graph construction with Tensor Fusion for multiclass cancer subtype classification. TF-DWGNet introduces two key innovations: (i) a supervised tree-based strategy that constructs directed, weighted graphs tailored to each omics modality, and (ii) a tensor fusion mechanism that captures unimodal, bimodal, and trimodal interactions using low-rank decomposition for computational efficiency. Experiments on three real-world cancer datasets demonstrate that TF-DWGNet consistently outperforms state-of-the-art baselines across multiple metrics and statistical tests. In addition, the model provides biologically meaningful insights through modality-level contribution scores and ranked feature importance. These results highlight that TF-DWGNet is an effective and interpretable solution for multi-omics integration in cancer research.",
+          "authors": [
+            "Tiantian Yang",
+            "Zhiqian Chen"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2509.16301v2",
+          "external_ids": {
+            "ArXiv": "2509.16301v2"
+          },
+          "fields_of_study": [
+            "q-bio.QM",
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2509.16301v2.pdf"
+        },
+        "relevance_score": 86.17,
+        "matched_query_terms": [
+          "classification",
+          "graph",
+          "multi",
+          "network",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 50.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 6.67,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 1
+      },
+      {
+        "source_rank": 2,
+        "paper": {
+          "paper_id": "ARXIV:2508.07465v2",
+          "title": "MOTGNN: Interpretable Graph Neural Networks for Multi-Omics Disease Classification",
+          "abstract": "Integrating multi-omics data, such as DNA methylation, mRNA expression, and microRNA (miRNA) expression, offers a comprehensive view of the biological mechanisms underlying disease. However, the high dimensionality of multi-omics data, the heterogeneity across modalities, and the lack of reliable biological interaction networks make meaningful integration challenging. In addition, many existing models rely on handcrafted similarity graphs, are vulnerable to class imbalance, and often lack built-in interpretability, limiting their usefulness in biomedical applications. We propose Multi-Omics integration with Tree-generated Graph Neural Network (MOTGNN), a novel and interpretable framework for binary disease classification. MOTGNN employs eXtreme Gradient Boosting (XGBoost) for omics-specific supervised graph construction, followed by modality-specific Graph Neural Networks (GNNs) for hierarchical representation learning, and a deep feedforward network for cross-omics integration. Across three real-world disease datasets, MOTGNN outperforms state-of-the-art baselines by 5-10% in accuracy, ROC-AUC, and F1-score, and remains robust to severe class imbalance. The model maintains computational efficiency through the use of sparse graphs and provides built-in interpretability, revealing both top-ranked biomarkers and the relative contributions of each omics modality. These results highlight the potential of MOTGNN to improve both predictive accuracy and interpretability in multi-omics disease modeling.",
+          "authors": [
+            "Tiantian Yang",
+            "Zhiqian Chen"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2508.07465v2",
+          "external_ids": {
+            "ArXiv": "2508.07465v2"
+          },
+          "fields_of_study": [
+            "cs.LG",
+            "q-bio.GN",
+            "stat.ML"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2508.07465v2.pdf"
+        },
+        "relevance_score": 84.5,
+        "matched_query_terms": [
+          "classification",
+          "graph",
+          "multi",
+          "network",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 41.67,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 13.33,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 2
+      },
+      {
+        "source_rank": 3,
+        "paper": {
+          "paper_id": "ARXIV:2410.05325v1",
+          "title": "Comparative Analysis of Multi-Omics Integration Using Advanced Graph Neural Networks for Cancer Classification",
+          "abstract": "Multi-omics data is increasingly being utilized to advance computational methods for cancer classification. However, multi-omics data integration poses significant challenges due to the high dimensionality, data complexity, and distinct characteristics of various omics types. This study addresses these challenges and evaluates three graph neural network architectures for multi-omics (MO) integration based on graph-convolutional networks (GCN), graph-attention networks (GAT), and graph-transformer networks (GTN) for classifying 31 cancer types and normal tissues. To address the high-dimensionality of multi-omics data, we employed LASSO (Least Absolute Shrinkage and Selection Operator) regression for feature selection, leading to the creation of LASSO-MOGCN, LASSO-MOGAT, and LASSO-MOTGN models. Graph structures for the networks were constructed using gene correlation matrices and protein-protein interaction networks for multi-omics integration of messenger-RNA, micro-RNA, and DNA methylation data. Such data integration enables the networks to dynamically focus on important relationships between biological entities, improving both model performance and interpretability. Among the models, LASSO-MOGAT with a correlation-based graph structure achieved state-of-the-art accuracy (95.9%) and outperformed the LASSO-MOGCN and LASSO-MOTGN models in terms of precision, recall, and F1-score. Our findings demonstrate that integrating multi-omics data in graph-based architectures enhances cancer classification performance by uncovering distinct molecular patterns that contribute to a better understanding of cancer biology and potential biomarkers for disease progression.",
+          "authors": [
+            "Fadi Alharbi",
+            "Aleksandar Vakanski",
+            "Boyu Zhang",
+            "Murtada K. Elbashir",
+            "Mohanad Mohammed"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2410.05325v1",
+          "external_ids": {
+            "ArXiv": "2410.05325v1"
+          },
+          "fields_of_study": [
+            "q-bio.GN",
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2410.05325v1.pdf"
+        },
+        "relevance_score": 82.33,
+        "matched_query_terms": [
+          "classification",
+          "graph",
+          "multi",
+          "network",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 41.67,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 11.67,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 3
+      },
+      {
+        "source_rank": 5,
+        "paper": {
+          "paper_id": "ARXIV:2507.20440v1",
+          "title": "BioNeuralNet: A Graph Neural Network based Multi-Omics Network Data Analysis Tool",
+          "abstract": "Multi-omics data offer unprecedented insights into complex biological systems, yet their high dimensionality, sparsity, and intricate interactions pose significant analytical challenges. Network-based approaches have advanced multi-omics research by effectively capturing biologically relevant relationships among molecular entities. While these methods are powerful for representing molecular interactions, there remains a need for tools specifically designed to effectively utilize these network representations across diverse downstream analyses. To fulfill this need, we introduce BioNeuralNet, a flexible and modular Python framework tailored for end-to-end network-based multi-omics data analysis. BioNeuralNet leverages Graph Neural Networks (GNNs) to learn biologically meaningful low-dimensional representations from multi-omics networks, converting these complex molecular networks into versatile embeddings. BioNeuralNet supports all major stages of multi-omics network analysis, including several network construction techniques, generation of low-dimensional representations, and a broad range of downstream analytical tasks. Its extensive utilities, including diverse GNN architectures, and compatibility with established Python packages (e.g., scikit-learn, PyTorch, NetworkX), enhance usability and facilitate quick adoption. BioNeuralNet is an open-source, user-friendly, and extensively documented framework designed to support flexible and reproducible multi-omics network analysis in precision medicine.",
+          "authors": [
+            "Vicente Ramos",
+            "Sundous Hussein",
+            "Mohamed Abdel-Hafiz",
+            "Arunangshu Sarkar",
+            "Weixuan Liu",
+            "Katerina J. Kechris",
+            "Russell P. Bowler",
+            "Leslie Lange",
+            "Farnoush Banaei-Kashani"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2507.20440v1",
+          "external_ids": {
+            "ArXiv": "2507.20440v1"
+          },
+          "fields_of_study": [
+            "cs.LG",
+            "q-bio.GN"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2507.20440v1.pdf"
+        },
+        "relevance_score": 75.33,
+        "matched_query_terms": [
+          "graph",
+          "multi",
+          "network",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 41.67,
+          "abstract_overlap": 20.83,
+          "source_api_rank": 8.33,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 4
+      },
+      {
+        "source_rank": 4,
+        "paper": {
+          "paper_id": "ARXIV:2506.17234v1",
+          "title": "Graph Neural Networks in Multi-Omics Cancer Research: A Structured Survey",
+          "abstract": "The task of data integration for multi-omics data has emerged as a powerful strategy to unravel the complex biological underpinnings of cancer. Recent advancements in graph neural networks (GNNs) offer an effective framework to model heterogeneous and structured omics data, enabling precise representation of molecular interactions and regulatory networks. This systematic review explores several recent studies that leverage GNN-based architectures in multi-omics cancer research. We classify the approaches based on their targeted omics layers, graph neural network structures, and biological tasks such as subtype classification, prognosis prediction, and biomarker discovery. The analysis reveals a growing trend toward hybrid and interpretable models, alongside increasing adoption of attention mechanisms and contrastive learning. Furthermore, we highlight the use of patient-specific graphs and knowledge-driven priors as emerging directions. This survey serves as a comprehensive resource for researchers aiming to design effective GNN-based pipelines for integrative cancer analysis, offering insights into current practices, limitations, and potential future directions.",
+          "authors": [
+            "Payam Zohari",
+            "Mostafa Haghir Chehreghani"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2506.17234v1",
+          "external_ids": {
+            "ArXiv": "2506.17234v1"
+          },
+          "fields_of_study": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2506.17234v1.pdf"
+        },
+        "relevance_score": 72.83,
+        "matched_query_terms": [
+          "classification",
+          "graph",
+          "multi",
+          "network",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 33.33,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 10.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 5
+      },
+      {
+        "source_rank": 7,
+        "paper": {
+          "paper_id": "ARXIV:2604.24371v1",
+          "title": "PathMoG: A Pathway-Centric Modular Graph Neural Network for Multi-Omics Survival Prediction",
+          "abstract": "Cancer survival prediction from multi-omics data remains challenging because prognostic signals are high-dimensional, heterogeneous, and distributed across interacting genes and pathways. We propose PathMoG, a pathway-centric modular graph neural network for multi-omics survival prediction. PathMoG reorganizes genome-scale inputs into 354 KEGG-informed pathway modules, introduces a Hierarchical Omics Modulation module to condition gene-expression representations on mutation, copy number variation, pathway, and clinical context, and uses dual-level attention to capture both intra-pathway driver signals and inter-pathway clinical relevance. We evaluated PathMoG on 5,650 patients across 10 TCGA cancer types and observed consistent improvements over representative survival baselines. The framework further provides gene-level, pathway-level, and patient-level interpretability, supporting biologically grounded and clinically relevant risk stratification.",
+          "authors": [
+            "Di Wang",
+            "Chupei Tang",
+            "Junxiao Kong",
+            "Jixiu Zhai",
+            "Moyu Tang",
+            "Tianchi Lu"
+          ],
+          "year": 2026,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2604.24371v1",
+          "external_ids": {
+            "ArXiv": "2604.24371v1"
+          },
+          "fields_of_study": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2604.24371v1.pdf"
+        },
+        "relevance_score": 72.5,
+        "matched_query_terms": [
+          "graph",
+          "multi",
+          "network",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 41.67,
+          "abstract_overlap": 20.83,
+          "source_api_rank": 5.0,
+          "citation_signal": 0.0,
+          "recency_signal": 5.0
+        },
+        "rank": 6
+      },
+      {
+        "source_rank": 8,
+        "paper": {
+          "paper_id": "ARXIV:2508.06257v1",
+          "title": "Multi-Omics Analysis for Cancer Subtype Inference via Unrolling Graph Smoothness Priors",
+          "abstract": "Integrating multi-omics datasets through data-driven analysis offers a comprehensive understanding of the complex biological processes underlying various diseases, particularly cancer. Graph Neural Networks (GNNs) have recently demonstrated remarkable ability to exploit relational structures in biological data, enabling advances in multi-omics integration for cancer subtype classification. Existing approaches often neglect the intricate coupling between heterogeneous omics, limiting their capacity to resolve subtle cancer subtype heterogeneity critical for precision oncology. To address these limitations, we propose a framework named Graph Transformer for Multi-omics Cancer Subtype Classification (GTMancer). This framework builds upon the GNN optimization problem and extends its application to complex multi-omics data. Specifically, our method leverages contrastive learning to embed multi-omics data into a unified semantic space. We unroll the multiplex graph optimization problem in that unified space and introduce dual sets of attention coefficients to capture structural graph priors both within and among multi-omics data. This approach enables global omics information to guide the refining of the representations of individual omics. Empirical experiments on seven real-world cancer datasets demonstrate that GTMancer outperforms existing state-of-the-art algorithms.",
+          "authors": [
+            "Jielong Lu",
+            "Zhihao Wu",
+            "Jiajun Yu",
+            "Jiajun Bu",
+            "Haishuai Wang"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2508.06257v1",
+          "external_ids": {
+            "ArXiv": "2508.06257v1"
+          },
+          "fields_of_study": [
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2508.06257v1.pdf"
+        },
+        "relevance_score": 53.67,
+        "matched_query_terms": [
+          "classification",
+          "graph",
+          "multi",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 20.83,
+          "source_api_rank": 3.33,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 7
+      },
+      {
+        "source_rank": 1,
+        "paper": {
+          "paper_id": "ARXIV:2602.05811v1",
+          "title": "STProtein: predicting spatial protein expression from multi-omics data",
+          "abstract": "The integration of spatial multi-omics data from single tissues is crucial for advancing biological research. However, a significant data imbalance impedes progress: while spatial transcriptomics data is relatively abundant, spatial proteomics data remains scarce due to technical limitations and high costs. To overcome this challenge we propose STProtein, a novel framework leveraging graph neural networks with multi-task learning strategy. STProtein is designed to accurately predict unknown spatial protein expression using more accessible spatial multi-omics data, such as spatial transcriptomics. We believe that STProtein can effectively addresses the scarcity of spatial proteomics, accelerating the integration of spatial multi-omics and potentially catalyzing transformative breakthroughs in life sciences. This tool enables scientists to accelerate discovery by identifying complex and previously hidden spatial patterns of proteins within tissues, uncovering novel relationships between different marker genes, and exploring the biological \"Dark Matter\".",
+          "authors": [
+            "Zhaorui Jiang",
+            "Yingfang Yuan",
+            "Lei Hu",
+            "Wei Pang"
+          ],
+          "year": 2026,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2602.05811v1",
+          "external_ids": {
+            "ArXiv": "2602.05811v1"
+          },
+          "fields_of_study": [
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2602.05811v1.pdf"
+        },
+        "relevance_score": 53.33,
+        "matched_query_terms": [
+          "graph",
+          "multi",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 16.67,
+          "abstract_overlap": 16.67,
+          "source_api_rank": 15.0,
+          "citation_signal": 0.0,
+          "recency_signal": 5.0
+        },
+        "rank": 8
+      },
+      {
+        "source_rank": 9,
+        "paper": {
+          "paper_id": "ARXIV:2510.06880v1",
+          "title": "MoRE-GNN: Multi-omics Data Integration with a Heterogeneous Graph Autoencoder",
+          "abstract": "The integration of multi-omics single-cell data remains challenging due to high-dimensionality and complex inter-modality relationships. To address this, we introduce MoRE-GNN (Multi-omics Relational Edge Graph Neural Network), a heterogeneous graph autoencoder that combines graph convolution and attention mechanisms to dynamically construct relational graphs directly from data. Evaluations on six publicly available datasets demonstrate that MoRE-GNN captures biologically meaningful relationships and outperforms existing methods, particularly in settings with strong inter-modality correlations. Furthermore, the learned representations allow for accurate downstream cross-modal predictions. While performance may vary with dataset complexity, MoRE-GNN offers an adaptive, scalable and interpretable framework for advancing multi-omics integration.",
+          "authors": [
+            "Zhiyu Wang",
+            "Sonia Koszut",
+            "Pietro Liò",
+            "Francesco Ceccarelli"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2510.06880v1",
+          "external_ids": {
+            "ArXiv": "2510.06880v1"
+          },
+          "fields_of_study": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2510.06880v1.pdf"
+        },
+        "relevance_score": 52.0,
+        "matched_query_terms": [
+          "graph",
+          "multi",
+          "network",
+          "neural",
+          "omics"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 20.83,
+          "source_api_rank": 1.67,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 9
+      }
+    ],
+    "selected_paper_ids": [
+      "ARXIV:2509.16301v2",
+      "ARXIV:2508.07465v2",
+      "ARXIV:2410.05325v1"
+    ]
+  },
+  "literature_review": {
+    "paper_summaries": [
+      {
+        "paper_id": "ARXIV:2509.16301v2",
+        "problem": "Integration and analysis of multi-omics data for cancer subtype classification.",
+        "method": "Directed Weighted Graph Neural Network with Tensor Fusion.",
+        "key_findings": [
+          "Outperforms state-of-the-art baselines across multiple metrics.",
+          "Provides biologically meaningful insights through modality-level contribution scores.",
+          "Introduces a supervised tree-based strategy for directed, weighted graph construction."
+        ],
+        "limitations": [
+          "Abstract does not specify the datasets used for comparison."
+        ],
+        "relevance_explanation": "Addresses challenges in multi-omics integration and provides an interpretable solution for cancer research.",
+        "source_refs": [
+          "paper:ARXIV:2509.16301v2:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2508.07465v2",
+        "problem": "Challenges in integrating multi-omics data for disease classification due to high dimensionality and lack of reliable interaction networks.",
+        "method": "Tree-generated Graph Neural Network with eXtreme Gradient Boosting.",
+        "key_findings": [
+          "Outperforms state-of-the-art baselines by 5-10% in accuracy, ROC-AUC, and F1-score.",
+          "Maintains computational efficiency through sparse graphs.",
+          "Provides built-in interpretability revealing top-ranked biomarkers."
+        ],
+        "limitations": [
+          "Abstract does not detail the specific datasets used for validation."
+        ],
+        "relevance_explanation": "Focuses on improving predictive accuracy and interpretability in multi-omics disease modeling.",
+        "source_refs": [
+          "paper:ARXIV:2508.07465v2:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2410.05325v1",
+        "problem": "Challenges in multi-omics data integration for cancer classification due to high dimensionality and complexity.",
+        "method": "Comparative analysis of GNN architectures (GCN, GAT, GTN) with LASSO for feature selection.",
+        "key_findings": [
+          "LASSO-MOGAT achieved state-of-the-art accuracy (95.9%).",
+          "Dynamic focus on important relationships improves model performance and interpretability.",
+          "Uncovers distinct molecular patterns for better understanding of cancer biology."
+        ],
+        "limitations": [
+          "Abstract does not specify the datasets used for comparison."
+        ],
+        "relevance_explanation": "Evaluates multiple GNN architectures for effective multi-omics integration in cancer classification.",
+        "source_refs": [
+          "paper:ARXIV:2410.05325v1:abstract"
+        ]
+      }
+    ],
+    "comparison": {
+      "common_themes": [
+        "Focus on multi-omics data integration for classification tasks.",
+        "Use of graph neural networks to model complex relationships in data.",
+        "Emphasis on interpretability and performance improvement."
+      ],
+      "methodological_differences": [
+        "TF-DWGNet uses directed weighted graphs and tensor fusion, while MOTGNN employs eXtreme Gradient Boosting for graph construction.",
+        "LASSO-MOGAT focuses on feature selection using LASSO regression and evaluates multiple GNN architectures."
+      ],
+      "evidence_gaps": [
+        "All abstracts lack detailed information on the datasets used for validation and comparison."
+      ],
+      "suggested_reading_order": [
+        "ARXIV:2410.05325v1",
+        "ARXIV:2508.07465v2",
+        "ARXIV:2509.16301v2"
+      ]
+    },
+    "topic_profile": {
+      "keywords": [
+        "Graph Neural Networks",
+        "Multi-Omics",
+        "Cancer Classification",
+        "Interpretable AI"
+      ],
+      "fields": [
+        "Bioinformatics",
+        "Computational Biology",
+        "Machine Learning"
+      ],
+      "venue_fit_description": "Papers are suitable for arXiv, focusing on cutting-edge research in multi-omics integration and machine learning applications in healthcare."
+    },
+    "source_level": "abstract_only",
+    "source_labels": [
+      "paper:ARXIV:2410.05325v1:abstract",
+      "paper:ARXIV:2508.07465v2:abstract",
+      "paper:ARXIV:2509.16301v2:abstract"
+    ]
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "neurips",
+      "acronym": "NeurIPS",
+      "name": "Conference on Neural Information Processing Systems",
+      "fit_score": 80,
+      "confidence": "medium",
+      "reasons": [
+        "Focus on machine learning applications aligns with the use of graph neural networks in the papers.",
+        "Interdisciplinary applications in healthcare are relevant to the cancer classification context."
+      ],
+      "risks": [
+        "Potentially high competition due to the broad scope of the conference."
+      ],
+      "evidence_topics": [
+        "Graph Neural Networks",
+        "Machine Learning",
+        "Cancer Classification"
+      ],
+      "official_url": "https://neurips.cc/",
+      "scope_source_url": "https://neurips.cc/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "icml",
+      "acronym": "ICML",
+      "name": "International Conference on Machine Learning",
+      "fit_score": 75,
+      "confidence": "medium",
+      "reasons": [
+        "Strong emphasis on machine learning research, which is central to the papers' methodologies.",
+        "Relevant topics include deep learning and optimization, applicable to the proposed methods."
+      ],
+      "risks": [
+        "May not focus specifically on bioinformatics or healthcare applications."
+      ],
+      "evidence_topics": [
+        "Machine Learning",
+        "Graph Neural Networks",
+        "Bioinformatics"
+      ],
+      "official_url": "https://icml.cc/",
+      "scope_source_url": "https://icml.cc/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "kdd",
+      "acronym": "KDD",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "fit_score": 70,
+      "confidence": "low",
+      "reasons": [
+        "Focus on data mining and knowledge discovery aligns with the integration of multi-omics data.",
+        "Graph mining is relevant to the methodologies used in the papers."
+      ],
+      "risks": [
+        "Less emphasis on machine learning compared to NeurIPS and ICML."
+      ],
+      "evidence_topics": [
+        "Graph Mining",
+        "Data Mining",
+        "Multi-Omics Integration"
+      ],
+      "official_url": "https://kdd.org/",
+      "scope_source_url": "https://kdd.org/",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "summary_source_level": "abstract_only",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "The comparison is based on abstracts, not full papers. Conference results are topical-fit suggestions only. Verify scope and deadlines on official conference sites."
+  }
+}

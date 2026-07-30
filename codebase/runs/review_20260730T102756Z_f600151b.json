@@ -1,0 +1,292 @@
+{
+  "status": "completed",
+  "run_type": "smart_literature_review",
+  "run_id": "review_20260730T102756Z_f600151b",
+  "created_at": "2026-07-30T10:27:56.127384+00:00",
+  "model": "gpt-4o-mini",
+  "query": "retrieval augmented generation for literature review",
+  "search": {
+    "source": "arxiv",
+    "primary_error": "HTTPError: 403 Client Error: Forbidden for url: https://api.semanticscholar.org/graph/v1/paper/search?query=retrieval+augmented+generation+for+literature+review&limit=3&fields=paperId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CcitationCount%2Cvenue%2Curl%2CexternalIds%2CfieldsOfStudy%2CopenAccessPdf",
+    "result_count": 3,
+    "ranked_papers": [
+      {
+        "source_rank": 1,
+        "paper": {
+          "paper_id": "ARXIV:2411.18583v1",
+          "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+          "abstract": "This research presents and compares multiple approaches to automate the generation of literature reviews using several Natural Language Processing (NLP) techniques and retrieval-augmented generation (RAG) with a Large Language Model (LLM). The ever-increasing number of research articles provides a huge challenge for manual literature review. It has resulted in an increased demand for automation. Developing a system capable of automatically generating the literature reviews from only the PDF files as input is the primary objective of this research work. The effectiveness of several Natural Language Processing (NLP) strategies, such as the frequency-based method (spaCy), the transformer model (Simple T5), and retrieval-augmented generation (RAG) with Large Language Model (GPT-3.5-turbo), is evaluated to meet the primary objective. The SciTLDR dataset is chosen for this research experiment and three distinct techniques are utilized to implement three different systems for auto-generating the literature reviews. The ROUGE scores are used for the evaluation of all three systems. Based on the evaluation, the Large Language Model GPT-3.5-turbo achieved the highest ROUGE-1 score, 0.364. The transformer model comes in second place and spaCy is at the last position. Finally, a graphical user interface is created for the best system based on the large language model.",
+          "authors": [
+            "Nurshat Fateh Ali",
+            "Md. Mahdi Mohtasim",
+            "Shakil Mosharrof",
+            "T. Gopi Krishna"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2411.18583v1",
+          "external_ids": {
+            "ArXiv": "2411.18583v1"
+          },
+          "fields_of_study": [
+            "cs.CL",
+            "cs.AI",
+            "cs.IR",
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2411.18583v1.pdf"
+        },
+        "relevance_score": 94.0,
+        "matched_query_terms": [
+          "augmented",
+          "generation",
+          "literature",
+          "retrieval",
+          "review"
+        ],
+        "score_breakdown": {
+          "title_overlap": 50.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 15.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 1
+      },
+      {
+        "source_rank": 2,
+        "paper": {
+          "paper_id": "ARXIV:2601.05264v1",
+          "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+          "abstract": "This article provides a comprehensive systematic literature review of academic studies, industrial applications, and real-world deployments from 2018 to 2025, providing a practical guide and detailed overview of modern Retrieval-Augmented Generation (RAG) architectures. RAG offers a modular approach for integrating external knowledge without increasing the capacity of the model as LLM systems expand. Research and engineering practices have been fragmented as a result of the increasing diversity of RAG methodologies, which encompasses a variety of fusion mechanisms, retrieval strategies, and orchestration approaches. We provide quantitative assessment frameworks, analyze the implications for trust and alignment, and systematically consolidate existing RAG techniques into a unified taxonomy. This document is a practical framework for the deployment of resilient, secure, and domain-adaptable RAG systems, synthesizing insights from academic literature, industry reports, and technical implementation guides. It also functions as a technical reference.",
+          "authors": [
+            "Dean Wampler",
+            "Dave Nielson",
+            "Alireza Seddighi"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2601.05264v1",
+          "external_ids": {
+            "ArXiv": "2601.05264v1"
+          },
+          "fields_of_study": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2601.05264v1.pdf"
+        },
+        "relevance_score": 79.5,
+        "matched_query_terms": [
+          "augmented",
+          "generation",
+          "literature",
+          "retrieval",
+          "review"
+        ],
+        "score_breakdown": {
+          "title_overlap": 40.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 10.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 2
+      },
+      {
+        "source_rank": 3,
+        "paper": {
+          "paper_id": "ARXIV:2412.15404v1",
+          "title": "A Retrieval-Augmented Generation Framework for Academic Literature Navigation in Data Science",
+          "abstract": "In the rapidly evolving field of data science, efficiently navigating the expansive body of academic literature is crucial for informed decision-making and innovation. This paper presents an enhanced Retrieval-Augmented Generation (RAG) application, an artificial intelligence (AI)-based system designed to assist data scientists in accessing precise and contextually relevant academic resources. The AI-powered application integrates advanced techniques, including the GeneRation Of BIbliographic Data (GROBID) technique for extracting bibliographic information, fine-tuned embedding models, semantic chunking, and an abstract-first retrieval method, to significantly improve the relevance and accuracy of the retrieved information. This implementation of AI specifically addresses the challenge of academic literature navigation. A comprehensive evaluation using the Retrieval-Augmented Generation Assessment System (RAGAS) framework demonstrates substantial improvements in key metrics, particularly Context Relevance, underscoring the system's effectiveness in reducing information overload and enhancing decision-making processes. Our findings highlight the potential of this enhanced Retrieval-Augmented Generation system to transform academic exploration within data science, ultimately advancing the workflow of research and innovation in the field.",
+          "authors": [
+            "Ahmet Yasin Aytar",
+            "Kemal Kilic",
+            "Kamer Kaya"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2412.15404v1",
+          "external_ids": {
+            "ArXiv": "2412.15404v1"
+          },
+          "fields_of_study": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2412.15404v1.pdf"
+        },
+        "relevance_score": 69.0,
+        "matched_query_terms": [
+          "augmented",
+          "generation",
+          "literature",
+          "retrieval"
+        ],
+        "score_breakdown": {
+          "title_overlap": 40.0,
+          "abstract_overlap": 20.0,
+          "source_api_rank": 5.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 3
+      }
+    ],
+    "selected_paper_ids": [
+      "ARXIV:2411.18583v1",
+      "ARXIV:2601.05264v1",
+      "ARXIV:2412.15404v1"
+    ]
+  },
+  "literature_review": {
+    "paper_summaries": [
+      {
+        "paper_id": "ARXIV:2411.18583v1",
+        "problem": "Automating literature review generation from PDF files.",
+        "method": "Comparison of NLP techniques including frequency-based methods, transformer models, and RAG with LLM.",
+        "key_findings": [
+          "Multiple NLP techniques evaluated for literature review automation.",
+          "GPT-3.5-turbo achieved the highest ROUGE-1 score of 0.364.",
+          "A graphical user interface was developed for the best-performing system."
+        ],
+        "limitations": [
+          "Abstract does not specify the limitations of the study."
+        ],
+        "relevance_explanation": "This paper addresses the challenge of manual literature review by proposing an automated solution using advanced NLP techniques and RAG.",
+        "source_refs": [
+          "paper:ARXIV:2411.18583v1:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2601.05264v1",
+        "problem": "Fragmentation in RAG methodologies and the need for a comprehensive framework.",
+        "method": "Systematic literature review and quantitative assessment of RAG architectures and trust frameworks.",
+        "key_findings": [
+          "Provides a unified taxonomy of RAG techniques.",
+          "Analyzes implications for trust and alignment in RAG systems.",
+          "Offers a practical guide for deploying resilient RAG systems."
+        ],
+        "limitations": [
+          "Abstract does not specify the limitations of the study."
+        ],
+        "relevance_explanation": "This paper consolidates various RAG methodologies and provides a framework for their application, which is crucial for understanding the broader context of RAG systems.",
+        "source_refs": [
+          "paper:ARXIV:2601.05264v1:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2412.15404v1",
+        "problem": "Navigating academic literature in data science efficiently.",
+        "method": "Development of an AI-based RAG application integrating various advanced techniques for literature navigation.",
+        "key_findings": [
+          "Significant improvements in Context Relevance metrics using the RAGAS framework.",
+          "Addresses the challenge of information overload in academic literature navigation."
+        ],
+        "limitations": [
+          "Abstract does not specify the limitations of the study."
+        ],
+        "relevance_explanation": "This paper focuses on enhancing the navigation of academic literature specifically for data science, showcasing practical applications of RAG.",
+        "source_refs": [
+          "paper:ARXIV:2412.15404v1:abstract"
+        ]
+      }
+    ],
+    "comparison": {
+      "common_themes": [
+        "Focus on Retrieval-Augmented Generation (RAG) methodologies.",
+        "Addressing challenges in literature review and navigation.",
+        "Utilization of advanced NLP techniques."
+      ],
+      "methodological_differences": [
+        "ARXIV:2411.18583v1 focuses on automating literature review generation from PDFs, while ARXIV:2412.15404v1 emphasizes literature navigation in data science.",
+        "ARXIV:2601.05264v1 provides a comprehensive review and framework rather than a specific application."
+      ],
+      "evidence_gaps": [
+        "Limited discussion on the limitations of each study.",
+        "Need for empirical validation of proposed frameworks and systems."
+      ],
+      "suggested_reading_order": [
+        "ARXIV:2601.05264v1 for foundational understanding of RAG systems.",
+        "ARXIV:2411.18583v1 for practical application in literature review automation.",
+        "ARXIV:2412.15404v1 for specific applications in data science."
+      ]
+    },
+    "topic_profile": {
+      "keywords": [
+        "Retrieval-Augmented Generation",
+        "Literature Review",
+        "Natural Language Processing",
+        "Data Science",
+        "AI Applications"
+      ],
+      "fields": [
+        "Computer Science",
+        "Artificial Intelligence",
+        "Information Retrieval"
+      ],
+      "venue_fit_description": "The papers are suitable for venues focusing on AI, NLP, and information retrieval, particularly those exploring innovative applications of RAG."
+    },
+    "source_level": "abstract_only",
+    "source_labels": [
+      "paper:ARXIV:2411.18583v1:abstract",
+      "paper:ARXIV:2412.15404v1:abstract",
+      "paper:ARXIV:2601.05264v1:abstract"
+    ]
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "emnlp",
+      "acronym": "EMNLP",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "fit_score": 80,
+      "confidence": "medium",
+      "reasons": [
+        "Focus on empirical methods in natural language processing aligns with the NLP techniques discussed in the papers.",
+        "The papers involve advanced NLP techniques and applications, which are central to the EMNLP scope."
+      ],
+      "risks": [
+        "Potentially high competition due to the popularity of the conference."
+      ],
+      "evidence_topics": [
+        "Natural Language Processing",
+        "Text Generation",
+        "Information Extraction"
+      ],
+      "official_url": "https://www.aclweb.org/portal/",
+      "scope_source_url": "https://www.aclweb.org/portal/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "acl",
+      "acronym": "ACL",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "fit_score": 75,
+      "confidence": "medium",
+      "reasons": [
+        "The conference covers computational linguistics and NLP, which are relevant to the methodologies used in the papers.",
+        "The focus on language modeling and generation aligns with the themes of the papers."
+      ],
+      "risks": [
+        "Similar to EMNLP, there may be a high volume of submissions."
+      ],
+      "evidence_topics": [
+        "Natural Language Processing",
+        "Text Generation",
+        "Computational Linguistics"
+      ],
+      "official_url": "https://www.aclweb.org/portal/acl",
+      "scope_source_url": "https://www.aclweb.org/portal/acl",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "summary_source_level": "abstract_only",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "The comparison is based on abstracts, not full papers. Conference results are topical-fit suggestions only. Verify scope and deadlines on official conference sites."
+  }
+}

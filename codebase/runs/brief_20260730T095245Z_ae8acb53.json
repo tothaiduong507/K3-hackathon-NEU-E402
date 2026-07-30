@@ -1,0 +1,180 @@
+{
+  "status": "completed",
+  "run_id": "brief_20260730T095245Z_ae8acb53",
+  "created_at": "2026-07-30T09:52:45.180989+00:00",
+  "model": "gpt-4o-mini",
+  "search_context": {
+    "source": "paper_id",
+    "paper_id": "ARXIV:2005.11401",
+    "search_source": "arxiv"
+  },
+  "paper": {
+    "paper_id": "ARXIV:2005.11401v4",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+    "authors": [
+      "Patrick Lewis",
+      "Ethan Perez",
+      "Aleksandra Piktus",
+      "Fabio Petroni",
+      "Vladimir Karpukhin",
+      "Naman Goyal",
+      "Heinrich Küttler",
+      "Mike Lewis",
+      "Wen-tau Yih",
+      "Tim Rocktäschel",
+      "Sebastian Riedel",
+      "Douwe Kiela"
+    ],
+    "year": 2020,
+    "citation_count": null,
+    "venue": "arXiv",
+    "url": "http://arxiv.org/abs/2005.11401v4",
+    "external_ids": {
+      "ArXiv": "2005.11401v4"
+    },
+    "fields_of_study": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "open_access_pdf_url": "https://arxiv.org/pdf/2005.11401v4.pdf"
+  },
+  "pdf": {
+    "attempted": true,
+    "used": true,
+    "arxiv_id": "2005.11401v4"
+  },
+  "summary": {
+    "problem": "The performance of large pre-trained language models on knowledge-intensive NLP tasks is limited due to their inability to access and manipulate knowledge effectively, leading to inferior results compared to task-specific architectures.",
+    "method": "The paper introduces Retrieval-Augmented Generation (RAG) models that combine pre-trained parametric memory (seq2seq models) with non-parametric memory (a dense vector index of Wikipedia) accessed via a neural retriever. Two formulations of RAG are compared: one that uses the same retrieved passages for the entire sequence and another that can use different passages for each token.",
+    "data_or_experiments": "The models were fine-tuned and evaluated on various knowledge-intensive NLP tasks, including open-domain question answering (QA), abstractive question answering, Jeopardy question generation, and fact verification. The experiments utilized a single Wikipedia dump as the non-parametric knowledge source, with documents split into 100-word chunks.",
+    "key_findings": [
+      "RAG models set the state-of-the-art on three open-domain QA tasks, outperforming both parametric seq2seq models and task-specific retrieve-and-extract architectures.",
+      "For language generation tasks, RAG models produce more specific, diverse, and factual language compared to a state-of-the-art parametric-only seq2seq baseline.",
+      "RAG's retrieval mechanism allows for effective knowledge access and can be updated without retraining, demonstrating flexibility in adapting to new information."
+    ],
+    "limitations": [
+      "The paper does not specify limitations regarding the generalizability of the RAG models to other domains or tasks outside those tested.",
+      "There is no mention of potential biases in the retrieved knowledge from Wikipedia or the implications of using such a source."
+    ],
+    "keywords": [
+      "Retrieval-Augmented Generation",
+      "Knowledge-Intensive NLP",
+      "Open-Domain Question Answering",
+      "Language Generation",
+      "Fact Verification"
+    ],
+    "fields": [
+      "Natural Language Processing",
+      "Machine Learning",
+      "Artificial Intelligence"
+    ],
+    "evidence": [
+      {
+        "claim": "RAG models set the state-of-the-art on three open-domain QA tasks.",
+        "source_refs": [
+          "abstract",
+          "p.1"
+        ]
+      },
+      {
+        "claim": "RAG models produce more specific, diverse, and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+        "source_refs": [
+          "abstract",
+          "p.1"
+        ]
+      },
+      {
+        "claim": "The retrieval mechanism allows for effective knowledge access and can be updated without retraining.",
+        "source_refs": [
+          "p.10"
+        ]
+      }
+    ],
+    "source_level": "full_text_excerpt",
+    "source_labels": [
+      "abstract",
+      "p.1",
+      "p.10",
+      "p.11",
+      "p.12",
+      "p.2",
+      "p.3",
+      "p.4",
+      "p.5",
+      "p.6",
+      "p.7",
+      "p.8",
+      "p.9"
+    ]
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "acl",
+      "acronym": "ACL",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "fit_score": 80,
+      "confidence": "high",
+      "reasons": [
+        "Strong focus on natural language processing and computational linguistics.",
+        "Relevant topics include language generation and information extraction, which align with the paper's contributions."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "natural language processing",
+        "language generation",
+        "information extraction"
+      ],
+      "official_url": "https://www.aclweb.org/portal/acl",
+      "scope_source_url": "https://www.aclweb.org/portal/acl",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "emnlp",
+      "acronym": "EMNLP",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "fit_score": 75,
+      "confidence": "high",
+      "reasons": [
+        "Focus on empirical methods in natural language processing, which is central to the paper's methodology.",
+        "Topics such as language models and text generation are directly relevant."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "natural language processing",
+        "empirical NLP",
+        "language models",
+        "text generation"
+      ],
+      "official_url": "https://www.aclweb.org/portal/",
+      "scope_source_url": "https://www.aclweb.org/portal/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "aaai",
+      "acronym": "AAAI",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "fit_score": 65,
+      "confidence": "medium",
+      "reasons": [
+        "Broad AI scope includes natural language processing and knowledge representation, relevant to the paper's themes.",
+        "Less focused on NLP compared to ACL and EMNLP."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "artificial intelligence",
+        "natural language processing",
+        "knowledge representation"
+      ],
+      "official_url": "https://aaai.org/conference/aaai/",
+      "scope_source_url": "https://aaai.org/conference/aaai/",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "recommendation_type": "scope_fit_shortlist",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "This is a topical-fit shortlist, not an acceptance forecast. Verify the current call for papers and deadlines on each official site."
+  }
+}

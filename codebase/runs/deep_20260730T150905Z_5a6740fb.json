@@ -1,0 +1,271 @@
+{
+  "status": "completed",
+  "run_type": "deep_paper_summary",
+  "run_id": "deep_20260730T150905Z_5a6740fb",
+  "created_at": "2026-07-30T15:09:05.477155+00:00",
+  "model": "gpt-4o-mini",
+  "language": "vi",
+  "paper": {
+    "paper_id": "ARXIV:2202.09741v5",
+    "title": "Visual Attention Network",
+    "abstract": "While originally designed for natural language processing tasks, the self-attention mechanism has recently taken various computer vision areas by storm. However, the 2D nature of images brings three challenges for applying self-attention in computer vision. (1) Treating images as 1D sequences neglects their 2D structures. (2) The quadratic complexity is too expensive for high-resolution images. (3) It only captures spatial adaptability but ignores channel adaptability. In this paper, we propose a novel linear attention named large kernel attention (LKA) to enable self-adaptive and long-range correlations in self-attention while avoiding its shortcomings. Furthermore, we present a neural network based on LKA, namely Visual Attention Network (VAN). While extremely simple, VAN surpasses similar size vision transformers(ViTs) and convolutional neural networks(CNNs) in various tasks, including image classification, object detection, semantic segmentation, panoptic segmentation, pose estimation, etc. For example, VAN-B6 achieves 87.8% accuracy on ImageNet benchmark and set new state-of-the-art performance (58.2 PQ) for panoptic segmentation. Besides, VAN-B2 surpasses Swin-T 4% mIoU (50.1 vs. 46.1) for semantic segmentation on ADE20K benchmark, 2.6% AP (48.8 vs. 46.2) for object detection on COCO dataset. It provides a novel method and a simple yet strong baseline for the community. Code is available at https://github.com/Visual-Attention-Network.",
+    "authors": [
+      "Meng-Hao Guo",
+      "Cheng-Ze Lu",
+      "Zheng-Ning Liu",
+      "Ming-Ming Cheng",
+      "Shi-Min Hu"
+    ],
+    "year": 2022,
+    "citation_count": null,
+    "venue": "arXiv",
+    "url": "http://arxiv.org/abs/2202.09741v5",
+    "external_ids": {
+      "ArXiv": "2202.09741v5"
+    },
+    "fields_of_study": [
+      "cs.CV"
+    ],
+    "open_access_pdf_url": "https://arxiv.org/pdf/2202.09741v5.pdf"
+  },
+  "pdf": {
+    "attempted": true,
+    "used": true,
+    "arxiv_id": "2202.09741v5",
+    "total_pages": 12,
+    "extracted_pages": 12,
+    "extracted_characters": 65975,
+    "coverage_percent": 100.0
+  },
+  "deep_summary": {
+    "executive_summary": "Bài báo này đề xuất một cơ chế chú ý mới gọi là chú ý lớn (LKA) để cải thiện khả năng tự thích ứng và mối tương quan dài hạn trong chú ý tự động, đồng thời khắc phục những nhược điểm của các phương pháp trước đó. Mạng Chú Ý Hình Ảnh (VAN) được phát triển dựa trên LKA, cho thấy hiệu suất vượt trội so với các mạng CNN và ViT có kích thước tương tự trong nhiều tác vụ như phân loại hình ảnh, phát hiện đối tượng, phân đoạn ngữ nghĩa, và phân đoạn toàn cảnh. Ví dụ, VAN-B6 đạt độ chính xác 87.8% trên bộ dữ liệu ImageNet và thiết lập hiệu suất tốt nhất mới (58.2 PQ) cho phân đoạn toàn cảnh. Ngoài ra, VAN-B2 vượt qua Swin-T 4% mIoU (50.1 so với 46.1) cho phân đoạn ngữ nghĩa trên bộ dữ liệu ADE20K, và 2.6% AP (48.8 so với 46.2) cho phát hiện đối tượng trên bộ dữ liệu COCO.",
+    "research_problem": "Nghiên cứu này giải quyết vấn đề về khả năng tự thích ứng và mối tương quan dài hạn trong chú ý tự động trong các tác vụ thị giác máy tính.",
+    "motivation": "Cần một cơ chế chú ý hiệu quả hơn để cải thiện hiệu suất của các mô hình thị giác máy tính hiện tại.",
+    "contributions": [
+      {
+        "contribution": "Đề xuất cơ chế chú ý lớn (LKA) cho các tác vụ thị giác.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "contribution": "Phát triển Mạng Chú Ý Hình Ảnh (VAN) dựa trên LKA.",
+        "source_refs": [
+          "p.1"
+        ]
+      }
+    ],
+    "methodology": {
+      "overview": "Phương pháp của nghiên cứu này bao gồm việc sử dụng cơ chế chú ý lớn (LKA) và mạng chú ý hình ảnh (VAN).",
+      "steps": [
+        "Sử dụng LKA để tạo bản đồ chú ý và chọn lọc các đặc trưng quan trọng.",
+        "Thiết kế mạng VAN với bốn giai đoạn giảm dần độ phân giải."
+      ],
+      "components": [
+        "LKA",
+        "Mạng VAN"
+      ]
+    },
+    "data_and_experiments": {
+      "datasets": [
+        "ImageNet-1K",
+        "ImageNet-22K",
+        "COCO",
+        "ADE20K"
+      ],
+      "experimental_setup": [
+        "Thí nghiệm trên tập dữ liệu ImageNet-1K với 1.28 triệu hình ảnh huấn luyện và 50.000 hình ảnh xác thực.",
+        "Sử dụng các phương pháp tăng cường dữ liệu như random clipping, random horizontal flipping, label-smoothing, mixup, cutmix và random erasing."
+      ],
+      "metrics": [
+        "Độ chính xác Top-1",
+        "mIoU",
+        "AP",
+        "PQ"
+      ],
+      "baselines": [
+        "ResNet",
+        "PVT",
+        "Swin Transformer",
+        "ConvNeXt"
+      ]
+    },
+    "results": [
+      {
+        "finding": "VAN-B6 đạt 87.8% độ chính xác trên ImageNet.",
+        "source_refs": [
+          "p.1",
+          "p.4"
+        ]
+      },
+      {
+        "finding": "VAN-B6 thiết lập hiệu suất tốt nhất mới cho phân đoạn toàn cảnh với 58.2 PQ.",
+        "source_refs": [
+          "p.1",
+          "p.9"
+        ]
+      },
+      {
+        "finding": "VAN-B2 vượt qua Swin-T 4% mIoU cho phân đoạn ngữ nghĩa trên ADE20K (50.1 so với 46.1).",
+        "source_refs": [
+          "p.1",
+          "p.8"
+        ]
+      },
+      {
+        "finding": "VAN-B2 vượt qua 2.6% AP cho phát hiện đối tượng trên COCO (48.8 so với 46.2).",
+        "source_refs": [
+          "p.1",
+          "p.8"
+        ]
+      }
+    ],
+    "ablation_studies": [
+      {
+        "finding": "Mỗi thành phần trong LKA là cần thiết để cải thiện hiệu suất.",
+        "source_refs": [
+          "p.4",
+          "p.5"
+        ]
+      }
+    ],
+    "limitations": {
+      "author_stated": [
+        "LKA có thể gặp khó khăn trong việc xử lý các hình ảnh có độ phân giải cao do chi phí tính toán lớn.",
+        "Mạng VAN có thể cần điều chỉnh thêm để tối ưu hóa cho các tác vụ cụ thể.",
+        "Kết quả chỉ dựa trên các tập dữ liệu cụ thể và có thể không tổng quát cho tất cả các loại hình ảnh.",
+        "Cần thêm nghiên cứu để xác định hiệu suất của VAN trên các tập dữ liệu khác ngoài ImageNet và COCO."
+      ],
+      "analyst_observations": [
+        "Chưa có cải tiến cấu trúc sâu hơn cho VAN.",
+        "Chưa thử nghiệm trên các lĩnh vực khác ngoài thị giác."
+      ]
+    },
+    "section_summaries": [
+      {
+        "section": "Abstract",
+        "summary": "Bài báo này đề xuất một cơ chế chú ý mới gọi là chú ý lớn (LKA) để cải thiện khả năng tự thích ứng và mối tương quan dài hạn trong chú ý tự động, đồng thời khắc phục những nhược điểm của các phương pháp trước đó. Mạng Chú Ý Hình Ảnh (VAN) được phát triển dựa trên LKA, cho thấy hiệu suất vượt trội so với các mạng CNN và ViT có kích thước tương tự trong nhiều tác vụ như phân loại hình ảnh, phát hiện đối tượng, phân đoạn ngữ nghĩa, và phân đoạn toàn cảnh. Ví dụ, VAN-B6 đạt độ chính xác 87.8% trên bộ dữ liệu ImageNet và thiết lập hiệu suất tốt nhất mới (58.2 PQ) cho phân đoạn toàn cảnh. Ngoài ra, VAN-B2 vượt qua Swin-T 4% mIoU (50.1 so với 46.1) cho phân đoạn ngữ nghĩa trên bộ dữ liệu ADE20K, và 2.6% AP (48.8 so với 46.2) cho phát hiện đối tượng trên bộ dữ liệu COCO.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "section": "Methodology",
+        "summary": "Phương pháp của nghiên cứu này bao gồm việc sử dụng cơ chế chú ý lớn (LKA) và mạng chú ý hình ảnh (VAN). LKA được thiết kế để giải quyết các vấn đề của cơ chế tự chú ý trong thị giác máy tính bằng cách phân tách phép toán tích chập lớn thành ba thành phần: tích chập cục bộ không gian, tích chập giãn nở không gian và tích chập kênh. Mạng VAN có cấu trúc phân cấp đơn giản với bốn giai đoạn giảm dần độ phân giải không gian đầu ra. Mỗi giai đoạn bao gồm các lớp chuẩn hóa theo lô, tích chập 1×1, kích hoạt GELU, LKA và mạng feed-forward (FFN).",
+        "source_refs": [
+          "p.2",
+          "p.3"
+        ]
+      },
+      {
+        "section": "Results",
+        "summary": "Phần này trình bày các kết quả thí nghiệm định lượng và định tính để chứng minh hiệu quả và hiệu suất của mạng chú ý hình ảnh (VAN). Các thí nghiệm được thực hiện trên các tập dữ liệu phân loại hình ảnh ImageNet-1K và ImageNet-22K, cũng như các bài kiểm tra trên COCO và ADE20K. Kết quả cho thấy rằng các thành phần trong LKA là rất quan trọng cho hiệu suất của mô hình. Các thí nghiệm cũng chỉ ra rằng VAN có khả năng đạt được độ chính xác cao hơn với số lượng tham số và FLOPs thấp hơn so với các phương pháp hiện tại.",
+        "source_refs": [
+          "p.4",
+          "p.5"
+        ]
+      },
+      {
+        "section": "Methodology",
+        "summary": "Phương pháp nghiên cứu này tập trung vào việc phát triển mạng chú ý hình ảnh (VAN) và so sánh hiệu suất của nó với các phương pháp hiện có như PVT, Swin Transformer và ConvNeXt trên nhiều tác vụ khác nhau như phân loại hình ảnh, phát hiện đối tượng, phân đoạn ngữ nghĩa, phân đoạn thể hiện và ước lượng tư thế. Các mô hình được huấn luyện trước trên tập dữ liệu ImageNet-22K và kết quả cho thấy VAN-B4 đạt được độ chính xác Top-1 cao nhất là 87.8% với 200 triệu tham số. Các cải tiến trong mạng được thực hiện thông qua cơ chế chú ý, việc sử dụng convolution 1x1 và hàm sigmoid, cho thấy sự cần thiết của khả năng thích ứng trong cả chiều kênh và không gian.",
+        "source_refs": [
+          "p.6",
+          "p.7"
+        ]
+      },
+      {
+        "section": "Results",
+        "summary": "Bài báo trình bày kết quả của mạng chú ý thị giác (VAN) trong các tác vụ khác nhau như phát hiện đối tượng, phân đoạn ngữ nghĩa, phân đoạn toàn diện, ước lượng tư thế, phân loại tinh vi và phát hiện độ nổi bật. Kết quả cho thấy VAN vượt trội hơn so với các phương pháp hiện tại như ResNet và PVT trong nhiều bài kiểm tra.",
+        "source_refs": [
+          "p.8",
+          "p.9",
+          "p.10"
+        ]
+      }
+    ],
+    "key_takeaways": [
+      {
+        "takeaway": "VAN vượt trội hơn các mạng CNN và ViT có kích thước tương tự trong nhiều tác vụ.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "takeaway": "LKA khắc phục những nhược điểm của các phương pháp chú ý tự động trước đó.",
+        "source_refs": [
+          "p.1"
+        ]
+      }
+    ],
+    "glossary": [
+      {
+        "term": "LKA",
+        "explanation": "Cơ chế chú ý lớn, giúp xây dựng mối quan hệ dài hạn giữa các đặc trưng.",
+        "source_refs": [
+          "p.2",
+          "p.3"
+        ]
+      },
+      {
+        "term": "VAN",
+        "explanation": "Mạng chú ý hình ảnh, có cấu trúc phân cấp với bốn giai đoạn.",
+        "source_refs": [
+          "p.3"
+        ]
+      },
+      {
+        "term": "FLOPs",
+        "explanation": "Số phép toán dấu phẩy động cần thiết để thực hiện một mô hình.",
+        "source_refs": [
+          "p.4",
+          "p.5",
+          "p.8",
+          "p.9"
+        ]
+      },
+      {
+        "term": "Top-1 accuracy",
+        "explanation": "Tỷ lệ chính xác của mô hình khi dự đoán đúng nhãn của hình ảnh đầu vào.",
+        "source_refs": [
+          "p.4",
+          "p.5"
+        ]
+      },
+      {
+        "term": "mIoU",
+        "explanation": "Mean Intersection over Union, chỉ số đánh giá cho phân đoạn ngữ nghĩa.",
+        "source_refs": [
+          "p.8",
+          "p.9"
+        ]
+      }
+    ],
+    "source_level": "full_text",
+    "source_labels": [
+      "p.1",
+      "p.2",
+      "p.3",
+      "p.4",
+      "p.5",
+      "p.6",
+      "p.7",
+      "p.8",
+      "p.9",
+      "p.10",
+      "p.11",
+      "p.12"
+    ],
+    "section_chunk_count": 5,
+    "prompt_version": "deep-summary-v1"
+  },
+  "cache": {
+    "hit": false,
+    "key": "b35b9374f9b4a09180a64d2bece43ee64fbd0af51fc7a187f3bfd8c85a160869",
+    "prompt_version": "deep-summary-v1"
+  },
+  "guardrails": {
+    "source_level": "full_text",
+    "page_references_required": true,
+    "disclaimer": "This summary is generated from extracted PDF text. Equations, figures, and complex tables may not be fully represented; verify critical claims against the cited pages in the original paper."
+  }
+}

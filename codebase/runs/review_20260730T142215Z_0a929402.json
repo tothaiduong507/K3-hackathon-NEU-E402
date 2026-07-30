@@ -1,0 +1,301 @@
+{
+  "status": "completed",
+  "run_type": "smart_literature_review",
+  "run_id": "review_20260730T142215Z_0a929402",
+  "created_at": "2026-07-30T14:22:15.324866+00:00",
+  "model": "gpt-4o-mini",
+  "query": "probability-based VNS",
+  "search": {
+    "source": "arxiv",
+    "primary_error": "HTTPError: 403 Client Error: Forbidden for url: https://api.semanticscholar.org/graph/v1/paper/search?query=probability-based+VNS&limit=10&fields=paperId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CcitationCount%2Cvenue%2Curl%2CexternalIds%2CfieldsOfStudy%2CopenAccessPdf&year=2022-",
+    "result_count": 3,
+    "filtered_count": 3,
+    "filters": {
+      "min_year": 2022,
+      "min_citations": 0
+    },
+    "ranked_papers": [
+      {
+        "source_rank": 1,
+        "paper": {
+          "paper_id": "ARXIV:2411.07092v5",
+          "title": "Improved entanglement entropy estimates from filtered bitstring probabilities",
+          "abstract": "Using the bitstring probabilities of ground states of bipartitioned ladders of Rydberg atoms, we calculate the mutual information, which is a lower bound on the corresponding bipartite von Neumann quantum entanglement entropy $S^{vN}_A$. We show that in many cases these lower bounds can be improved by removing the bitstrings with a probability lower than some value $p_{min}$ and renormalizing the remaining probabilities (filtering). We propose a heuristic based on the change of the conditional entropy under filtering that very effectively improves the estimate of $S^{vN}_A$. We consider various sizes, lattice spacings and bipartitions. Our numerical investigation suggest that the filtered mutual information obtained with samples having just a few thousand bitstrings can provide reasonably close estimates of $S^{vN}_A$. We briefly discuss practical implementations with QuEra's Aquila device.",
+          "authors": [
+            "Avi Kaufman",
+            "James Corona",
+            "Zane Ozzello",
+            "Blake Senseman",
+            "Muhammad Asaduzzaman",
+            "Yannick Meurice"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2411.07092v5",
+          "external_ids": {
+            "ArXiv": "2411.07092v5"
+          },
+          "fields_of_study": [
+            "quant-ph",
+            "hep-lat",
+            "hep-th"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2411.07092v5.pdf"
+        },
+        "relevance_score": 35.67,
+        "matched_query_terms": [
+          "based",
+          "probability"
+        ],
+        "score_breakdown": {
+          "title_overlap": 0.0,
+          "abstract_overlap": 16.67,
+          "source_api_rank": 15.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 1
+      },
+      {
+        "source_rank": 3,
+        "paper": {
+          "paper_id": "ARXIV:2606.28940v1",
+          "title": "Modeling and Analysis of Sensing Assisted UAV Networks for Urban Vehicular Communications",
+          "abstract": "Urban vehicular networks (VNs) demand seamless connectivity and situational awareness within road-constrained environments, motivating the deployment of unmanned aerial vehicles (UAVs) platforms capable of simultaneously sensing vehicles and establishing communication with them. In this paper, we present a sensing-assisted UAV network that provides connectivity to the vehicles in an urban area. The road network of the urban area is modeled as Manhattan Poisson line process (MPLP), and the random location of vehicles on each road is modeled as one dimensional Poisson point processes (PPPs). UAVs are distributed in the urban area at a fixed altitude and provide connectivity after sensing the vehicles. Their locations are modeled as a two-dimensional homogeneous PPP. Combined with the fixed altitude, this results in a three-dimensional spatial configuration. We incorporate an elevation dependent blockage model and define the sensing radius based on detection probability (DP), showing that it is jointly limited by signal strength and blockage effects. We derive the DP and characterize the typical UAV's sensing region within the reliability requirements. We also derive the Laplace transform (LT) of aggregate interference accounting for directional patterns and sensing-driven activity, and analyze the resulting coverage probability (CP). Finally, we obtain the rate coverage (RC) of sensed vehicles falling within the UAV's sensing zone. Numerical results shows that increasing altitude degrades sensing and coverage performance, whereas RC exhibits a non-monotonic trend, first decreasing and then increasing with altitude.",
+          "authors": [
+            "Kaushlendra Pandey",
+            "Nithin V Sabu",
+            "Abhishek K. Gupta"
+          ],
+          "year": 2026,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2606.28940v1",
+          "external_ids": {
+            "ArXiv": "2606.28940v1"
+          },
+          "fields_of_study": [
+            "cs.IT"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2606.28940v1.pdf"
+        },
+        "relevance_score": 35.0,
+        "matched_query_terms": [
+          "based",
+          "probability",
+          "vns"
+        ],
+        "score_breakdown": {
+          "title_overlap": 0.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 5.0,
+          "citation_signal": 0.0,
+          "recency_signal": 5.0
+        },
+        "rank": 2
+      },
+      {
+        "source_rank": 2,
+        "paper": {
+          "paper_id": "ARXIV:2404.09935v5",
+          "title": "Lower bounds on entanglement entropy without twin copy",
+          "abstract": "We discuss the possibility of estimating experimentally the von Neumann entanglement entropy $S_{A}^{vN}$ of a symmetric bi-partite quantum system $AB$ by using the basic measurement counts (bitstrings) for a $single$ copy of a prepared state. Using exact diagonalization and analog simulations performed with the publicly available QuEra facilities for chains and ladders of Rydberg atoms, we calculate the Shannon entropy $S_{AB}^X$ associated with the bitstrings of adiabatically prepared ground states and the reduced entropies $S_A^X$ and $S_B^X$ obtained from the marginal probabilities in $A$ and $B$. We then calculate the classical mutual information $I^X_{AB}=S_A^X+S_B^X-S_{AB}^X$, which is a lower bound on $S_{A}^{vN}$. We show that for a broad range of lattice spacing and detuning, $I^X_{AB}$ is typically 20 percent below $S_{A}^{vN}$ in regions where $S_{A}^{vN}$ is large and a less close bound in regions where $S_{A}^{vN}$ is low. We argue that this use of the easily available bitstrings provides a robust and efficient way to explore empirically the phase diagram of qubit-based quantum simulators and identify critical regions.",
+          "authors": [
+            "Yannick Meurice"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2404.09935v5",
+          "external_ids": {
+            "ArXiv": "2404.09935v5"
+          },
+          "fields_of_study": [
+            "quant-ph",
+            "hep-lat"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2404.09935v5.pdf"
+        },
+        "relevance_score": 22.33,
+        "matched_query_terms": [
+          "based"
+        ],
+        "score_breakdown": {
+          "title_overlap": 0.0,
+          "abstract_overlap": 8.33,
+          "source_api_rank": 10.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 3
+      }
+    ],
+    "selected_paper_ids": [
+      "ARXIV:2411.07092v5",
+      "ARXIV:2606.28940v1",
+      "ARXIV:2404.09935v5"
+    ]
+  },
+  "literature_review": {
+    "paper_summaries": [
+      {
+        "paper_id": "ARXIV:2411.07092v5",
+        "problem": "Estimating von Neumann quantum entanglement entropy using bitstring probabilities.",
+        "method": "Calculating mutual information from filtered bitstring probabilities of ground states of bipartitioned ladders of Rydberg atoms.",
+        "key_findings": [
+          "Filtered mutual information can improve estimates of entanglement entropy.",
+          "Practical implementations can be achieved with QuEra's Aquila device."
+        ],
+        "limitations": [
+          "Abstract does not specify the range of lattice sizes or spacings used."
+        ],
+        "relevance_explanation": "This paper contributes to the understanding of quantum entanglement estimation, relevant for quantum computing and information theory.",
+        "source_refs": [
+          "paper:ARXIV:2411.07092v5:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2606.28940v1",
+        "problem": "Providing connectivity in urban vehicular networks using UAVs.",
+        "method": "Modeling urban vehicular networks as a Manhattan Poisson line process and analyzing UAVs' sensing and communication capabilities.",
+        "key_findings": [
+          "UAVs can provide connectivity to vehicles in urban areas.",
+          "Sensing radius is limited by signal strength and blockage effects."
+        ],
+        "limitations": [
+          "Abstract does not provide specific numerical results or performance metrics."
+        ],
+        "relevance_explanation": "This paper addresses connectivity challenges in urban environments, relevant for communication networks and UAV applications.",
+        "source_refs": [
+          "paper:ARXIV:2606.28940v1:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2404.09935v5",
+        "problem": "Estimating von Neumann entanglement entropy without using twin copies.",
+        "method": "Using measurement counts from a single copy of a prepared state to calculate Shannon entropy and mutual information.",
+        "key_findings": [
+          "Classical mutual information provides a lower bound on entanglement entropy.",
+          "Bitstrings can effectively explore the phase diagram of quantum simulators."
+        ],
+        "limitations": [
+          "Abstract does not detail the specific experimental setups or conditions."
+        ],
+        "relevance_explanation": "This paper offers a novel approach to estimating entanglement entropy, important for quantum information science.",
+        "source_refs": [
+          "paper:ARXIV:2404.09935v5:abstract"
+        ]
+      }
+    ],
+    "comparison": {
+      "common_themes": [
+        "Estimation of entanglement entropy",
+        "Use of probabilistic models",
+        "Application of quantum and communication theories"
+      ],
+      "methodological_differences": [
+        "First paper focuses on filtering bitstring probabilities, while the third paper uses single-copy measurements.",
+        "Second paper models urban environments and UAVs, which is distinct from the quantum focus of the other two."
+      ],
+      "evidence_gaps": [
+        "Limited numerical results in the second paper regarding UAV performance metrics.",
+        "Insufficient detail on experimental setups in the first and third papers."
+      ],
+      "suggested_reading_order": [
+        "ARXIV:2404.09935v5",
+        "ARXIV:2411.07092v5",
+        "ARXIV:2606.28940v1"
+      ]
+    },
+    "topic_profile": {
+      "keywords": [
+        "entanglement entropy",
+        "bitstring probabilities",
+        "UAV networks",
+        "urban communications",
+        "quantum information"
+      ],
+      "fields": [
+        "quantum physics",
+        "communication networks",
+        "information theory"
+      ],
+      "venue_fit_description": "The papers are suitable for venues focusing on quantum information science and communication technologies."
+    },
+    "source_level": "abstract_only",
+    "source_labels": [
+      "paper:ARXIV:2404.09935v5:abstract",
+      "paper:ARXIV:2411.07092v5:abstract",
+      "paper:ARXIV:2606.28940v1:abstract"
+    ]
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "neurips",
+      "acronym": "NeurIPS",
+      "name": "Conference on Neural Information Processing Systems",
+      "fit_score": 10,
+      "confidence": "low",
+      "reasons": [
+        "Focus on machine learning and computational neuroscience, which is not directly related to quantum information or communication networks."
+      ],
+      "risks": [
+        "Low relevance to the paper topics."
+      ],
+      "evidence_topics": [
+        "machine learning",
+        "neural networks"
+      ],
+      "official_url": "https://neurips.cc/",
+      "scope_source_url": "https://neurips.cc/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "kdd",
+      "acronym": "KDD",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "fit_score": 15,
+      "confidence": "low",
+      "reasons": [
+        "While it covers data science, it does not align closely with quantum information or UAV connectivity."
+      ],
+      "risks": [
+        "Limited applicability to the core themes of the papers."
+      ],
+      "evidence_topics": [
+        "data mining",
+        "knowledge discovery"
+      ],
+      "official_url": "https://kdd.org/",
+      "scope_source_url": "https://kdd.org/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "icml",
+      "acronym": "ICML",
+      "name": "International Conference on Machine Learning",
+      "fit_score": 20,
+      "confidence": "low",
+      "reasons": [
+        "Focus on machine learning theory and applications, which is tangentially related but not a primary focus of the papers."
+      ],
+      "risks": [
+        "Potential mismatch with the quantum and communication themes."
+      ],
+      "evidence_topics": [
+        "machine learning",
+        "learning theory"
+      ],
+      "official_url": "https://icml.cc/",
+      "scope_source_url": "https://icml.cc/",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "summary_source_level": "abstract_only",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "The comparison is based on abstracts, not full papers. Conference results are topical-fit suggestions only. Verify scope and deadlines on official conference sites."
+  }
+}

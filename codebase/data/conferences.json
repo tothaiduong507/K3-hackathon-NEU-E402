@@ -1,0 +1,95 @@
+{
+  "catalog_version": "2026-07-30-v1",
+  "catalog_scope": "Selected AI, machine learning, NLP, computer vision, data mining, and general AI conferences.",
+  "deadline_policy": "Deadlines are deliberately not stored. Users must verify the current call for papers on the official site.",
+  "conferences": [
+    {
+      "id": "iclr",
+      "acronym": "ICLR",
+      "name": "International Conference on Learning Representations",
+      "official_url": "https://iclr.cc/",
+      "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+      "topics": ["representation learning", "deep learning", "neural networks", "reinforcement learning", "optimization", "computer vision", "natural language processing", "robotics"],
+      "scope_source_url": "https://iclr.cc/",
+      "scope_verified_at": "2026-07-30",
+      "notes": "Broad deep-learning scope; verify the current call for papers."
+    },
+    {
+      "id": "icml",
+      "acronym": "ICML",
+      "name": "International Conference on Machine Learning",
+      "official_url": "https://icml.cc/",
+      "scope": "Research in machine learning, including theory, algorithms, systems, applications, evaluation, and responsible machine learning.",
+      "topics": ["machine learning", "learning theory", "deep learning", "optimization", "reinforcement learning", "probabilistic methods", "machine learning systems", "responsible AI"],
+      "scope_source_url": "https://icml.cc/",
+      "scope_verified_at": "2026-07-30",
+      "notes": "General machine-learning venue; verify track-level scope."
+    },
+    {
+      "id": "neurips",
+      "acronym": "NeurIPS",
+      "name": "Conference on Neural Information Processing Systems",
+      "official_url": "https://neurips.cc/",
+      "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+      "topics": ["machine learning", "neural networks", "computational neuroscience", "optimization", "reinforcement learning", "generative models", "datasets", "machine learning systems"],
+      "scope_source_url": "https://neurips.cc/",
+      "scope_verified_at": "2026-07-30",
+      "notes": "Broad venue; recommendation is topical fit only."
+    },
+    {
+      "id": "acl",
+      "acronym": "ACL",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "official_url": "https://www.aclweb.org/portal/acl",
+      "scope": "Computational linguistics and natural language processing, including language modeling, machine translation, information extraction, dialogue, generation, evaluation, ethics, and linguistic analysis.",
+      "topics": ["natural language processing", "computational linguistics", "language models", "machine translation", "information extraction", "dialogue", "text generation", "NLP evaluation"],
+      "scope_source_url": "https://www.aclweb.org/portal/acl",
+      "scope_verified_at": "2026-07-30",
+      "notes": "Use for work whose primary contribution is in NLP or computational linguistics."
+    },
+    {
+      "id": "emnlp",
+      "acronym": "EMNLP",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "official_url": "https://www.aclweb.org/portal/",
+      "scope": "Empirical methods for natural language processing, including language models, evaluation, datasets, generation, understanding, information extraction, and multilingual NLP.",
+      "topics": ["natural language processing", "empirical NLP", "language models", "NLP datasets", "text generation", "language understanding", "multilingual NLP", "NLP evaluation"],
+      "scope_source_url": "https://www.aclweb.org/portal/",
+      "scope_verified_at": "2026-07-30",
+      "notes": "Verify the current EMNLP event page through the ACL portal."
+    },
+    {
+      "id": "cvpr",
+      "acronym": "CVPR",
+      "name": "Conference on Computer Vision and Pattern Recognition",
+      "official_url": "https://cvpr.thecvf.com/",
+      "scope": "Computer vision and pattern recognition, including image and video understanding, recognition, detection, segmentation, 3D vision, vision-language learning, and visual generation.",
+      "topics": ["computer vision", "pattern recognition", "image recognition", "object detection", "segmentation", "3D vision", "vision language", "image generation", "video understanding"],
+      "scope_source_url": "https://cvpr.thecvf.com/",
+      "scope_verified_at": "2026-07-30",
+      "notes": "Primary contribution should be in computer vision or pattern recognition."
+    },
+    {
+      "id": "kdd",
+      "acronym": "KDD",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "official_url": "https://kdd.org/",
+      "scope": "Knowledge discovery and data mining, including scalable data systems, graph mining, recommender systems, applied data science, responsible data mining, and industrial applications.",
+      "topics": ["data mining", "knowledge discovery", "recommender systems", "graph mining", "applied data science", "scalable machine learning", "industry applications", "responsible data mining"],
+      "scope_source_url": "https://kdd.org/",
+      "scope_verified_at": "2026-07-30",
+      "notes": "Distinguish research and applied-data-science tracks."
+    },
+    {
+      "id": "aaai",
+      "acronym": "AAAI",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "official_url": "https://aaai.org/conference/aaai/",
+      "scope": "Broad artificial intelligence research, including knowledge representation, reasoning, planning, search, machine learning, natural language processing, computer vision, robotics, agents, and AI applications.",
+      "topics": ["artificial intelligence", "knowledge representation", "reasoning", "planning", "search", "machine learning", "natural language processing", "computer vision", "robotics", "AI agents"],
+      "scope_source_url": "https://aaai.org/conference/aaai/",
+      "scope_verified_at": "2026-07-30",
+      "notes": "Broad AI scope; verify the current technical track."
+    }
+  ]
+}

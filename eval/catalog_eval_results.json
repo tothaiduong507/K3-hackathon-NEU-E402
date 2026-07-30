@@ -1,0 +1,1704 @@
+{
+  "dataset_id": "paper2venue_catalog_v0",
+  "created_at": "2026-07-30T10:24:33.177422+00:00",
+  "evaluation_scope": "deterministic_guardrails_and_catalog_retrieval",
+  "summary": {
+    "total": 20,
+    "passed": 20,
+    "pass_rate": 1.0,
+    "quality_bar": {
+      "overall_pass_rate": 0.8,
+      "hard_condition": "No fabricated paper, source URL, conference URL, or deadline."
+    },
+    "by_class": {
+      "ambiguity": {
+        "passed": 2,
+        "total": 2,
+        "pass_rate": 1.0
+      },
+      "domain_specific": {
+        "passed": 2,
+        "total": 2,
+        "pass_rate": 1.0
+      },
+      "normal": {
+        "passed": 8,
+        "total": 8,
+        "pass_rate": 1.0
+      },
+      "out_of_scope": {
+        "passed": 2,
+        "total": 2,
+        "pass_rate": 1.0
+      },
+      "rare": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "source_truth": {
+        "passed": 2,
+        "total": 2,
+        "pass_rate": 1.0
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "N01_nlp_rag",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "acl",
+        "emnlp"
+      ],
+      "actual_top3": [
+        "emnlp",
+        "acl",
+        "neurips"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "emnlp",
+            "acronym": "EMNLP",
+            "name": "Conference on Empirical Methods in Natural Language Processing",
+            "official_url": "https://www.aclweb.org/portal/",
+            "scope": "Empirical methods for natural language processing, including language models, evaluation, datasets, generation, understanding, information extraction, and multilingual NLP.",
+            "topics": [
+              "natural language processing",
+              "empirical NLP",
+              "language models",
+              "NLP datasets",
+              "text generation",
+              "language understanding",
+              "multilingual NLP",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Verify the current EMNLP event page through the ACL portal."
+          },
+          "retrieval_score": 30,
+          "matched_terms": [
+            "evaluation",
+            "generation",
+            "language",
+            "models",
+            "multilingual",
+            "nlp"
+          ],
+          "matched_topics": [
+            "language models",
+            "NLP evaluation"
+          ]
+        },
+        {
+          "conference": {
+            "id": "acl",
+            "acronym": "ACL",
+            "name": "Annual Meeting of the Association for Computational Linguistics",
+            "official_url": "https://www.aclweb.org/portal/acl",
+            "scope": "Computational linguistics and natural language processing, including language modeling, machine translation, information extraction, dialogue, generation, evaluation, ethics, and linguistic analysis.",
+            "topics": [
+              "natural language processing",
+              "computational linguistics",
+              "language models",
+              "machine translation",
+              "information extraction",
+              "dialogue",
+              "text generation",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/acl",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Use for work whose primary contribution is in NLP or computational linguistics."
+          },
+          "retrieval_score": 27,
+          "matched_terms": [
+            "evaluation",
+            "generation",
+            "language",
+            "models",
+            "nlp"
+          ],
+          "matched_topics": [
+            "language models",
+            "NLP evaluation"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 6,
+          "matched_terms": [
+            "evaluation",
+            "models"
+          ],
+          "matched_topics": []
+        }
+      ]
+    },
+    {
+      "id": "N02_computer_vision",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "cvpr"
+      ],
+      "actual_top3": [
+        "cvpr",
+        "iclr",
+        "aaai"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "cvpr",
+            "acronym": "CVPR",
+            "name": "Conference on Computer Vision and Pattern Recognition",
+            "official_url": "https://cvpr.thecvf.com/",
+            "scope": "Computer vision and pattern recognition, including image and video understanding, recognition, detection, segmentation, 3D vision, vision-language learning, and visual generation.",
+            "topics": [
+              "computer vision",
+              "pattern recognition",
+              "image recognition",
+              "object detection",
+              "segmentation",
+              "3D vision",
+              "vision language",
+              "image generation",
+              "video understanding"
+            ],
+            "scope_source_url": "https://cvpr.thecvf.com/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Primary contribution should be in computer vision or pattern recognition."
+          },
+          "retrieval_score": 36,
+          "matched_terms": [
+            "computer",
+            "detection",
+            "image",
+            "object",
+            "segmentation",
+            "vision"
+          ],
+          "matched_topics": [
+            "computer vision",
+            "object detection",
+            "segmentation"
+          ]
+        },
+        {
+          "conference": {
+            "id": "iclr",
+            "acronym": "ICLR",
+            "name": "International Conference on Learning Representations",
+            "official_url": "https://iclr.cc/",
+            "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+            "topics": [
+              "representation learning",
+              "deep learning",
+              "neural networks",
+              "reinforcement learning",
+              "optimization",
+              "computer vision",
+              "natural language processing",
+              "robotics"
+            ],
+            "scope_source_url": "https://iclr.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad deep-learning scope; verify the current call for papers."
+          },
+          "retrieval_score": 12,
+          "matched_terms": [
+            "computer",
+            "vision"
+          ],
+          "matched_topics": [
+            "computer vision"
+          ]
+        },
+        {
+          "conference": {
+            "id": "aaai",
+            "acronym": "AAAI",
+            "name": "AAAI Conference on Artificial Intelligence",
+            "official_url": "https://aaai.org/conference/aaai/",
+            "scope": "Broad artificial intelligence research, including knowledge representation, reasoning, planning, search, machine learning, natural language processing, computer vision, robotics, agents, and AI applications.",
+            "topics": [
+              "artificial intelligence",
+              "knowledge representation",
+              "reasoning",
+              "planning",
+              "search",
+              "machine learning",
+              "natural language processing",
+              "computer vision",
+              "robotics",
+              "AI agents"
+            ],
+            "scope_source_url": "https://aaai.org/conference/aaai/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad AI scope; verify the current technical track."
+          },
+          "retrieval_score": 12,
+          "matched_terms": [
+            "computer",
+            "vision"
+          ],
+          "matched_topics": [
+            "computer vision"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N03_representation_learning",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "iclr",
+        "icml",
+        "neurips"
+      ],
+      "actual_top3": [
+        "iclr",
+        "neurips",
+        "aaai"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "iclr",
+            "acronym": "ICLR",
+            "name": "International Conference on Learning Representations",
+            "official_url": "https://iclr.cc/",
+            "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+            "topics": [
+              "representation learning",
+              "deep learning",
+              "neural networks",
+              "reinforcement learning",
+              "optimization",
+              "computer vision",
+              "natural language processing",
+              "robotics"
+            ],
+            "scope_source_url": "https://iclr.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad deep-learning scope; verify the current call for papers."
+          },
+          "retrieval_score": 24,
+          "matched_terms": [
+            "learning",
+            "networks",
+            "neural",
+            "representation"
+          ],
+          "matched_topics": [
+            "representation learning",
+            "neural networks"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 15,
+          "matched_terms": [
+            "learning",
+            "networks",
+            "neural"
+          ],
+          "matched_topics": [
+            "neural networks"
+          ]
+        },
+        {
+          "conference": {
+            "id": "aaai",
+            "acronym": "AAAI",
+            "name": "AAAI Conference on Artificial Intelligence",
+            "official_url": "https://aaai.org/conference/aaai/",
+            "scope": "Broad artificial intelligence research, including knowledge representation, reasoning, planning, search, machine learning, natural language processing, computer vision, robotics, agents, and AI applications.",
+            "topics": [
+              "artificial intelligence",
+              "knowledge representation",
+              "reasoning",
+              "planning",
+              "search",
+              "machine learning",
+              "natural language processing",
+              "computer vision",
+              "robotics",
+              "AI agents"
+            ],
+            "scope_source_url": "https://aaai.org/conference/aaai/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad AI scope; verify the current technical track."
+          },
+          "retrieval_score": 6,
+          "matched_terms": [
+            "learning",
+            "representation"
+          ],
+          "matched_topics": []
+        }
+      ]
+    },
+    {
+      "id": "N04_data_mining",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "kdd"
+      ],
+      "actual_top3": [
+        "kdd",
+        "neurips",
+        "icml"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "kdd",
+            "acronym": "KDD",
+            "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+            "official_url": "https://kdd.org/",
+            "scope": "Knowledge discovery and data mining, including scalable data systems, graph mining, recommender systems, applied data science, responsible data mining, and industrial applications.",
+            "topics": [
+              "data mining",
+              "knowledge discovery",
+              "recommender systems",
+              "graph mining",
+              "applied data science",
+              "scalable machine learning",
+              "industry applications",
+              "responsible data mining"
+            ],
+            "scope_source_url": "https://kdd.org/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Distinguish research and applied-data-science tracks."
+          },
+          "retrieval_score": 42,
+          "matched_terms": [
+            "discovery",
+            "graph",
+            "industrial",
+            "knowledge",
+            "mining",
+            "recommender",
+            "scalable",
+            "systems"
+          ],
+          "matched_topics": [
+            "knowledge discovery",
+            "recommender systems",
+            "graph mining"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 3,
+          "matched_terms": [
+            "systems"
+          ],
+          "matched_topics": []
+        },
+        {
+          "conference": {
+            "id": "icml",
+            "acronym": "ICML",
+            "name": "International Conference on Machine Learning",
+            "official_url": "https://icml.cc/",
+            "scope": "Research in machine learning, including theory, algorithms, systems, applications, evaluation, and responsible machine learning.",
+            "topics": [
+              "machine learning",
+              "learning theory",
+              "deep learning",
+              "optimization",
+              "reinforcement learning",
+              "probabilistic methods",
+              "machine learning systems",
+              "responsible AI"
+            ],
+            "scope_source_url": "https://icml.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "General machine-learning venue; verify track-level scope."
+          },
+          "retrieval_score": 3,
+          "matched_terms": [
+            "systems"
+          ],
+          "matched_topics": []
+        }
+      ]
+    },
+    {
+      "id": "N05_learning_theory",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "icml",
+        "neurips"
+      ],
+      "actual_top3": [
+        "icml",
+        "neurips",
+        "iclr"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "icml",
+            "acronym": "ICML",
+            "name": "International Conference on Machine Learning",
+            "official_url": "https://icml.cc/",
+            "scope": "Research in machine learning, including theory, algorithms, systems, applications, evaluation, and responsible machine learning.",
+            "topics": [
+              "machine learning",
+              "learning theory",
+              "deep learning",
+              "optimization",
+              "reinforcement learning",
+              "probabilistic methods",
+              "machine learning systems",
+              "responsible AI"
+            ],
+            "scope_source_url": "https://icml.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "General machine-learning venue; verify track-level scope."
+          },
+          "retrieval_score": 27,
+          "matched_terms": [
+            "algorithms",
+            "learning",
+            "machine",
+            "optimization",
+            "theory"
+          ],
+          "matched_topics": [
+            "machine learning",
+            "optimization"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 24,
+          "matched_terms": [
+            "algorithms",
+            "learning",
+            "machine",
+            "optimization"
+          ],
+          "matched_topics": [
+            "machine learning",
+            "optimization"
+          ]
+        },
+        {
+          "conference": {
+            "id": "iclr",
+            "acronym": "ICLR",
+            "name": "International Conference on Learning Representations",
+            "official_url": "https://iclr.cc/",
+            "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+            "topics": [
+              "representation learning",
+              "deep learning",
+              "neural networks",
+              "reinforcement learning",
+              "optimization",
+              "computer vision",
+              "natural language processing",
+              "robotics"
+            ],
+            "scope_source_url": "https://iclr.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad deep-learning scope; verify the current call for papers."
+          },
+          "retrieval_score": 12,
+          "matched_terms": [
+            "learning",
+            "optimization"
+          ],
+          "matched_topics": [
+            "optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N06_ai_planning",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "aaai"
+      ],
+      "actual_top3": [
+        "aaai",
+        "kdd",
+        "iclr"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "aaai",
+            "acronym": "AAAI",
+            "name": "AAAI Conference on Artificial Intelligence",
+            "official_url": "https://aaai.org/conference/aaai/",
+            "scope": "Broad artificial intelligence research, including knowledge representation, reasoning, planning, search, machine learning, natural language processing, computer vision, robotics, agents, and AI applications.",
+            "topics": [
+              "artificial intelligence",
+              "knowledge representation",
+              "reasoning",
+              "planning",
+              "search",
+              "machine learning",
+              "natural language processing",
+              "computer vision",
+              "robotics",
+              "AI agents"
+            ],
+            "scope_source_url": "https://aaai.org/conference/aaai/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad AI scope; verify the current technical track."
+          },
+          "retrieval_score": 33,
+          "matched_terms": [
+            "agents",
+            "knowledge",
+            "planning",
+            "representation",
+            "search"
+          ],
+          "matched_topics": [
+            "knowledge representation",
+            "planning",
+            "search"
+          ]
+        },
+        {
+          "conference": {
+            "id": "kdd",
+            "acronym": "KDD",
+            "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+            "official_url": "https://kdd.org/",
+            "scope": "Knowledge discovery and data mining, including scalable data systems, graph mining, recommender systems, applied data science, responsible data mining, and industrial applications.",
+            "topics": [
+              "data mining",
+              "knowledge discovery",
+              "recommender systems",
+              "graph mining",
+              "applied data science",
+              "scalable machine learning",
+              "industry applications",
+              "responsible data mining"
+            ],
+            "scope_source_url": "https://kdd.org/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Distinguish research and applied-data-science tracks."
+          },
+          "retrieval_score": 3,
+          "matched_terms": [
+            "knowledge"
+          ],
+          "matched_topics": []
+        },
+        {
+          "conference": {
+            "id": "iclr",
+            "acronym": "ICLR",
+            "name": "International Conference on Learning Representations",
+            "official_url": "https://iclr.cc/",
+            "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+            "topics": [
+              "representation learning",
+              "deep learning",
+              "neural networks",
+              "reinforcement learning",
+              "optimization",
+              "computer vision",
+              "natural language processing",
+              "robotics"
+            ],
+            "scope_source_url": "https://iclr.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad deep-learning scope; verify the current call for papers."
+          },
+          "retrieval_score": 3,
+          "matched_terms": [
+            "representation"
+          ],
+          "matched_topics": []
+        }
+      ]
+    },
+    {
+      "id": "N07_vision_language",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "cvpr",
+        "acl",
+        "emnlp"
+      ],
+      "actual_top3": [
+        "cvpr",
+        "emnlp",
+        "acl"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "cvpr",
+            "acronym": "CVPR",
+            "name": "Conference on Computer Vision and Pattern Recognition",
+            "official_url": "https://cvpr.thecvf.com/",
+            "scope": "Computer vision and pattern recognition, including image and video understanding, recognition, detection, segmentation, 3D vision, vision-language learning, and visual generation.",
+            "topics": [
+              "computer vision",
+              "pattern recognition",
+              "image recognition",
+              "object detection",
+              "segmentation",
+              "3D vision",
+              "vision language",
+              "image generation",
+              "video understanding"
+            ],
+            "scope_source_url": "https://cvpr.thecvf.com/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Primary contribution should be in computer vision or pattern recognition."
+          },
+          "retrieval_score": 24,
+          "matched_terms": [
+            "generation",
+            "image",
+            "language",
+            "learning",
+            "understanding",
+            "vision"
+          ],
+          "matched_topics": [
+            "vision language"
+          ]
+        },
+        {
+          "conference": {
+            "id": "emnlp",
+            "acronym": "EMNLP",
+            "name": "Conference on Empirical Methods in Natural Language Processing",
+            "official_url": "https://www.aclweb.org/portal/",
+            "scope": "Empirical methods for natural language processing, including language models, evaluation, datasets, generation, understanding, information extraction, and multilingual NLP.",
+            "topics": [
+              "natural language processing",
+              "empirical NLP",
+              "language models",
+              "NLP datasets",
+              "text generation",
+              "language understanding",
+              "multilingual NLP",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Verify the current EMNLP event page through the ACL portal."
+          },
+          "retrieval_score": 18,
+          "matched_terms": [
+            "generation",
+            "language",
+            "text",
+            "understanding"
+          ],
+          "matched_topics": [
+            "text generation"
+          ]
+        },
+        {
+          "conference": {
+            "id": "acl",
+            "acronym": "ACL",
+            "name": "Annual Meeting of the Association for Computational Linguistics",
+            "official_url": "https://www.aclweb.org/portal/acl",
+            "scope": "Computational linguistics and natural language processing, including language modeling, machine translation, information extraction, dialogue, generation, evaluation, ethics, and linguistic analysis.",
+            "topics": [
+              "natural language processing",
+              "computational linguistics",
+              "language models",
+              "machine translation",
+              "information extraction",
+              "dialogue",
+              "text generation",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/acl",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Use for work whose primary contribution is in NLP or computational linguistics."
+          },
+          "retrieval_score": 15,
+          "matched_terms": [
+            "generation",
+            "language",
+            "text"
+          ],
+          "matched_topics": [
+            "text generation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N08_reinforcement_learning",
+      "class": "normal",
+      "passed": true,
+      "expected_any": [
+        "iclr",
+        "icml",
+        "neurips"
+      ],
+      "actual_top3": [
+        "iclr",
+        "neurips",
+        "icml"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "iclr",
+            "acronym": "ICLR",
+            "name": "International Conference on Learning Representations",
+            "official_url": "https://iclr.cc/",
+            "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+            "topics": [
+              "representation learning",
+              "deep learning",
+              "neural networks",
+              "reinforcement learning",
+              "optimization",
+              "computer vision",
+              "natural language processing",
+              "robotics"
+            ],
+            "scope_source_url": "https://iclr.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad deep-learning scope; verify the current call for papers."
+          },
+          "retrieval_score": 30,
+          "matched_terms": [
+            "learning",
+            "optimization",
+            "reinforcement",
+            "representation"
+          ],
+          "matched_topics": [
+            "representation learning",
+            "reinforcement learning",
+            "optimization"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 21,
+          "matched_terms": [
+            "learning",
+            "optimization",
+            "reinforcement"
+          ],
+          "matched_topics": [
+            "optimization",
+            "reinforcement learning"
+          ]
+        },
+        {
+          "conference": {
+            "id": "icml",
+            "acronym": "ICML",
+            "name": "International Conference on Machine Learning",
+            "official_url": "https://icml.cc/",
+            "scope": "Research in machine learning, including theory, algorithms, systems, applications, evaluation, and responsible machine learning.",
+            "topics": [
+              "machine learning",
+              "learning theory",
+              "deep learning",
+              "optimization",
+              "reinforcement learning",
+              "probabilistic methods",
+              "machine learning systems",
+              "responsible AI"
+            ],
+            "scope_source_url": "https://icml.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "General machine-learning venue; verify track-level scope."
+          },
+          "retrieval_score": 21,
+          "matched_terms": [
+            "learning",
+            "optimization",
+            "reinforcement"
+          ],
+          "matched_topics": [
+            "optimization",
+            "reinforcement learning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S01_missing_abstract",
+      "class": "source_truth",
+      "passed": true,
+      "expected": "needs_clarification",
+      "actual": "needs_clarification",
+      "details": {
+        "status": "needs_clarification",
+        "message": "Provide an abstract or research description of at least 80 characters.",
+        "questions": [
+          "What problem does the work address?",
+          "What method or technical approach does it use?",
+          "What application domain or data does it target?"
+        ]
+      }
+    },
+    {
+      "id": "S02_too_short_to_ground",
+      "class": "source_truth",
+      "passed": true,
+      "expected": "needs_clarification",
+      "actual": "needs_clarification",
+      "details": {
+        "status": "needs_clarification",
+        "message": "Provide an abstract or research description of at least 80 characters.",
+        "questions": [
+          "What problem does the work address?",
+          "What method or technical approach does it use?",
+          "What application domain or data does it target?"
+        ]
+      }
+    },
+    {
+      "id": "A01_vague_ai",
+      "class": "ambiguity",
+      "passed": true,
+      "expected": "needs_clarification",
+      "actual": "needs_clarification",
+      "details": {
+        "status": "needs_clarification",
+        "message": "Provide an abstract or research description of at least 80 characters.",
+        "questions": [
+          "What problem does the work address?",
+          "What method or technical approach does it use?",
+          "What application domain or data does it target?"
+        ]
+      }
+    },
+    {
+      "id": "A02_title_without_method",
+      "class": "ambiguity",
+      "passed": true,
+      "expected": "needs_clarification",
+      "actual": "needs_clarification",
+      "details": {
+        "status": "needs_clarification",
+        "message": "Provide an abstract or research description of at least 80 characters.",
+        "questions": [
+          "What problem does the work address?",
+          "What method or technical approach does it use?",
+          "What application domain or data does it target?"
+        ]
+      }
+    },
+    {
+      "id": "O01_acceptance_guarantee_vi",
+      "class": "out_of_scope",
+      "passed": true,
+      "expected": "out_of_scope",
+      "actual": "out_of_scope",
+      "details": {
+        "status": "out_of_scope",
+        "message": "Paper2Venue can create an evidence-based venue shortlist, but cannot guarantee acceptance, submit a paper, or fabricate citations.",
+        "matched_boundaries": [
+          "đảm bảo được nhận"
+        ]
+      }
+    },
+    {
+      "id": "O02_fabricated_citation",
+      "class": "out_of_scope",
+      "passed": true,
+      "expected": "out_of_scope",
+      "actual": "out_of_scope",
+      "details": {
+        "status": "out_of_scope",
+        "message": "Paper2Venue can create an evidence-based venue shortlist, but cannot guarantee acceptance, submit a paper, or fabricate citations.",
+        "matched_boundaries": [
+          "fabricate citation"
+        ]
+      }
+    },
+    {
+      "id": "D01_empirical_nlp",
+      "class": "domain_specific",
+      "passed": true,
+      "expected_any": [
+        "emnlp",
+        "acl"
+      ],
+      "actual_top3": [
+        "emnlp",
+        "acl",
+        "neurips"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "emnlp",
+            "acronym": "EMNLP",
+            "name": "Conference on Empirical Methods in Natural Language Processing",
+            "official_url": "https://www.aclweb.org/portal/",
+            "scope": "Empirical methods for natural language processing, including language models, evaluation, datasets, generation, understanding, information extraction, and multilingual NLP.",
+            "topics": [
+              "natural language processing",
+              "empirical NLP",
+              "language models",
+              "NLP datasets",
+              "text generation",
+              "language understanding",
+              "multilingual NLP",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Verify the current EMNLP event page through the ACL portal."
+          },
+          "retrieval_score": 39,
+          "matched_terms": [
+            "datasets",
+            "empirical",
+            "evaluation",
+            "language",
+            "multilingual",
+            "nlp",
+            "understanding"
+          ],
+          "matched_topics": [
+            "NLP datasets",
+            "language understanding",
+            "multilingual NLP"
+          ]
+        },
+        {
+          "conference": {
+            "id": "acl",
+            "acronym": "ACL",
+            "name": "Annual Meeting of the Association for Computational Linguistics",
+            "official_url": "https://www.aclweb.org/portal/acl",
+            "scope": "Computational linguistics and natural language processing, including language modeling, machine translation, information extraction, dialogue, generation, evaluation, ethics, and linguistic analysis.",
+            "topics": [
+              "natural language processing",
+              "computational linguistics",
+              "language models",
+              "machine translation",
+              "information extraction",
+              "dialogue",
+              "text generation",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/acl",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Use for work whose primary contribution is in NLP or computational linguistics."
+          },
+          "retrieval_score": 21,
+          "matched_terms": [
+            "evaluation",
+            "language",
+            "machine",
+            "nlp",
+            "translation"
+          ],
+          "matched_topics": [
+            "machine translation"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 15,
+          "matched_terms": [
+            "datasets",
+            "evaluation",
+            "machine"
+          ],
+          "matched_topics": [
+            "datasets"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D02_applied_industrial_ml",
+      "class": "domain_specific",
+      "passed": true,
+      "expected_any": [
+        "kdd"
+      ],
+      "actual_top3": [
+        "kdd",
+        "neurips",
+        "icml"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "kdd",
+            "acronym": "KDD",
+            "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+            "official_url": "https://kdd.org/",
+            "scope": "Knowledge discovery and data mining, including scalable data systems, graph mining, recommender systems, applied data science, responsible data mining, and industrial applications.",
+            "topics": [
+              "data mining",
+              "knowledge discovery",
+              "recommender systems",
+              "graph mining",
+              "applied data science",
+              "scalable machine learning",
+              "industry applications",
+              "responsible data mining"
+            ],
+            "scope_source_url": "https://kdd.org/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Distinguish research and applied-data-science tracks."
+          },
+          "retrieval_score": 33,
+          "matched_terms": [
+            "applied",
+            "data",
+            "graph",
+            "industrial",
+            "mining",
+            "recommender",
+            "science"
+          ],
+          "matched_topics": [
+            "graph mining",
+            "applied data science"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 0,
+          "matched_terms": [],
+          "matched_topics": []
+        },
+        {
+          "conference": {
+            "id": "icml",
+            "acronym": "ICML",
+            "name": "International Conference on Machine Learning",
+            "official_url": "https://icml.cc/",
+            "scope": "Research in machine learning, including theory, algorithms, systems, applications, evaluation, and responsible machine learning.",
+            "topics": [
+              "machine learning",
+              "learning theory",
+              "deep learning",
+              "optimization",
+              "reinforcement learning",
+              "probabilistic methods",
+              "machine learning systems",
+              "responsible AI"
+            ],
+            "scope_source_url": "https://icml.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "General machine-learning venue; verify track-level scope."
+          },
+          "retrieval_score": 0,
+          "matched_terms": [],
+          "matched_topics": []
+        }
+      ]
+    },
+    {
+      "id": "R01_computational_neuroscience",
+      "class": "rare",
+      "passed": true,
+      "expected_any": [
+        "neurips"
+      ],
+      "actual_top3": [
+        "neurips",
+        "iclr",
+        "acl"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 24,
+          "matched_terms": [
+            "computational",
+            "networks",
+            "neural",
+            "neuroscience"
+          ],
+          "matched_topics": [
+            "neural networks",
+            "computational neuroscience"
+          ]
+        },
+        {
+          "conference": {
+            "id": "iclr",
+            "acronym": "ICLR",
+            "name": "International Conference on Learning Representations",
+            "official_url": "https://iclr.cc/",
+            "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+            "topics": [
+              "representation learning",
+              "deep learning",
+              "neural networks",
+              "reinforcement learning",
+              "optimization",
+              "computer vision",
+              "natural language processing",
+              "robotics"
+            ],
+            "scope_source_url": "https://iclr.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad deep-learning scope; verify the current call for papers."
+          },
+          "retrieval_score": 15,
+          "matched_terms": [
+            "networks",
+            "neural",
+            "processing"
+          ],
+          "matched_topics": [
+            "neural networks"
+          ]
+        },
+        {
+          "conference": {
+            "id": "acl",
+            "acronym": "ACL",
+            "name": "Annual Meeting of the Association for Computational Linguistics",
+            "official_url": "https://www.aclweb.org/portal/acl",
+            "scope": "Computational linguistics and natural language processing, including language modeling, machine translation, information extraction, dialogue, generation, evaluation, ethics, and linguistic analysis.",
+            "topics": [
+              "natural language processing",
+              "computational linguistics",
+              "language models",
+              "machine translation",
+              "information extraction",
+              "dialogue",
+              "text generation",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/acl",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Use for work whose primary contribution is in NLP or computational linguistics."
+          },
+          "retrieval_score": 9,
+          "matched_terms": [
+            "computational",
+            "information",
+            "processing"
+          ],
+          "matched_topics": []
+        }
+      ]
+    },
+    {
+      "id": "R02_robotics_representation",
+      "class": "rare",
+      "passed": true,
+      "expected_any": [
+        "iclr",
+        "neurips",
+        "aaai"
+      ],
+      "actual_top3": [
+        "iclr",
+        "aaai",
+        "neurips"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "iclr",
+            "acronym": "ICLR",
+            "name": "International Conference on Learning Representations",
+            "official_url": "https://iclr.cc/",
+            "scope": "Representation learning and deep learning, including optimization, reinforcement learning, vision, speech, natural language processing, robotics, and related applications.",
+            "topics": [
+              "representation learning",
+              "deep learning",
+              "neural networks",
+              "reinforcement learning",
+              "optimization",
+              "computer vision",
+              "natural language processing",
+              "robotics"
+            ],
+            "scope_source_url": "https://iclr.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad deep-learning scope; verify the current call for papers."
+          },
+          "retrieval_score": 21,
+          "matched_terms": [
+            "learning",
+            "reinforcement",
+            "representation"
+          ],
+          "matched_topics": [
+            "representation learning",
+            "reinforcement learning"
+          ]
+        },
+        {
+          "conference": {
+            "id": "aaai",
+            "acronym": "AAAI",
+            "name": "AAAI Conference on Artificial Intelligence",
+            "official_url": "https://aaai.org/conference/aaai/",
+            "scope": "Broad artificial intelligence research, including knowledge representation, reasoning, planning, search, machine learning, natural language processing, computer vision, robotics, agents, and AI applications.",
+            "topics": [
+              "artificial intelligence",
+              "knowledge representation",
+              "reasoning",
+              "planning",
+              "search",
+              "machine learning",
+              "natural language processing",
+              "computer vision",
+              "robotics",
+              "AI agents"
+            ],
+            "scope_source_url": "https://aaai.org/conference/aaai/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad AI scope; verify the current technical track."
+          },
+          "retrieval_score": 15,
+          "matched_terms": [
+            "learning",
+            "planning",
+            "representation"
+          ],
+          "matched_topics": [
+            "planning"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 12,
+          "matched_terms": [
+            "learning",
+            "reinforcement"
+          ],
+          "matched_topics": [
+            "reinforcement learning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R03_multilingual_generation",
+      "class": "rare",
+      "passed": true,
+      "expected_any": [
+        "acl",
+        "emnlp"
+      ],
+      "actual_top3": [
+        "acl",
+        "emnlp",
+        "neurips"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "acl",
+            "acronym": "ACL",
+            "name": "Annual Meeting of the Association for Computational Linguistics",
+            "official_url": "https://www.aclweb.org/portal/acl",
+            "scope": "Computational linguistics and natural language processing, including language modeling, machine translation, information extraction, dialogue, generation, evaluation, ethics, and linguistic analysis.",
+            "topics": [
+              "natural language processing",
+              "computational linguistics",
+              "language models",
+              "machine translation",
+              "information extraction",
+              "dialogue",
+              "text generation",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/acl",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Use for work whose primary contribution is in NLP or computational linguistics."
+          },
+          "retrieval_score": 30,
+          "matched_terms": [
+            "evaluation",
+            "generation",
+            "language",
+            "machine",
+            "text",
+            "translation"
+          ],
+          "matched_topics": [
+            "machine translation",
+            "text generation"
+          ]
+        },
+        {
+          "conference": {
+            "id": "emnlp",
+            "acronym": "EMNLP",
+            "name": "Conference on Empirical Methods in Natural Language Processing",
+            "official_url": "https://www.aclweb.org/portal/",
+            "scope": "Empirical methods for natural language processing, including language models, evaluation, datasets, generation, understanding, information extraction, and multilingual NLP.",
+            "topics": [
+              "natural language processing",
+              "empirical NLP",
+              "language models",
+              "NLP datasets",
+              "text generation",
+              "language understanding",
+              "multilingual NLP",
+              "NLP evaluation"
+            ],
+            "scope_source_url": "https://www.aclweb.org/portal/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Verify the current EMNLP event page through the ACL portal."
+          },
+          "retrieval_score": 21,
+          "matched_terms": [
+            "evaluation",
+            "generation",
+            "language",
+            "multilingual",
+            "text"
+          ],
+          "matched_topics": [
+            "text generation"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 6,
+          "matched_terms": [
+            "evaluation",
+            "machine"
+          ],
+          "matched_topics": []
+        }
+      ]
+    },
+    {
+      "id": "R04_responsible_data_mining",
+      "class": "rare",
+      "passed": true,
+      "expected_any": [
+        "kdd",
+        "icml"
+      ],
+      "actual_top3": [
+        "kdd",
+        "icml",
+        "neurips"
+      ],
+      "details": [
+        {
+          "conference": {
+            "id": "kdd",
+            "acronym": "KDD",
+            "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+            "official_url": "https://kdd.org/",
+            "scope": "Knowledge discovery and data mining, including scalable data systems, graph mining, recommender systems, applied data science, responsible data mining, and industrial applications.",
+            "topics": [
+              "data mining",
+              "knowledge discovery",
+              "recommender systems",
+              "graph mining",
+              "applied data science",
+              "scalable machine learning",
+              "industry applications",
+              "responsible data mining"
+            ],
+            "scope_source_url": "https://kdd.org/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Distinguish research and applied-data-science tracks."
+          },
+          "retrieval_score": 48,
+          "matched_terms": [
+            "applications",
+            "data",
+            "industry",
+            "learning",
+            "machine",
+            "mining",
+            "responsible",
+            "scalable"
+          ],
+          "matched_topics": [
+            "data mining",
+            "scalable machine learning",
+            "industry applications",
+            "responsible data mining"
+          ]
+        },
+        {
+          "conference": {
+            "id": "icml",
+            "acronym": "ICML",
+            "name": "International Conference on Machine Learning",
+            "official_url": "https://icml.cc/",
+            "scope": "Research in machine learning, including theory, algorithms, systems, applications, evaluation, and responsible machine learning.",
+            "topics": [
+              "machine learning",
+              "learning theory",
+              "deep learning",
+              "optimization",
+              "reinforcement learning",
+              "probabilistic methods",
+              "machine learning systems",
+              "responsible AI"
+            ],
+            "scope_source_url": "https://icml.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "General machine-learning venue; verify track-level scope."
+          },
+          "retrieval_score": 21,
+          "matched_terms": [
+            "applications",
+            "evaluation",
+            "learning",
+            "machine",
+            "responsible"
+          ],
+          "matched_topics": [
+            "machine learning"
+          ]
+        },
+        {
+          "conference": {
+            "id": "neurips",
+            "acronym": "NeurIPS",
+            "name": "Conference on Neural Information Processing Systems",
+            "official_url": "https://neurips.cc/",
+            "scope": "Machine learning and computational neuroscience, including foundations, algorithms, systems, datasets, evaluation, and interdisciplinary applications.",
+            "topics": [
+              "machine learning",
+              "neural networks",
+              "computational neuroscience",
+              "optimization",
+              "reinforcement learning",
+              "generative models",
+              "datasets",
+              "machine learning systems"
+            ],
+            "scope_source_url": "https://neurips.cc/",
+            "scope_verified_at": "2026-07-30",
+            "notes": "Broad venue; recommendation is topical fit only."
+          },
+          "retrieval_score": 18,
+          "matched_terms": [
+            "applications",
+            "evaluation",
+            "learning",
+            "machine"
+          ],
+          "matched_topics": [
+            "machine learning"
+          ]
+        }
+      ]
+    }
+  ]
+}

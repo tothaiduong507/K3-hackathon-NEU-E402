@@ -1,0 +1,288 @@
+{
+  "status": "completed",
+  "run_type": "deep_paper_summary",
+  "run_id": "deep_20260730T151203Z_48719fd9",
+  "created_at": "2026-07-30T15:12:03.421324+00:00",
+  "model": "gpt-4o-mini",
+  "language": "vi",
+  "paper": {
+    "paper_id": "ARXIV:2105.02358v2",
+    "title": "Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks",
+    "abstract": "Attention mechanisms, especially self-attention, have played an increasingly important role in deep feature representation for visual tasks. Self-attention updates the feature at each position by computing a weighted sum of features using pair-wise affinities across all positions to capture the long-range dependency within a single sample. However, self-attention has quadratic complexity and ignores potential correlation between different samples. This paper proposes a novel attention mechanism which we call external attention, based on two external, small, learnable, shared memories, which can be implemented easily by simply using two cascaded linear layers and two normalization layers; it conveniently replaces self-attention in existing popular architectures. External attention has linear complexity and implicitly considers the correlations between all data samples. We further incorporate the multi-head mechanism into external attention to provide an all-MLP architecture, external attention MLP (EAMLP), for image classification. Extensive experiments on image classification, object detection, semantic segmentation, instance segmentation, image generation, and point cloud analysis reveal that our method provides results comparable or superior to the self-attention mechanism and some of its variants, with much lower computational and memory costs.",
+    "authors": [
+      "Meng-Hao Guo",
+      "Zheng-Ning Liu",
+      "Tai-Jiang Mu",
+      "Shi-Min Hu"
+    ],
+    "year": 2021,
+    "citation_count": null,
+    "venue": "arXiv",
+    "url": "http://arxiv.org/abs/2105.02358v2",
+    "external_ids": {
+      "ArXiv": "2105.02358v2"
+    },
+    "fields_of_study": [
+      "cs.CV"
+    ],
+    "open_access_pdf_url": "https://arxiv.org/pdf/2105.02358v2.pdf"
+  },
+  "pdf": {
+    "attempted": true,
+    "used": true,
+    "arxiv_id": "2105.02358v2",
+    "total_pages": 11,
+    "extracted_pages": 11,
+    "extracted_characters": 51709,
+    "coverage_percent": 100.0
+  },
+  "deep_summary": {
+    "executive_summary": "Bài báo này đề xuất một cơ chế chú ý mới gọi là chú ý bên ngoài, dựa trên hai bộ nhớ nhỏ, có thể học được và chia sẻ, có thể thay thế cho cơ chế tự chú ý trong các kiến trúc phổ biến hiện có. Chú ý bên ngoài có độ phức tạp tuyến tính và xem xét mối tương quan giữa tất cả các mẫu dữ liệu. Bài báo cũng kết hợp cơ chế đa đầu vào chú ý bên ngoài để cung cấp một kiến trúc MLP hoàn toàn cho phân loại hình ảnh. Các thí nghiệm cho thấy phương pháp này đạt được kết quả tương đương hoặc tốt hơn so với cơ chế tự chú ý và một số biến thể của nó, với chi phí tính toán và bộ nhớ thấp hơn nhiều.",
+    "research_problem": "Cơ chế tự chú ý hiện tại trong các kiến trúc mạng nơ-ron có thể gặp khó khăn trong việc xử lý hiệu quả các tác vụ thị giác do độ phức tạp tính toán cao. Cần có một phương pháp mới có thể cải thiện hiệu suất mà không làm tăng chi phí tính toán.",
+    "motivation": "Nhu cầu cải thiện hiệu suất trong các tác vụ thị giác mà không làm tăng chi phí tính toán là động lực chính cho việc phát triển cơ chế chú ý bên ngoài.",
+    "contributions": [
+      {
+        "contribution": "Đề xuất cơ chế chú ý bên ngoài với hai lớp tuyến tính và hai lớp chuẩn hóa.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "contribution": "Kết hợp cơ chế đa đầu vào vào chú ý bên ngoài.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "contribution": "Cung cấp kết quả tương đương hoặc tốt hơn so với cơ chế tự chú ý.",
+        "source_refs": [
+          "p.1"
+        ]
+      }
+    ],
+    "methodology": {
+      "overview": "Nghiên cứu này trình bày cơ chế chú ý bên ngoài, một phương pháp nhẹ nhưng hiệu quả cho các tác vụ thị giác khác nhau.",
+      "steps": [
+        "Sử dụng bộ nhớ bên ngoài để cải thiện hiệu suất và giảm chi phí tính toán.",
+        "Áp dụng ResNet-101 với độ phân giải đầu ra 8 cho các tác vụ phân đoạn ngữ nghĩa.",
+        "Thay thế cơ chế tự chú ý trong SAGAN bằng chú ý bên ngoài để tạo ra mô hình EAGAN."
+      ],
+      "components": [
+        "Hai đơn vị bộ nhớ bên ngoài",
+        "Cơ chế chú ý bên ngoài"
+      ]
+    },
+    "data_and_experiments": {
+      "datasets": [
+        "ImageNet",
+        "COCO",
+        "PASCAL VOC"
+      ],
+      "experimental_setup": [
+        "Sử dụng Jittor và/hoặc Pytorch cho các thí nghiệm.",
+        "Thí nghiệm ablation trên tập dữ liệu PASCAL VOC."
+      ],
+      "metrics": [
+        "Top1 accuracy",
+        "Box AP",
+        "Mask AP",
+        "mIoU"
+      ],
+      "baselines": [
+        "T2T-ViT",
+        "Performer",
+        "EA",
+        "MEA",
+        "MLP",
+        "Faster RCNN",
+        "Mask RCNN",
+        "RetinaNet",
+        "PSPNet",
+        "DFN",
+        "EANet"
+      ]
+    },
+    "results": [
+      {
+        "finding": "Chú ý bên ngoài cung cấp độ chính xác tốt hơn chú ý tự thân trên tập dữ liệu PASCAL VOC.",
+        "source_refs": [
+          "p.4"
+        ]
+      },
+      {
+        "finding": "Kết quả Top1 accuracy cho các phương pháp trên ImageNet dao động từ 63.2% đến 81.9%.",
+        "source_refs": [
+          "p.5"
+        ]
+      },
+      {
+        "finding": "EANet đạt được hiệu suất cạnh tranh so với các phương pháp hiện tại trên các tập dữ liệu khác nhau.",
+        "source_refs": [
+          "p.5"
+        ]
+      }
+    ],
+    "ablation_studies": [
+      {
+        "finding": "Việc chọn số lượng đơn vị bộ nhớ phù hợp là quan trọng cho chất lượng kết quả.",
+        "source_refs": [
+          "p.4"
+        ]
+      },
+      {
+        "finding": "Phương pháp chuẩn hóa có tác động tích cực đến chú ý bên ngoài và cải thiện chú ý tự thân.",
+        "source_refs": [
+          "p.4"
+        ]
+      }
+    ],
+    "limitations": {
+      "author_stated": [
+        "Cần thực hiện thêm các thí nghiệm để xác nhận tính hiệu quả của cơ chế chú ý bên ngoài trong các tác vụ khác nhau.",
+        "Không đề cập đến chi tiết cụ thể về các thí nghiệm khác ngoài PASCAL VOC."
+      ],
+      "analyst_observations": [
+        "Một số phương pháp không hội tụ trong các thí nghiệm.",
+        "Kết quả có thể bị ảnh hưởng bởi việc không sử dụng tiền huấn luyện trên COCO."
+      ]
+    },
+    "section_summaries": [
+      {
+        "section": "Abstract",
+        "summary": "Bài báo này đề xuất một cơ chế chú ý mới gọi là chú ý bên ngoài, dựa trên hai bộ nhớ nhỏ, có thể học được và chia sẻ, có thể thay thế cho cơ chế tự chú ý trong các kiến trúc phổ biến hiện có. Chú ý bên ngoài có độ phức tạp tuyến tính và xem xét mối tương quan giữa tất cả các mẫu dữ liệu. Bài báo cũng kết hợp cơ chế đa đầu vào chú ý bên ngoài để cung cấp một kiến trúc MLP hoàn toàn cho phân loại hình ảnh. Các thí nghiệm cho thấy phương pháp này đạt được kết quả tương đương hoặc tốt hơn so với cơ chế tự chú ý và một số biến thể của nó, với chi phí tính toán và bộ nhớ thấp hơn nhiều.",
+        "source_refs": [
+          "p.1",
+          "p.2",
+          "p.3"
+        ]
+      },
+      {
+        "section": "Results",
+        "summary": "Nghiên cứu đã thực hiện trên nhiều tác vụ như phân loại hình ảnh, phát hiện đối tượng, phân đoạn ngữ nghĩa, phân đoạn thể hiện, tạo hình ảnh, phân loại đám mây điểm và phân đoạn đám mây điểm để đánh giá hiệu quả của phương pháp chú ý bên ngoài được đề xuất. Các thí nghiệm được thực hiện với các khung học sâu Jittor và/hoặc Pytorch. Trong nghiên cứu ablation, các thí nghiệm được thực hiện trên tập dữ liệu phân đoạn PASCAL VOC. Kết quả cho thấy chú ý bên ngoài cung cấp độ chính xác tốt hơn so với chú ý tự thân trên tập dữ liệu PASCAL VOC. Việc chọn số lượng đơn vị bộ nhớ phù hợp là quan trọng cho chất lượng kết quả. Phương pháp chuẩn hóa có thể tạo ra tác động tích cực lớn đến chú ý bên ngoài và cải thiện chú ý tự thân.",
+        "source_refs": [
+          "p.4"
+        ]
+      },
+      {
+        "section": "Experiments",
+        "summary": "Nghiên cứu thực hiện các thí nghiệm trên các tập dữ liệu ImageNet, COCO và PASCAL VOC để đánh giá hiệu suất của các phương pháp khác nhau liên quan đến attention bên ngoài và kiến trúc MLP.",
+        "source_refs": [
+          "p.5"
+        ]
+      },
+      {
+        "section": "Methodology",
+        "summary": "Nghiên cứu này trình bày cơ chế chú ý bên ngoài, một phương pháp nhẹ nhưng hiệu quả cho các tác vụ thị giác khác nhau. Hai đơn vị bộ nhớ bên ngoài được sử dụng trong chú ý bên ngoài có thể được xem như từ điển cho toàn bộ tập dữ liệu và có khả năng học các đặc trưng đại diện hơn cho đầu vào trong khi giảm chi phí tính toán.",
+        "source_refs": [
+          "p.6",
+          "p.9"
+        ]
+      }
+    ],
+    "key_takeaways": [
+      {
+        "takeaway": "Chú ý bên ngoài có thể thay thế cho tự chú ý trong các kiến trúc phổ biến hiện có.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "takeaway": "Phương pháp này đạt được kết quả tương đương hoặc tốt hơn so với cơ chế tự chú ý và một số biến thể của nó.",
+        "source_refs": [
+          "p.1"
+        ]
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Chú ý bên ngoài",
+        "explanation": "Cơ chế chú ý mới dựa trên hai bộ nhớ nhỏ, có thể học được và chia sẻ.",
+        "source_refs": [
+          "p.1"
+        ]
+      },
+      {
+        "term": "Độ phức tạp tuyến tính",
+        "explanation": "Đề xuất có độ phức tạp O(n), cho phép xử lý hiệu quả hơn so với tự chú ý.",
+        "source_refs": [
+          "p.2"
+        ]
+      },
+      {
+        "term": "mIoU",
+        "explanation": "Mean Intersection over Union, một chỉ số đánh giá độ chính xác trong phân đoạn hình ảnh.",
+        "source_refs": [
+          "p.4"
+        ]
+      },
+      {
+        "term": "FCN",
+        "explanation": "Fully Convolutional Network, một loại mạng nơ-ron được sử dụng cho phân đoạn hình ảnh.",
+        "source_refs": [
+          "p.4"
+        ]
+      },
+      {
+        "term": "SA",
+        "explanation": "Self-Attention, một cơ chế chú ý trong mạng nơ-ron.",
+        "source_refs": [
+          "p.4"
+        ]
+      },
+      {
+        "term": "EA",
+        "explanation": "External Attention, cơ chế chú ý bên ngoài được đề xuất trong nghiên cứu này.",
+        "source_refs": [
+          "p.4"
+        ]
+      },
+      {
+        "term": "Top1 accuracy",
+        "explanation": "Độ chính xác hàng đầu trong phân loại hình ảnh.",
+        "source_refs": [
+          "p.5"
+        ]
+      },
+      {
+        "term": "Box AP",
+        "explanation": "Độ chính xác trung bình của hộp trong phát hiện đối tượng.",
+        "source_refs": [
+          "p.5"
+        ]
+      },
+      {
+        "term": "Mask AP",
+        "explanation": "Độ chính xác trung bình của mặt nạ trong phân đoạn đối tượng.",
+        "source_refs": [
+          "p.5"
+        ]
+      }
+    ],
+    "source_level": "full_text",
+    "source_labels": [
+      "p.1",
+      "p.2",
+      "p.3",
+      "p.4",
+      "p.5",
+      "p.6",
+      "p.7",
+      "p.8",
+      "p.9",
+      "p.10",
+      "p.11"
+    ],
+    "section_chunk_count": 4,
+    "prompt_version": "deep-summary-v1"
+  },
+  "cache": {
+    "hit": false,
+    "key": "8d29bd25970576428fb4d9c768d3785aecc9c60ed910488af741e15121ed6b0e",
+    "prompt_version": "deep-summary-v1"
+  },
+  "guardrails": {
+    "source_level": "full_text",
+    "page_references_required": true,
+    "disclaimer": "This summary is generated from extracted PDF text. Equations, figures, and complex tables may not be fully represented; verify critical claims against the cited pages in the original paper."
+  }
+}

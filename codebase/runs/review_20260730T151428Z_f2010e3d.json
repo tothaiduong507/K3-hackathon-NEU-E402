@@ -1,0 +1,631 @@
+{
+  "status": "completed",
+  "run_type": "smart_literature_review",
+  "run_id": "review_20260730T151428Z_f2010e3d",
+  "created_at": "2026-07-30T15:14:28.526986+00:00",
+  "model": "gpt-4o-mini",
+  "query": "Diffusion Models for Medical Image Segmentation",
+  "search": {
+    "source": "arxiv",
+    "primary_error": "HTTPError: 403 Client Error: Forbidden for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Diffusion+Models+for+Medical+Image+Segmentation&limit=10&fields=paperId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CcitationCount%2Cvenue%2Curl%2CexternalIds%2CfieldsOfStudy%2CopenAccessPdf&year=2022-",
+    "result_count": 10,
+    "filtered_count": 10,
+    "filters": {
+      "min_year": 2022,
+      "min_citations": 0
+    },
+    "ranked_papers": [
+      {
+        "source_rank": 6,
+        "paper": {
+          "paper_id": "ARXIV:2407.03548v1",
+          "title": "HiDiff: Hybrid Diffusion Framework for Medical Image Segmentation",
+          "abstract": "Medical image segmentation has been significantly advanced with the rapid development of deep learning (DL) techniques. Existing DL-based segmentation models are typically discriminative; i.e., they aim to learn a mapping from the input image to segmentation masks. However, these discriminative methods neglect the underlying data distribution and intrinsic class characteristics, suffering from unstable feature space. In this work, we propose to complement discriminative segmentation methods with the knowledge of underlying data distribution from generative models. To that end, we propose a novel hybrid diffusion framework for medical image segmentation, termed HiDiff, which can synergize the strengths of existing discriminative segmentation models and new generative diffusion models. HiDiff comprises two key components: discriminative segmentor and diffusion refiner. First, we utilize any conventional trained segmentation models as discriminative segmentor, which can provide a segmentation mask prior for diffusion refiner. Second, we propose a novel binary Bernoulli diffusion model (BBDM) as the diffusion refiner, which can effectively, efficiently, and interactively refine the segmentation mask by modeling the underlying data distribution. Third, we train the segmentor and BBDM in an alternate-collaborative manner to mutually boost each other. Extensive experimental results on abdomen organ, brain tumor, polyps, and retinal vessels segmentation datasets, covering four widely-used modalities, demonstrate the superior performance of HiDiff over existing medical segmentation algorithms, including the state-of-the-art transformer- and diffusion-based ones. In addition, HiDiff excels at segmenting small objects and generalizing to new datasets. Source codes are made available at https://github.com/takimailto/HiDiff.",
+          "authors": [
+            "Tao Chen",
+            "Chenhui Wang",
+            "Zhihao Chen",
+            "Yiming Lei",
+            "Hongming Shan"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2407.03548v1",
+          "external_ids": {
+            "ArXiv": "2407.03548v1"
+          },
+          "fields_of_study": [
+            "cs.CV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2407.03548v1.pdf"
+        },
+        "relevance_score": 76.5,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical",
+          "models",
+          "segmentation"
+        ],
+        "score_breakdown": {
+          "title_overlap": 40.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 7.5,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 1
+      },
+      {
+        "source_rank": 1,
+        "paper": {
+          "paper_id": "ARXIV:2406.17608v2",
+          "title": "Test-time generative augmentation for medical image segmentation",
+          "abstract": "Medical image segmentation is critical for clinical diagnosis, treatment planning, and monitoring, yet segmentation models often struggle with uncertainties stemming from occlusions, ambiguous boundaries, and variations in imaging devices. Traditional test-time augmentation (TTA) techniques typically rely on predefined geometric and photometric transformations, limiting their adaptability and effectiveness in complex medical scenarios. In this study, we introduced Test-Time Generative Augmentation (TTGA), a novel augmentation strategy specifically tailored for medical image segmentation at inference time. Different from conventional augmentation strategies that suffer from excessive randomness or limited flexibility, TTGA leverages a domain-fine-tuned generative model to produce contextually relevant and diverse augmentations tailored to the characteristics of each test image. Built upon diffusion model inversion, a masked null-text inversion method is proposed to enable region-specific augmentations during sampling. Furthermore, a dual denoising pathway is designed to balance precise identity preservation with controlled variability. We demonstrate the efficacy of our TTGA through extensive experiments across three distinct segmentation tasks spanning nine datasets. Our results consistently demonstrate that TTGA not only improves segmentation accuracy (with DSC gains ranging from 0.1% to 2.3% over the baseline) but also offers pixel-wise error estimation (with DSC gains ranging from 1.1% to 29.0% over the baseline). The source code and demonstration are available at: https://github.com/maxiao0234/TTGA.",
+          "authors": [
+            "Xiao Ma",
+            "Yuhui Tao",
+            "Zetian Zhang",
+            "Yuhan Zhang",
+            "Xi Wang",
+            "Sheng Zhang",
+            "Zexuan Ji",
+            "Yizhe Zhang",
+            "Qiang Chen",
+            "Guang Yang"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2406.17608v2",
+          "external_ids": {
+            "ArXiv": "2406.17608v2"
+          },
+          "fields_of_study": [
+            "cs.CV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2406.17608v2.pdf"
+        },
+        "relevance_score": 74.0,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical",
+          "models",
+          "segmentation"
+        ],
+        "score_breakdown": {
+          "title_overlap": 30.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 15.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 2
+      },
+      {
+        "source_rank": 2,
+        "paper": {
+          "paper_id": "ARXIV:2405.12223v3",
+          "title": "Cascaded Multi-path Shortcut Diffusion Model for Medical Image Translation",
+          "abstract": "Image-to-image translation is a vital component in medical imaging processing, with many uses in a wide range of imaging modalities and clinical scenarios. Previous methods include Generative Adversarial Networks (GANs) and Diffusion Models (DMs), which offer realism but suffer from instability and lack uncertainty estimation. Even though both GAN and DM methods have individually exhibited their capability in medical image translation tasks, the potential of combining a GAN and DM to further improve translation performance and to enable uncertainty estimation remains largely unexplored. In this work, we address these challenges by proposing a Cascade Multi-path Shortcut Diffusion Model (CMDM) for high-quality medical image translation and uncertainty estimation. To reduce the required number of iterations and ensure robust performance, our method first obtains a conditional GAN-generated prior image that will be used for the efficient reverse translation with a DM in the subsequent step. Additionally, a multi-path shortcut diffusion strategy is employed to refine translation results and estimate uncertainty. A cascaded pipeline further enhances translation quality, incorporating residual averaging between cascades. We collected three different medical image datasets with two sub-tasks for each dataset to test the generalizability of our approach. Our experimental results found that CMDM can produce high-quality translations comparable to state-of-the-art methods while providing reasonable uncertainty estimations that correlate well with the translation error.",
+          "authors": [
+            "Yinchi Zhou",
+            "Tianqi Chen",
+            "Jun Hou",
+            "Huidong Xie",
+            "Nicha C. Dvornek",
+            "S. Kevin Zhou",
+            "David L. Wilson",
+            "James S. Duncan",
+            "Chi Liu",
+            "Bo Zhou"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2405.12223v3",
+          "external_ids": {
+            "ArXiv": "2405.12223v3"
+          },
+          "fields_of_study": [
+            "eess.IV",
+            "cs.CV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2405.12223v3.pdf"
+        },
+        "relevance_score": 67.5,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical",
+          "models"
+        ],
+        "score_breakdown": {
+          "title_overlap": 30.0,
+          "abstract_overlap": 20.0,
+          "source_api_rank": 13.5,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 3
+      },
+      {
+        "source_rank": 10,
+        "paper": {
+          "paper_id": "ARXIV:2304.02742v3",
+          "title": "Zero-shot Medical Image Translation via Frequency-Guided Diffusion Models",
+          "abstract": "Recently, the diffusion model has emerged as a superior generative model that can produce high quality and realistic images. However, for medical image translation, the existing diffusion models are deficient in accurately retaining structural information since the structure details of source domain images are lost during the forward diffusion process and cannot be fully recovered through learned reverse diffusion, while the integrity of anatomical structures is extremely important in medical images. For instance, errors in image translation may distort, shift, or even remove structures and tumors, leading to incorrect diagnosis and inadequate treatments. Training and conditioning diffusion models using paired source and target images with matching anatomy can help. However, such paired data are very difficult and costly to obtain, and may also reduce the robustness of the developed model to out-of-distribution testing data. We propose a frequency-guided diffusion model (FGDM) that employs frequency-domain filters to guide the diffusion model for structure-preserving image translation. Based on its design, FGDM allows zero-shot learning, as it can be trained solely on the data from the target domain, and used directly for source-to-target domain translation without any exposure to the source-domain data during training. We evaluated it on three cone-beam CT (CBCT)-to-CT translation tasks for different anatomical sites, and a cross-institutional MR imaging translation task. FGDM outperformed the state-of-the-art methods (GAN-based, VAE-based, and diffusion-based) in metrics of Frechet Inception Distance (FID), Peak Signal-to-Noise Ratio (PSNR), and Structural Similarity Index Measure (SSIM), showing its significant advantages in zero-shot medical image translation.",
+          "authors": [
+            "Yunxiang Li",
+            "Hua-Chieh Shao",
+            "Xiao Liang",
+            "Liyuan Chen",
+            "Ruiqi Li",
+            "Steve Jiang",
+            "Jing Wang",
+            "You Zhang"
+          ],
+          "year": 2023,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2304.02742v3",
+          "external_ids": {
+            "ArXiv": "2304.02742v3"
+          },
+          "fields_of_study": [
+            "eess.IV",
+            "cs.CV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2304.02742v3.pdf"
+        },
+        "relevance_score": 65.0,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical",
+          "models"
+        ],
+        "score_breakdown": {
+          "title_overlap": 40.0,
+          "abstract_overlap": 20.0,
+          "source_api_rank": 1.5,
+          "citation_signal": 0.0,
+          "recency_signal": 3.5
+        },
+        "rank": 4
+      },
+      {
+        "source_rank": 4,
+        "paper": {
+          "paper_id": "ARXIV:2212.08228v2",
+          "title": "SADM: Sequence-Aware Diffusion Model for Longitudinal Medical Image Generation",
+          "abstract": "Human organs constantly undergo anatomical changes due to a complex mix of short-term (e.g., heartbeat) and long-term (e.g., aging) factors. Evidently, prior knowledge of these factors will be beneficial when modeling their future state, i.e., via image generation. However, most of the medical image generation tasks only rely on the input from a single image, thus ignoring the sequential dependency even when longitudinal data is available. Sequence-aware deep generative models, where model input is a sequence of ordered and timestamped images, are still underexplored in the medical imaging domain that is featured by several unique challenges: 1) Sequences with various lengths; 2) Missing data or frame, and 3) High dimensionality. To this end, we propose a sequence-aware diffusion model (SADM) for the generation of longitudinal medical images. Recently, diffusion models have shown promising results in high-fidelity image generation. Our method extends this new technique by introducing a sequence-aware transformer as the conditional module in a diffusion model. The novel design enables learning longitudinal dependency even with missing data during training and allows autoregressive generation of a sequence of images during inference. Our extensive experiments on 3D longitudinal medical images demonstrate the effectiveness of SADM compared with baselines and alternative methods. The code is available at https://github.com/ubc-tea/SADM-Longitudinal-Medical-Image-Generation.",
+          "authors": [
+            "Jee Seok Yoon",
+            "Chenghao Zhang",
+            "Heung-Il Suk",
+            "Jia Guo",
+            "Xiaoxiao Li"
+          ],
+          "year": 2022,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2212.08228v2",
+          "external_ids": {
+            "ArXiv": "2212.08228v2"
+          },
+          "fields_of_study": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2212.08228v2.pdf"
+        },
+        "relevance_score": 63.5,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical",
+          "models"
+        ],
+        "score_breakdown": {
+          "title_overlap": 30.0,
+          "abstract_overlap": 20.0,
+          "source_api_rank": 10.5,
+          "citation_signal": 0.0,
+          "recency_signal": 3.0
+        },
+        "rank": 5
+      },
+      {
+        "source_rank": 7,
+        "paper": {
+          "paper_id": "ARXIV:2407.07295v3",
+          "title": "Deformation-Recovery Diffusion Model (DRDM): Instance Deformation for Image Manipulation and Synthesis",
+          "abstract": "In medical imaging, the diffusion models have shown great potential for synthetic image generation tasks. However, these approaches often lack the interpretable connections between the generated and real images and can create anatomically implausible structures or illusions. To address these limitations, we propose the Deformation-Recovery Diffusion Model (DRDM), a novel diffusion-based generative model that emphasises morphological transformation through deformation fields rather than direct image synthesis. DRDM introduces a topology-preserving deformation field generation strategy, which randomly samples and integrates multi-scale Deformation Velocity Fields (DVFs). DRDM is trained to learn to recover unrealistic deformation components, thus restoring randomly deformed images to a realistic distribution. This formulation enables the generation of diverse yet anatomically plausible deformations that preserve structural integrity, thereby improving data augmentation and synthesis for downstream tasks such as few-shot learning and image registration. Experiments on cardiac Magnetic Resonance Imaging and pulmonary Computed Tomography show that DRDM is capable of creating diverse, large-scale deformations, while maintaining anatomical plausibility of deformation fields. Additional evaluations on 2D image segmentation and 3D image registration tasks indicate notable performance gains, underscoring DRDM's potential to enhance both image manipulation and generative modelling in medical imaging applications. Project page: https://jianqingzheng.github.io/def_diff_rec/",
+          "authors": [
+            "Jian-Qing Zheng",
+            "Yuanhan Mo",
+            "Yang Sun",
+            "Jiahua Li",
+            "Fuping Wu",
+            "Ziyang Wang",
+            "Tonia Vincent",
+            "Bartłomiej W. Papież"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2407.07295v3",
+          "external_ids": {
+            "ArXiv": "2407.07295v3"
+          },
+          "fields_of_study": [
+            "eess.IV",
+            "cs.CE",
+            "cs.CV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2407.07295v3.pdf"
+        },
+        "relevance_score": 55.0,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical",
+          "models",
+          "segmentation"
+        ],
+        "score_breakdown": {
+          "title_overlap": 20.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 6.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 6
+      },
+      {
+        "source_rank": 9,
+        "paper": {
+          "paper_id": "ARXIV:2404.17357v4",
+          "title": "Simultaneous Tri-Modal Medical Image Fusion and Super-Resolution using Conditional Diffusion Model",
+          "abstract": "In clinical practice, tri-modal medical image fusion, compared to the existing dual-modal technique, can provide a more comprehensive view of the lesions, aiding physicians in evaluating the disease's shape, location, and biological activity. However, due to the limitations of imaging equipment and considerations for patient safety, the quality of medical images is usually limited, leading to sub-optimal fusion performance, and affecting the depth of image analysis by the physician. Thus, there is an urgent need for a technology that can both enhance image resolution and integrate multi-modal information. Although current image processing methods can effectively address image fusion and super-resolution individually, solving both problems synchronously remains extremely challenging. In this paper, we propose TFS-Diff, a simultaneously realize tri-modal medical image fusion and super-resolution model. Specially, TFS-Diff is based on the diffusion model generation of a random iterative denoising process. We also develop a simple objective function and the proposed fusion super-resolution loss, effectively evaluates the uncertainty in the fusion and ensures the stability of the optimization process. And the channel attention module is proposed to effectively integrate key information from different modalities for clinical diagnosis, avoiding information loss caused by multiple image processing. Extensive experiments on public Harvard datasets show that TFS-Diff significantly surpass the existing state-of-the-art methods in both quantitative and visual evaluations. Code is available at https://github.com/XylonXu01/TFS-Diff.",
+          "authors": [
+            "Yushen Xu",
+            "Xiaosong Li",
+            "Yuchan Jie",
+            "Haishu Tan"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2404.17357v4",
+          "external_ids": {
+            "ArXiv": "2404.17357v4"
+          },
+          "fields_of_study": [
+            "eess.IV",
+            "cs.CV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2404.17357v4.pdf"
+        },
+        "relevance_score": 52.0,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical"
+        ],
+        "score_breakdown": {
+          "title_overlap": 30.0,
+          "abstract_overlap": 15.0,
+          "source_api_rank": 3.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 7
+      },
+      {
+        "source_rank": 8,
+        "paper": {
+          "paper_id": "ARXIV:2504.08635v1",
+          "title": "Latent Diffusion Autoencoders: Toward Efficient and Meaningful Unsupervised Representation Learning in Medical Imaging",
+          "abstract": "This study presents Latent Diffusion Autoencoder (LDAE), a novel encoder-decoder diffusion-based framework for efficient and meaningful unsupervised learning in medical imaging, focusing on Alzheimer disease (AD) using brain MR from the ADNI database as a case study. Unlike conventional diffusion autoencoders operating in image space, LDAE applies the diffusion process in a compressed latent representation, improving computational efficiency and making 3D medical imaging representation learning tractable. To validate the proposed approach, we explore two key hypotheses: (i) LDAE effectively captures meaningful semantic representations on 3D brain MR associated with AD and ageing, and (ii) LDAE achieves high-quality image generation and reconstruction while being computationally efficient. Experimental results support both hypotheses: (i) linear-probe evaluations demonstrate promising diagnostic performance for AD (ROC-AUC: 90%, ACC: 84%) and age prediction (MAE: 4.1 years, RMSE: 5.2 years); (ii) the learned semantic representations enable attribute manipulation, yielding anatomically plausible modifications; (iii) semantic interpolation experiments show strong reconstruction of missing scans, with SSIM of 0.969 (MSE: 0.0019) for a 6-month gap. Even for longer gaps (24 months), the model maintains robust performance (SSIM > 0.93, MSE < 0.004), indicating an ability to capture temporal progression trends; (iv) compared to conventional diffusion autoencoders, LDAE significantly increases inference throughput (20x faster) while also enhancing reconstruction quality. These findings position LDAE as a promising framework for scalable medical imaging applications, with the potential to serve as a foundation model for medical image analysis. Code available at https://github.com/GabrieleLozupone/LDAE",
+          "authors": [
+            "Gabriele Lozupone",
+            "Alessandro Bria",
+            "Francesco Fontanella",
+            "Frederick J. A. Meijer",
+            "Claudio De Stefano",
+            "Henkjan Huisman"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2504.08635v1",
+          "external_ids": {
+            "ArXiv": "2504.08635v1"
+          },
+          "fields_of_study": [
+            "cs.CV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2504.08635v1.pdf"
+        },
+        "relevance_score": 44.0,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical"
+        ],
+        "score_breakdown": {
+          "title_overlap": 20.0,
+          "abstract_overlap": 15.0,
+          "source_api_rank": 4.5,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 8
+      },
+      {
+        "source_rank": 5,
+        "paper": {
+          "paper_id": "ARXIV:2504.09441v2",
+          "title": "Structure-Accurate Medical Image Translation via Dynamic Frequency Balance and Knowledge Guidance",
+          "abstract": "Multimodal medical images play a crucial role in the precise and comprehensive clinical diagnosis. Diffusion model is a powerful strategy to synthesize the required medical images. However, existing approaches still suffer from the problem of anatomical structure distortion due to the overfitting of high-frequency information and the weakening of low-frequency information. Thus, we propose a novel method based on dynamic frequency balance and knowledge guidance. Specifically, we first extract the low-frequency and high-frequency components by decomposing the critical features of the model using wavelet transform. Then, a dynamic frequency balance module is designed to adaptively adjust frequency for enhancing global low-frequency features and effective high-frequency details as well as suppressing high-frequency noise. To further overcome the challenges posed by the large differences between different medical modalities, we construct a knowledge-guided mechanism that fuses the prior clinical knowledge from a visual language model with visual features, to facilitate the generation of accurate anatomical structures. Experimental evaluations on multiple datasets show the proposed method achieves significant improvements in qualitative and quantitative assessments, verifying its effectiveness and superiority.",
+          "authors": [
+            "Jiahua Xu",
+            "Dawei Zhou",
+            "Lei Hu",
+            "Zaiyi Liu",
+            "Nannan Wang",
+            "Xinbo Gao"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2504.09441v2",
+          "external_ids": {
+            "ArXiv": "2504.09441v2"
+          },
+          "fields_of_study": [
+            "cs.CV",
+            "eess.IV"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2504.09441v2.pdf"
+        },
+        "relevance_score": 43.5,
+        "matched_query_terms": [
+          "diffusion",
+          "image",
+          "medical"
+        ],
+        "score_breakdown": {
+          "title_overlap": 20.0,
+          "abstract_overlap": 10.0,
+          "source_api_rank": 9.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 9
+      },
+      {
+        "source_rank": 3,
+        "paper": {
+          "paper_id": "ARXIV:2410.19288v1",
+          "title": "A Flow-based Truncated Denoising Diffusion Model for Super-resolution Magnetic Resonance Spectroscopic Imaging",
+          "abstract": "Magnetic Resonance Spectroscopic Imaging (MRSI) is a non-invasive imaging technique for studying metabolism and has become a crucial tool for understanding neurological diseases, cancers and diabetes. High spatial resolution MRSI is needed to characterize lesions, but in practice MRSI is acquired at low resolution due to time and sensitivity restrictions caused by the low metabolite concentrations. Therefore, there is an imperative need for a post-processing approach to generate high-resolution MRSI from low-resolution data that can be acquired fast and with high sensitivity. Deep learning-based super-resolution methods provided promising results for improving the spatial resolution of MRSI, but they still have limited capability to generate accurate and high-quality images. Recently, diffusion models have demonstrated superior learning capability than other generative models in various tasks, but sampling from diffusion models requires iterating through a large number of diffusion steps, which is time-consuming. This work introduces a Flow-based Truncated Denoising Diffusion Model (FTDDM) for super-resolution MRSI, which shortens the diffusion process by truncating the diffusion chain, and the truncated steps are estimated using a normalizing flow-based network. The network is conditioned on upscaling factors to enable multi-scale super-resolution. To train and evaluate the deep learning models, we developed a 1H-MRSI dataset acquired from 25 high-grade glioma patients. We demonstrate that FTDDM outperforms existing generative models while speeding up the sampling process by over 9-fold compared to the baseline diffusion model. Neuroradiologists' evaluations confirmed the clinical advantages of our method, which also supports uncertainty estimation and sharpness adjustment, extending its potential clinical applications.",
+          "authors": [
+            "Siyuan Dong",
+            "Zhuotong Cai",
+            "Gilbert Hangel",
+            "Wolfgang Bogner",
+            "Georg Widhalm",
+            "Yaqing Huang",
+            "Qinghao Liang",
+            "Chenyu You",
+            "Chathura Kumaragamage",
+            "Robert K. Fulbright",
+            "Amit Mahajan",
+            "Amin Karbasi",
+            "John A. Onofrey",
+            "Robin A. de Graaf",
+            "James S. Duncan"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2410.19288v1",
+          "external_ids": {
+            "ArXiv": "2410.19288v1"
+          },
+          "fields_of_study": [
+            "eess.IV",
+            "cs.CV",
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2410.19288v1.pdf"
+        },
+        "relevance_score": 36.0,
+        "matched_query_terms": [
+          "diffusion",
+          "models"
+        ],
+        "score_breakdown": {
+          "title_overlap": 10.0,
+          "abstract_overlap": 10.0,
+          "source_api_rank": 12.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 10
+      }
+    ],
+    "selected_paper_ids": [
+      "ARXIV:2407.03548v1",
+      "ARXIV:2406.17608v2",
+      "ARXIV:2405.12223v3"
+    ]
+  },
+  "literature_review": {
+    "paper_summaries": [
+      {
+        "paper_id": "ARXIV:2407.03548v1",
+        "problem": "Medical image segmentation using deep learning techniques.",
+        "method": "Hybrid diffusion framework combining discriminative segmentor and diffusion refiner.",
+        "key_findings": [
+          "Proposes HiDiff, a hybrid framework for segmentation.",
+          "Utilizes a binary Bernoulli diffusion model for refining segmentation masks.",
+          "Demonstrates superior performance on various datasets, especially for small objects."
+        ],
+        "limitations": [
+          "Abstract does not specify the computational efficiency or scalability of the proposed method."
+        ],
+        "relevance_explanation": "Addresses the limitations of existing discriminative models by incorporating generative diffusion models, making it relevant for improving medical image segmentation.",
+        "source_refs": [
+          "paper:ARXIV:2407.03548v1:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2406.17608v2",
+        "problem": "Uncertainties in medical image segmentation due to occlusions and ambiguous boundaries.",
+        "method": "Test-Time Generative Augmentation (TTGA) leveraging a domain-fine-tuned generative model.",
+        "key_findings": [
+          "TTGA improves segmentation accuracy and provides pixel-wise error estimation.",
+          "Demonstrates effectiveness across multiple datasets and segmentation tasks."
+        ],
+        "limitations": [
+          "Abstract does not detail the specific datasets used or the generalizability of the method."
+        ],
+        "relevance_explanation": "Offers a novel approach to augmenting test-time segmentation, addressing uncertainties in medical imaging, which is crucial for clinical applications.",
+        "source_refs": [
+          "paper:ARXIV:2406.17608v2:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2405.12223v3",
+        "problem": "Challenges in medical image translation and uncertainty estimation.",
+        "method": "Cascaded Multi-path Shortcut Diffusion Model (CMDM) combining GAN and DM.",
+        "key_findings": [
+          "CMDM achieves high-quality translations and provides uncertainty estimations.",
+          "Utilizes a multi-path shortcut strategy to enhance translation results."
+        ],
+        "limitations": [
+          "Abstract does not specify the computational cost or efficiency of the proposed method."
+        ],
+        "relevance_explanation": "Combines GAN and diffusion models to improve medical image translation, relevant for applications requiring high-quality image processing and uncertainty assessment.",
+        "source_refs": [
+          "paper:ARXIV:2405.12223v3:abstract"
+        ]
+      }
+    ],
+    "comparison": {
+      "common_themes": [
+        "Focus on improving medical image segmentation and translation using diffusion models.",
+        "Addressing uncertainties and limitations of traditional methods.",
+        "Utilization of generative models to enhance performance."
+      ],
+      "methodological_differences": [
+        "HiDiff combines discriminative and generative models, while TTGA focuses on test-time augmentation using generative models.",
+        "CMDM integrates GANs with diffusion models for image translation, differing from the other two papers' segmentation focus."
+      ],
+      "evidence_gaps": [
+        "Lack of detailed computational efficiency analysis in all abstracts.",
+        "Limited information on the datasets used for validation in TTGA and CMDM."
+      ],
+      "suggested_reading_order": [
+        "ARXIV:2407.03548v1",
+        "ARXIV:2406.17608v2",
+        "ARXIV:2405.12223v3"
+      ]
+    },
+    "topic_profile": {
+      "keywords": [
+        "medical image segmentation",
+        "diffusion models",
+        "generative models",
+        "uncertainty estimation",
+        "image translation"
+      ],
+      "fields": [
+        "medical imaging",
+        "computer vision",
+        "deep learning"
+      ],
+      "venue_fit_description": "All papers are published on arXiv, indicating they are in the early stages of dissemination and peer review, suitable for researchers interested in cutting-edge developments in medical image processing."
+    },
+    "source_level": "abstract_only",
+    "source_labels": [
+      "paper:ARXIV:2405.12223v3:abstract",
+      "paper:ARXIV:2406.17608v2:abstract",
+      "paper:ARXIV:2407.03548v1:abstract"
+    ],
+    "analysis_mode": "cross_paper_review"
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "cvpr",
+      "acronym": "CVPR",
+      "name": "Conference on Computer Vision and Pattern Recognition",
+      "fit_score": 90,
+      "confidence": "high",
+      "reasons": [
+        "Strong focus on computer vision, particularly in image segmentation and understanding, which aligns with the papers' themes.",
+        "The papers utilize advanced deep learning techniques relevant to the conference's scope."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "medical image segmentation",
+        "image recognition",
+        "segmentation"
+      ],
+      "official_url": "https://cvpr.thecvf.com/",
+      "scope_source_url": "https://cvpr.thecvf.com/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "iclr",
+      "acronym": "ICLR",
+      "name": "International Conference on Learning Representations",
+      "fit_score": 80,
+      "confidence": "medium",
+      "reasons": [
+        "Covers deep learning and representation learning, which are central to the methodologies used in the papers.",
+        "Relevant to the generative models discussed in the papers."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "deep learning",
+        "generative models"
+      ],
+      "official_url": "https://iclr.cc/",
+      "scope_source_url": "https://iclr.cc/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "neurips",
+      "acronym": "NeurIPS",
+      "name": "Conference on Neural Information Processing Systems",
+      "fit_score": 70,
+      "confidence": "low",
+      "reasons": [
+        "Focus on machine learning and generative models, which are relevant to the methodologies in the papers.",
+        "Less emphasis on computer vision compared to CVPR, but still applicable."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "generative models",
+        "machine learning"
+      ],
+      "official_url": "https://neurips.cc/",
+      "scope_source_url": "https://neurips.cc/",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "summary_source_level": "abstract_only",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "The comparison is based on abstracts, not full papers. Conference results are topical-fit suggestions only. Verify scope and deadlines on official conference sites."
+  }
+}

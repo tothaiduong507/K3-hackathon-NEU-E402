@@ -1,0 +1,490 @@
+{
+  "status": "completed",
+  "run_type": "smart_literature_review",
+  "run_id": "review_20260730T140153Z_faf94a98",
+  "created_at": "2026-07-30T14:01:53.487479+00:00",
+  "model": "gpt-4o-mini",
+  "query": "districting problem",
+  "search": {
+    "source": "arxiv",
+    "primary_error": "HTTPError: 403 Client Error: Forbidden for url: https://api.semanticscholar.org/graph/v1/paper/search?query=districting+problem&limit=10&fields=paperId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CcitationCount%2Cvenue%2Curl%2CexternalIds%2CfieldsOfStudy%2CopenAccessPdf&year=2020-",
+    "result_count": 7,
+    "filtered_count": 7,
+    "filters": {
+      "min_year": 2020,
+      "min_citations": 0
+    },
+    "ranked_papers": [
+      {
+        "source_rank": 1,
+        "paper": {
+          "paper_id": "ARXIV:2501.17277v2",
+          "title": "Hardness and Approximation Algorithms for Balanced Districting Problems",
+          "abstract": "We introduce and study the problem of balanced districting, where given an undirected graph with vertices carrying two types of weights (different population, resource types, etc) the goal is to maximize the total weights covered in vertex disjoint districts such that each district is a star or (in general) a connected induced subgraph with the two weights to be balanced. This problem is strongly motivated by political redistricting, where contiguity, population balance, and compactness are essential. We provide hardness and approximation algorithms for this problem. In particular, we show NP-hardness for an approximation better than $n^{1/2-δ}$ for any constant $δ>0$ in general graphs even when the districts are star graphs, as well as NP-hardness on complete graphs, tree graphs, planar graphs and other restricted settings. On the other hand, we develop an algorithm for balanced star districting that gives an $O(\\sqrt{n})$-approximation on any graph (which is basically tight considering matching hardness of approximation results), an $O(\\log n)$ approximation on planar graphs with extensions to minor-free graphs. Our algorithm uses a modified Whack-a-Mole algorithm [Bhattacharya, Kiss, and Saranurak, SODA 2023] to find a sparse solution of a fractional packing linear program (despite exponentially many variables) and to get a good approximation ratio of the rounding procedure, a crucial element in the analysis is the \\emph{balanced scattering separators} for planar graphs and minor-free graphs - separators that can be partitioned into a small number of $k$-hop independent sets for some constant $k$ - which may find independent interest in solving other packing style problems.",
+          "authors": [
+            "Prathamesh Dharangutte",
+            "Jie Gao",
+            "Shang-En Huang",
+            "Fang-Yi Yu"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2501.17277v2",
+          "external_ids": {
+            "ArXiv": "2501.17277v2"
+          },
+          "fields_of_study": [
+            "cs.DS"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2501.17277v2.pdf"
+        },
+        "relevance_score": 69.5,
+        "matched_query_terms": [
+          "districting",
+          "problem"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 15.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 1
+      },
+      {
+        "source_rank": 2,
+        "paper": {
+          "paper_id": "ARXIV:2510.25614v1",
+          "title": "Why Districting Becomes NP-hard",
+          "abstract": "This paper investigates why and when the edge-based districting problem becomes computationally intractable. The overall problem is represented as an exact mathematical programming formulation consisting of an objective function and several constraint groups, each enforcing a well-known districting criterion such as balance, contiguity, or compactness. While districting is known to be NP-hard in general, we study what happens when specific constraint groups are relaxed or removed. The results identify precise boundaries between tractable subproblems (in P) and intractable ones (NP-hard). The paper also discusses implications on node-based analogs of the featured districting problems, and it considers alternative notions of certain criteria in its analysis.",
+          "authors": [
+            "Niklas Jost",
+            "Adolfo Escobedo",
+            "Alice Kirchheim"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2510.25614v1",
+          "external_ids": {
+            "ArXiv": "2510.25614v1"
+          },
+          "fields_of_study": [
+            "cs.DM"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2510.25614v1.pdf"
+        },
+        "relevance_score": 67.36,
+        "matched_query_terms": [
+          "districting",
+          "problem"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 12.86,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 2
+      },
+      {
+        "source_rank": 3,
+        "paper": {
+          "paper_id": "ARXIV:2412.08287v1",
+          "title": "DistrictNet: Decision-aware learning for geographical districting",
+          "abstract": "Districting is a complex combinatorial problem that consists in partitioning a geographical area into small districts. In logistics, it is a major strategic decision determining operating costs for several years. Solving districting problems using traditional methods is intractable even for small geographical areas and existing heuristics often provide sub-optimal results. We present a structured learning approach to find high-quality solutions to real-world districting problems in a few minutes. It is based on integrating a combinatorial optimization layer, the capacitated minimum spanning tree problem, into a graph neural network architecture. To train this pipeline in a decision-aware fashion, we show how to construct target solutions embedded in a suitable space and learn from target solutions. Experiments show that our approach outperforms existing methods as it can significantly reduce costs on real-world cities.",
+          "authors": [
+            "Cheikh Ahmed",
+            "Alexandre Forel",
+            "Axel Parmentier",
+            "Thibaut Vidal"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2412.08287v1",
+          "external_ids": {
+            "ArXiv": "2412.08287v1"
+          },
+          "fields_of_study": [
+            "cs.LG",
+            "math.OC"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2412.08287v1.pdf"
+        },
+        "relevance_score": 64.71,
+        "matched_query_terms": [
+          "districting",
+          "problem"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 10.71,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 3
+      },
+      {
+        "source_rank": 4,
+        "paper": {
+          "paper_id": "ARXIV:2303.05631v1",
+          "title": "A $k$-medoids Approach to Exploring Districting Plans",
+          "abstract": "Researchers and legislators alike continue the search for methods of drawing fair districting plans. A districting plan is a partition of a state's subdivisions (e.g. counties, voting precincts, etc.). By modeling these districting plans as graphs, they are easier to create, store, and operate on. Since graph partitioning with balancing populations is a computationally intractable (NP-hard) problem most attempts to solve them use heuristic methods. In this paper, we present a variant on the $k$-medoids algorithm where, given a set of initial medoids, we find a partition of the graph's vertices to admit a districting plan. We first use the $k$-medoids process to find an initial districting plan, then use local search strategies to fine-tune the results, such as reducing population imbalances between districts. We also experiment with coarsening the graph to work with fewer vertices. The algorithm is tested on Iowa and Florida using 2010 census data to evaluate the effectiveness.",
+          "authors": [
+            "Jared Grove",
+            "Suely Oliveira",
+            "Anthony Pizzimenti",
+            "David E. Stewart"
+          ],
+          "year": 2023,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2303.05631v1",
+          "external_ids": {
+            "ArXiv": "2303.05631v1"
+          },
+          "fields_of_study": [
+            "math.CO"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2303.05631v1.pdf"
+        },
+        "relevance_score": 62.07,
+        "matched_query_terms": [
+          "districting",
+          "problem"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 8.57,
+          "citation_signal": 0.0,
+          "recency_signal": 3.5
+        },
+        "rank": 4
+      },
+      {
+        "source_rank": 5,
+        "paper": {
+          "paper_id": "ARXIV:2102.11864v3",
+          "title": "A Refined Complexity Analysis of Fair Districting over Graphs",
+          "abstract": "We study the NP-hard Fair Connected Districting problem recently proposed by Stoica et al. [AAMAS 2020]: Partition a vertex-colored graph into k connected components (subsequently referred to as districts) so that in every district the most frequent color occurs at most a given number of times more often than the second most frequent color. Fair Connected Districting is motivated by various real-world scenarios where agents of different types, which are one-to-one represented by nodes in a network, have to be partitioned into disjoint districts. Herein, one strives for \"fair districts\" without any type being in a dominating majority in any of the districts. This is to e.g. prevent segregation or political domination of some political party. We conduct a fine-grained analysis of the (parameterized) computational complexity of Fair Connected Districting. In particular, we prove that it is polynomial-time solvable on paths, cycles, stars, and caterpillars, but already becomes NP-hard on trees. Motivated by the latter negative result, we perform a parameterized complexity analysis with respect to various graph parameters, including treewidth, and problem-specific parameters, including, the numbers of colors and districts. We obtain a rich and diverse, close to complete picture of the corresponding parameterized complexity landscape (that is, a classification along the complexity classes FPT, XP, W[1]-hard, and para-NP-hard).",
+          "authors": [
+            "Niclas Boehmer",
+            "Tomohiro Koana",
+            "Rolf Niedermeier"
+          ],
+          "year": 2021,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2102.11864v3",
+          "external_ids": {
+            "ArXiv": "2102.11864v3"
+          },
+          "fields_of_study": [
+            "cs.GT",
+            "cs.DM"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2102.11864v3.pdf"
+        },
+        "relevance_score": 58.93,
+        "matched_query_terms": [
+          "districting",
+          "problem"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 6.43,
+          "citation_signal": 0.0,
+          "recency_signal": 2.5
+        },
+        "rank": 5
+      },
+      {
+        "source_rank": 7,
+        "paper": {
+          "paper_id": "ARXIV:2002.06849v1",
+          "title": "Gerrymandering and fair districting in parallel voting systems",
+          "abstract": "Switching from one electoral system to another one is frequently criticized by the opposition and is viewed as a means for the ruling party to stay in power. In particular, when the new electoral system is a parallel voting (or a single-member district) system, the ruling party is usually suspected of a biased way of partitioning the state into electoral districts such that based on a priori knowledge it has more chances to win in a maximum possible number of districts. In this paper, we propose a new methodology for deciding whether a particular party benefits from a given districting map under a parallel voting system. As a part of our methodology, we formulate and solve several gerrymandering problems. We showcased the application of our approach to the Moldovan parliamentary elections of 2019. Our results suggest that contrary to the arguments of previous studies, there is no clear evidence to consider that the districting map used in those elections was unfair.",
+          "authors": [
+            "Igor Mandric",
+            "Igor Roşca",
+            "Radu Buzatu"
+          ],
+          "year": 2020,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2002.06849v1",
+          "external_ids": {
+            "ArXiv": "2002.06849v1"
+          },
+          "fields_of_study": [
+            "physics.soc-ph",
+            "math.OC"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2002.06849v1.pdf"
+        },
+        "relevance_score": 41.64,
+        "matched_query_terms": [
+          "districting"
+        ],
+        "score_breakdown": {
+          "title_overlap": 25.0,
+          "abstract_overlap": 12.5,
+          "source_api_rank": 2.14,
+          "citation_signal": 0.0,
+          "recency_signal": 2.0
+        },
+        "rank": 6
+      },
+      {
+        "source_rank": 6,
+        "paper": {
+          "paper_id": "ARXIV:2404.10964v1",
+          "title": "Drawing Competitive Districts in Redistricting",
+          "abstract": "In the process of redistricting, one important metric is the number of competitive districts, that is, districts where both parties have a reasonable chance of winning a majority of votes. Competitive districts are important for achieving proportionality, responsiveness, and other desirable qualities; some states even directly list competitiveness in their legally-codified districting requirements. In this work, we discuss the problem of drawing plans with at least a fixed number of competitive districts. In addition to the standard, ``vote-band'' measure of competitivenesss (i.e., how close was the last election?), we propose a measure that explicitly considers ``swing voters'' - the segment of the population that may choose to vote either way, or not vote at all, in a given election. We present two main, contrasting results. First, from a computational complexity perspective, we show that the task of drawing plans with competitive districts is NP-hard, even on very natural instances where the districting task itself is easy (e.g., small rectangular grids of population-balanced cells). Second, however, we show that a simple hill-climbing procedure can in practice find districtings on real states in which all the districts are competitive. We present the results of the latter on the precinct-level graphs of the U.S. states of North Carolina and Arizona, and discuss trade-offs between competitiveness and other desirable qualities.",
+          "authors": [
+            "Gabriel Chuang",
+            "Oussama Hanguir",
+            "Clifford Stein"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2404.10964v1",
+          "external_ids": {
+            "ArXiv": "2404.10964v1"
+          },
+          "fields_of_study": [
+            "cs.DS",
+            "cs.CY"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2404.10964v1.pdf"
+        },
+        "relevance_score": 33.29,
+        "matched_query_terms": [
+          "districting",
+          "problem"
+        ],
+        "score_breakdown": {
+          "title_overlap": 0.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 4.29,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 7
+      }
+    ],
+    "selected_paper_ids": [
+      "ARXIV:2501.17277v2",
+      "ARXIV:2510.25614v1",
+      "ARXIV:2412.08287v1",
+      "ARXIV:2303.05631v1",
+      "ARXIV:2102.11864v3"
+    ]
+  },
+  "literature_review": {
+    "paper_summaries": [
+      {
+        "paper_id": "ARXIV:2501.17277v2",
+        "problem": "Balanced districting problem with two types of weights on vertices.",
+        "method": "Hardness and approximation algorithms; NP-hardness proofs; approximation algorithms for balanced star districting.",
+        "key_findings": [
+          "Introduces balanced districting problem motivated by political redistricting.",
+          "Shows NP-hardness for approximations better than $n^{1/2-δ}$ in general graphs.",
+          "Develops an $O(\frac{n}{\text{log} n})$ approximation for planar graphs."
+        ],
+        "limitations": [
+          "Abstract does not provide specific details on the performance of the algorithms in practical scenarios."
+        ],
+        "relevance_explanation": "Addresses computational challenges in districting, relevant for political and resource allocation contexts.",
+        "source_refs": [
+          "paper:ARXIV:2501.17277v2:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2510.25614v1",
+        "problem": "Understanding NP-hardness in edge-based districting problems.",
+        "method": "Mathematical programming formulation; analysis of constraint groups.",
+        "key_findings": [
+          "Identifies boundaries between tractable and NP-hard subproblems.",
+          "Discusses implications for node-based analogs of districting problems."
+        ],
+        "limitations": [
+          "Abstract does not specify the exact constraints analyzed or the results of relaxing them."
+        ],
+        "relevance_explanation": "Provides insights into the complexity of districting problems, crucial for algorithm design.",
+        "source_refs": [
+          "paper:ARXIV:2510.25614v1:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2412.08287v1",
+        "problem": "Districting as a combinatorial optimization problem in logistics.",
+        "method": "Structured learning approach integrating combinatorial optimization with graph neural networks.",
+        "key_findings": [
+          "Presents a decision-aware learning approach that outperforms existing heuristics.",
+          "Demonstrates significant cost reductions in real-world applications."
+        ],
+        "limitations": [
+          "Abstract lacks details on the specific datasets used for training and testing."
+        ],
+        "relevance_explanation": "Offers a novel approach to solving districting problems efficiently, relevant for practical applications.",
+        "source_refs": [
+          "paper:ARXIV:2412.08287v1:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2303.05631v1",
+        "problem": "Fair districting plans using graph partitioning.",
+        "method": "$k$-medoids algorithm with local search strategies.",
+        "key_findings": [
+          "Introduces a variant of the $k$-medoids algorithm for districting.",
+          "Tests effectiveness on real census data from Iowa and Florida."
+        ],
+        "limitations": [
+          "Abstract does not provide quantitative results or comparisons with other methods."
+        ],
+        "relevance_explanation": "Explores heuristic methods for districting, relevant for practical implementations.",
+        "source_refs": [
+          "paper:ARXIV:2303.05631v1:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2102.11864v3",
+        "problem": "Fair Connected Districting problem and its complexity.",
+        "method": "Fine-grained analysis of computational complexity; parameterized complexity analysis.",
+        "key_findings": [
+          "Proves polynomial-time solvability on certain graph types; NP-hardness on trees.",
+          "Provides a comprehensive classification of complexity classes."
+        ],
+        "limitations": [
+          "Abstract does not detail the implications of the parameterized complexity results."
+        ],
+        "relevance_explanation": "Contributes to understanding fairness in districting, important for equitable political representation.",
+        "source_refs": [
+          "paper:ARXIV:2102.11864v3:abstract"
+        ]
+      }
+    ],
+    "comparison": {
+      "common_themes": [
+        "Focus on districting problems and their computational complexity.",
+        "Exploration of algorithms and heuristics for solving districting issues.",
+        "Consideration of fairness and balance in districting."
+      ],
+      "methodological_differences": [
+        "Some papers focus on theoretical hardness and approximation (ARXIV:2501.17277v2, ARXIV:2510.25614v1, ARXIV:2102.11864v3), while others employ machine learning techniques (ARXIV:2412.08287v1) or heuristic methods (ARXIV:2303.05631v1).",
+        "Different approaches to defining and analyzing constraints in districting problems."
+      ],
+      "evidence_gaps": [
+        "Limited empirical results in some abstracts, particularly regarding the performance of proposed algorithms in real-world scenarios.",
+        "Lack of detailed comparisons between different methods and their effectiveness."
+      ],
+      "suggested_reading_order": [
+        "ARXIV:2501.17277v2",
+        "ARXIV:2510.25614v1",
+        "ARXIV:2102.11864v3",
+        "ARXIV:2412.08287v1",
+        "ARXIV:2303.05631v1"
+      ]
+    },
+    "topic_profile": {
+      "keywords": [
+        "districting",
+        "NP-hardness",
+        "approximation algorithms",
+        "fairness",
+        "graph theory"
+      ],
+      "fields": [
+        "Computer Science",
+        "Operations Research",
+        "Political Science"
+      ],
+      "venue_fit_description": "Papers are suitable for venues focusing on algorithmic research, combinatorial optimization, and applications in political science."
+    },
+    "source_level": "abstract_only",
+    "source_labels": [
+      "paper:ARXIV:2102.11864v3:abstract",
+      "paper:ARXIV:2303.05631v1:abstract",
+      "paper:ARXIV:2412.08287v1:abstract",
+      "paper:ARXIV:2501.17277v2:abstract",
+      "paper:ARXIV:2510.25614v1:abstract"
+    ]
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "icml",
+      "acronym": "ICML",
+      "name": "International Conference on Machine Learning",
+      "fit_score": 30,
+      "confidence": "low",
+      "reasons": [
+        "Focus on algorithms and optimization which aligns with the methods used in the papers."
+      ],
+      "risks": [
+        "The primary focus on machine learning may not fully encompass the theoretical aspects of districting problems."
+      ],
+      "evidence_topics": [
+        "machine learning",
+        "optimization"
+      ],
+      "official_url": "https://icml.cc/",
+      "scope_source_url": "https://icml.cc/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "neurips",
+      "acronym": "NeurIPS",
+      "name": "Conference on Neural Information Processing Systems",
+      "fit_score": 25,
+      "confidence": "low",
+      "reasons": [
+        "Similar to ICML, it covers algorithms and optimization, but with a stronger emphasis on computational neuroscience."
+      ],
+      "risks": [
+        "May not be the best fit due to its focus on neural networks rather than combinatorial optimization."
+      ],
+      "evidence_topics": [
+        "machine learning",
+        "optimization"
+      ],
+      "official_url": "https://neurips.cc/",
+      "scope_source_url": "https://neurips.cc/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "kdd",
+      "acronym": "KDD",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "fit_score": 20,
+      "confidence": "low",
+      "reasons": [
+        "Includes graph mining and applied data science, which could relate to districting problems."
+      ],
+      "risks": [
+        "The focus on data mining may not align closely with the theoretical aspects of the papers."
+      ],
+      "evidence_topics": [
+        "graph mining",
+        "applied data science"
+      ],
+      "official_url": "https://kdd.org/",
+      "scope_source_url": "https://kdd.org/",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "summary_source_level": "abstract_only",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "The comparison is based on abstracts, not full papers. Conference results are topical-fit suggestions only. Verify scope and deadlines on official conference sites."
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "status": "completed",
+  "run_type": "smart_literature_review",
+  "run_id": "review_20260730T140743Z_135c5443",
+  "created_at": "2026-07-30T14:07:43.106884+00:00",
+  "model": "gpt-4o-mini",
+  "query": "Large Language Model Hallucination Mitigation",
+  "search": {
+    "source": "arxiv",
+    "primary_error": "HTTPError: 403 Client Error: Forbidden for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Large+Language+Model+Hallucination+Mitigation&limit=10&fields=paperId%2Ctitle%2Cabstract%2Cauthors%2Cyear%2CcitationCount%2Cvenue%2Curl%2CexternalIds%2CfieldsOfStudy%2CopenAccessPdf&year=2022-",
+    "result_count": 10,
+    "filtered_count": 10,
+    "filters": {
+      "min_year": 2022,
+      "min_citations": 0
+    },
+    "ranked_papers": [
+      {
+        "source_rank": 1,
+        "paper": {
+          "paper_id": "ARXIV:2409.11353v3",
+          "title": "THaMES: An End-to-End Tool for Hallucination Mitigation and Evaluation in Large Language Models",
+          "abstract": "Hallucination, the generation of factually incorrect content, is a growing challenge in Large Language Models (LLMs). Existing detection and mitigation methods are often isolated and insufficient for domain-specific needs, lacking a standardized pipeline. This paper introduces THaMES (Tool for Hallucination Mitigations and EvaluationS), an integrated framework and library addressing this gap. THaMES offers an end-to-end solution for evaluating and mitigating hallucinations in LLMs, featuring automated test set generation, multifaceted benchmarking, and adaptable mitigation strategies. It automates test set creation from any corpus, ensuring high data quality, diversity, and cost-efficiency through techniques like batch processing, weighted sampling, and counterfactual validation. THaMES assesses a model's ability to detect and reduce hallucinations across various tasks, including text generation and binary classification, applying optimal mitigation strategies like In-Context Learning (ICL), Retrieval Augmented Generation (RAG), and Parameter-Efficient Fine-tuning (PEFT). Evaluations of state-of-the-art LLMs using a knowledge base of academic papers, political news, and Wikipedia reveal that commercial models like GPT-4o benefit more from RAG than ICL, while open-weight models like Llama-3.1-8B-Instruct and Mistral-Nemo gain more from ICL. Additionally, PEFT significantly enhances the performance of Llama-3.1-8B-Instruct in both evaluation tasks.",
+          "authors": [
+            "Mengfei Liang",
+            "Archish Arun",
+            "Zekun Wu",
+            "Cristian Munoz",
+            "Jonathan Lutch",
+            "Emre Kazim",
+            "Adriano Koshiyama",
+            "Philip Treleaven"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2409.11353v3",
+          "external_ids": {
+            "ArXiv": "2409.11353v3"
+          },
+          "fields_of_study": [
+            "cs.CL"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2409.11353v3.pdf"
+        },
+        "relevance_score": 84.0,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large",
+          "mitigation",
+          "model"
+        ],
+        "score_breakdown": {
+          "title_overlap": 40.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 15.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 1
+      },
+      {
+        "source_rank": 5,
+        "paper": {
+          "paper_id": "ARXIV:2310.00259v3",
+          "title": "AutoHall: Automated Factuality Hallucination Dataset Generation for Large Language Models",
+          "abstract": "Large language models (LLMs) have gained broad applications across various domains but still struggle with hallucinations. Currently, hallucinations occur frequently in the generation of factual content and pose a great challenge to trustworthy LLMs. However, hallucination detection is hindered by the laborious and expensive manual annotation of hallucinatory content. Meanwhile, as different LLMs exhibit distinct types and rates of hallucination, the collection of hallucination datasets is inherently model-specific, which also increases the cost. To address this issue, this paper proposes a method called $\\textbf{AutoHall}$ for $\\underline{Auto}$matically constructing model-specific $\\underline{Hall}$ucination datasets based on existing fact-checking datasets. The empirical results reveal variations in hallucination proportions and types among different models. Moreover, we introduce a zero-resource and black-box hallucination detection method based on self-contradiction to recognize the hallucination in our constructed dataset, achieving superior detection performance compared to baselines. Further analysis on our dataset provides insight into factors that may contribute to LLM hallucinations. Our codes and datasets are publicly available at https://github.com/zouyingcao/AutoHall.",
+          "authors": [
+            "Zouying Cao",
+            "Yifei Yang",
+            "XiaoJing Li",
+            "Hai Zhao"
+          ],
+          "year": 2023,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2310.00259v3",
+          "external_ids": {
+            "ArXiv": "2310.00259v3"
+          },
+          "fields_of_study": [
+            "cs.CL"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2310.00259v3.pdf"
+        },
+        "relevance_score": 62.5,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large",
+          "model"
+        ],
+        "score_breakdown": {
+          "title_overlap": 30.0,
+          "abstract_overlap": 20.0,
+          "source_api_rank": 9.0,
+          "citation_signal": 0.0,
+          "recency_signal": 3.5
+        },
+        "rank": 2
+      },
+      {
+        "source_rank": 6,
+        "paper": {
+          "paper_id": "ARXIV:2407.04693v2",
+          "title": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+          "abstract": "Large language models (LLMs) exhibit hallucinations in long-form question-answering tasks across various domains and wide applications. Current hallucination detection and mitigation datasets are limited in domains and sizes, which struggle to scale due to prohibitive labor costs and insufficient reliability of existing hallucination annotators. To facilitate the scalable oversight of LLM hallucinations, this paper introduces an iterative self-training framework that simultaneously and progressively scales up the hallucination annotation dataset and improves the accuracy of the hallucination annotator. Based on the Expectation Maximization (EM) algorithm, in each iteration, the framework first applies a hallucination annotation pipeline to annotate a scaled dataset and then trains a more accurate hallucination annotator on the dataset. This new hallucination annotator is adopted in the hallucination annotation pipeline used for the next iteration. Extensive experimental results demonstrate that the finally obtained hallucination annotator with only 7B parameters surpasses the performance of GPT-4 and obtains new state-of-the-art hallucination detection results on HaluEval and HalluQA by zero-shot inference. Such an annotator can not only evaluate the hallucination levels of various LLMs on the large-scale dataset but also help to mitigate the hallucination of LLMs generations, with the Natural Language Inference (NLI) metric increasing from 25% to 37% on HaluEval.",
+          "authors": [
+            "Yuzhe Gu",
+            "Ziwei Ji",
+            "Wenwei Zhang",
+            "Chengqi Lyu",
+            "Dahua Lin",
+            "Kai Chen"
+          ],
+          "year": 2024,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2407.04693v2",
+          "external_ids": {
+            "ArXiv": "2407.04693v2"
+          },
+          "fields_of_study": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2407.04693v2.pdf"
+        },
+        "relevance_score": 61.5,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large",
+          "mitigation"
+        ],
+        "score_breakdown": {
+          "title_overlap": 30.0,
+          "abstract_overlap": 20.0,
+          "source_api_rank": 7.5,
+          "citation_signal": 0.0,
+          "recency_signal": 4.0
+        },
+        "rank": 3
+      },
+      {
+        "source_rank": 4,
+        "paper": {
+          "paper_id": "ARXIV:2307.15343v2",
+          "title": "Med-HALT: Medical Domain Hallucination Test for Large Language Models",
+          "abstract": "This research paper focuses on the challenges posed by hallucinations in large language models (LLMs), particularly in the context of the medical domain. Hallucination, wherein these models generate plausible yet unverified or incorrect information, can have serious consequences in healthcare applications. We propose a new benchmark and dataset, Med-HALT (Medical Domain Hallucination Test), designed specifically to evaluate and reduce hallucinations. Med-HALT provides a diverse multinational dataset derived from medical examinations across various countries and includes multiple innovative testing modalities. Med-HALT includes two categories of tests reasoning and memory-based hallucination tests, designed to assess LLMs's problem-solving and information retrieval abilities. Our study evaluated leading LLMs, including Text Davinci, GPT-3.5, LlaMa-2, MPT, and Falcon, revealing significant differences in their performance. The paper provides detailed insights into the dataset, promoting transparency and reproducibility. Through this work, we aim to contribute to the development of safer and more reliable language models in healthcare. Our benchmark can be found at medhalt.github.io",
+          "authors": [
+            "Ankit Pal",
+            "Logesh Kumar Umapathi",
+            "Malaikannan Sankarasubbu"
+          ],
+          "year": 2023,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2307.15343v2",
+          "external_ids": {
+            "ArXiv": "2307.15343v2"
+          },
+          "fields_of_study": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2307.15343v2.pdf"
+        },
+        "relevance_score": 59.0,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large"
+        ],
+        "score_breakdown": {
+          "title_overlap": 30.0,
+          "abstract_overlap": 15.0,
+          "source_api_rank": 10.5,
+          "citation_signal": 0.0,
+          "recency_signal": 3.5
+        },
+        "rank": 4
+      },
+      {
+        "source_rank": 8,
+        "paper": {
+          "paper_id": "ARXIV:2306.13549v4",
+          "title": "A Survey on Multimodal Large Language Models",
+          "abstract": "Recently, Multimodal Large Language Model (MLLM) represented by GPT-4V has been a new rising research hotspot, which uses powerful Large Language Models (LLMs) as a brain to perform multimodal tasks. The surprising emergent capabilities of MLLM, such as writing stories based on images and OCR-free math reasoning, are rare in traditional multimodal methods, suggesting a potential path to artificial general intelligence. To this end, both academia and industry have endeavored to develop MLLMs that can compete with or even better than GPT-4V, pushing the limit of research at a surprising speed. In this paper, we aim to trace and summarize the recent progress of MLLMs. First of all, we present the basic formulation of MLLM and delineate its related concepts, including architecture, training strategy and data, as well as evaluation. Then, we introduce research topics about how MLLMs can be extended to support more granularity, modalities, languages, and scenarios. We continue with multimodal hallucination and extended techniques, including Multimodal ICL (M-ICL), Multimodal CoT (M-CoT), and LLM-Aided Visual Reasoning (LAVR). To conclude the paper, we discuss existing challenges and point out promising research directions. In light of the fact that the era of MLLM has only just begun, we will keep updating this survey and hope it can inspire more research. An associated GitHub link collecting the latest papers is available at https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models.",
+          "authors": [
+            "Shukang Yin",
+            "Chaoyou Fu",
+            "Sirui Zhao",
+            "Ke Li",
+            "Xing Sun",
+            "Tong Xu",
+            "Enhong Chen"
+          ],
+          "year": 2023,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2306.13549v4",
+          "external_ids": {
+            "ArXiv": "2306.13549v4"
+          },
+          "fields_of_study": [
+            "cs.CV",
+            "cs.AI",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2306.13549v4.pdf"
+        },
+        "relevance_score": 48.0,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large",
+          "model"
+        ],
+        "score_breakdown": {
+          "title_overlap": 20.0,
+          "abstract_overlap": 20.0,
+          "source_api_rank": 4.5,
+          "citation_signal": 0.0,
+          "recency_signal": 3.5
+        },
+        "rank": 5
+      },
+      {
+        "source_rank": 3,
+        "paper": {
+          "paper_id": "ARXIV:2506.22486v1",
+          "title": "Hallucination Detection with Small Language Models",
+          "abstract": "Since the introduction of ChatGPT, large language models (LLMs) have demonstrated significant utility in various tasks, such as answering questions through retrieval-augmented generation. Context can be retrieved using a vectorized database, serving as a foundation for LLMs to generate responses. However, hallucinations in responses can undermine the reliability of LLMs in practical applications, and they are not easily detectable in the absence of ground truth, particularly in question-and-answer scenarios. This paper proposes a framework that integrates multiple small language models to verify responses generated by LLMs using the retrieved context from a vectorized database. By breaking down the responses into individual sentences and utilizing the probability of generating \"Yes\" tokens from the outputs of multiple models for a given set of questions, responses, and relevant context, hallucinations can be detected. The proposed framework is validated through experiments with real datasets comprising over 100 sets of questions, answers, and contexts, including responses with fully and partially correct sentences. The results demonstrate a 10\\% improvement in F1 scores for detecting correct responses compared to hallucinations, indicating that multiple small language models can be effectively employed for answer verification, providing a scalable and efficient solution for both academic and practical applications.",
+          "authors": [
+            "Ming Cheung"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2506.22486v1",
+          "external_ids": {
+            "ArXiv": "2506.22486v1"
+          },
+          "fields_of_study": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2506.22486v1.pdf"
+        },
+        "relevance_score": 46.5,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large"
+        ],
+        "score_breakdown": {
+          "title_overlap": 20.0,
+          "abstract_overlap": 10.0,
+          "source_api_rank": 12.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 6
+      },
+      {
+        "source_rank": 7,
+        "paper": {
+          "paper_id": "ARXIV:2604.17982v1",
+          "title": "Mitigating Multimodal Hallucination via Phase-wise Self-reward",
+          "abstract": "Large Vision-Language Models (LVLMs) still struggle with vision hallucination, where generated responses are inconsistent with the visual input. Existing methods either rely on large-scale annotated data for fine-tuning, which incurs massive computational overhead, or employ static post-hoc strategies that overlook the dynamic nature of hallucination emergence. To address these, we introduce a new self-rewarding framework, enabling dynamic hallucination mitigation at inference time without external supervision. On the empirical side, we reveal that visual hallucination exhibits phase-wise dynamic patterns, peaking at the onset of each semantic phase. Drawing on these insights, we propose \\textbf{PSRD} (\\textbf{Phase-wise \\textbf{S}elf-\\textbf{R}eward \\textbf{D}ecoding) for online hallucination correction guided by phase-wise self-reward signals. To reduce the cost of repeated self-evaluation during decoding, we distill the hallucination guidance signal from LVLMs into a lightweight reward model. The reward model subsequently provides on-the-fly guidance for targeted intervention during the decoding process, enabling precise hallucination suppression. The proposed PSRD significantly reduces the hallucination rate of LLaVA-1.5-7B by 50.0% and consistently outperforms existing post-hoc methods across five hallucination evaluation benchmarks for four LVLMs. Further analysis confirms that PSRD effectively mitigates hallucination propagation and achieves a highly controllable trade-off between strong performance and inference efficiency.",
+          "authors": [
+            "Yu Zhang",
+            "Chuyang Sun",
+            "Kehai Chen",
+            "Xuefeng Bai",
+            "Yang Xiang",
+            "Min Zhang"
+          ],
+          "year": 2026,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2604.17982v1",
+          "external_ids": {
+            "ArXiv": "2604.17982v1"
+          },
+          "fields_of_study": [
+            "cs.CV",
+            "cs.CL"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2604.17982v1.pdf"
+        },
+        "relevance_score": 46.0,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large",
+          "mitigation",
+          "model"
+        ],
+        "score_breakdown": {
+          "title_overlap": 10.0,
+          "abstract_overlap": 25.0,
+          "source_api_rank": 6.0,
+          "citation_signal": 0.0,
+          "recency_signal": 5.0
+        },
+        "rank": 7
+      },
+      {
+        "source_rank": 2,
+        "paper": {
+          "paper_id": "ARXIV:2503.21676v2",
+          "title": "How do language models learn facts? Dynamics, curricula and hallucinations",
+          "abstract": "Large language models accumulate vast knowledge during pre-training, yet the dynamics governing this acquisition remain poorly understood. This work investigates the learning dynamics of language models on a synthetic factual recall task, uncovering three key findings: First, language models learn in three phases, exhibiting a performance plateau before acquiring precise factual knowledge. Mechanistically, this plateau coincides with the formation of attention-based circuits that support recall. Second, the training data distribution significantly impacts learning dynamics, as imbalanced distributions lead to shorter plateaus. Finally, hallucinations emerge simultaneously with knowledge, and integrating new knowledge into the model through fine-tuning is challenging, as it quickly corrupts its existing parametric memories. Our results emphasize the importance of data distribution in knowledge acquisition and suggest novel data scheduling strategies to accelerate neural network training.",
+          "authors": [
+            "Nicolas Zucchet",
+            "Jörg Bornschein",
+            "Stephanie Chan",
+            "Andrew Lampinen",
+            "Razvan Pascanu",
+            "Soham De"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2503.21676v2",
+          "external_ids": {
+            "ArXiv": "2503.21676v2"
+          },
+          "fields_of_study": [
+            "cs.CL",
+            "cs.LG"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2503.21676v2.pdf"
+        },
+        "relevance_score": 43.0,
+        "matched_query_terms": [
+          "language",
+          "large",
+          "model"
+        ],
+        "score_breakdown": {
+          "title_overlap": 10.0,
+          "abstract_overlap": 15.0,
+          "source_api_rank": 13.5,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 8
+      },
+      {
+        "source_rank": 10,
+        "paper": {
+          "paper_id": "ARXIV:2507.20836v4",
+          "title": "First Hallucination Tokens Are Different from Conditional Ones",
+          "abstract": "Large Language Models (LLMs) hallucinate, and detecting these cases is key to ensuring trust. While many approaches address hallucination detection at the response or span level, recent work explores token-level detection, enabling more fine-grained intervention. However, the distribution of hallucination signal across sequences of hallucinated tokens remains unexplored. We leverage token-level annotations from the RAGTruth corpus and find that the first hallucinated token is far more detectable than later ones. This structural property holds across models, suggesting that first hallucination tokens play a key role in token-level hallucination detection. Our code is available at https://github.com/jakobsnl/RAGTruth_Xtended.",
+          "authors": [
+            "Jakob Snel",
+            "Seong Joon Oh"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2507.20836v4",
+          "external_ids": {
+            "ArXiv": "2507.20836v4"
+          },
+          "fields_of_study": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2507.20836v4.pdf"
+        },
+        "relevance_score": 31.0,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large"
+        ],
+        "score_breakdown": {
+          "title_overlap": 10.0,
+          "abstract_overlap": 15.0,
+          "source_api_rank": 1.5,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 9
+      },
+      {
+        "source_rank": 9,
+        "paper": {
+          "paper_id": "ARXIV:2506.00448v1",
+          "title": "Fact-Controlled Diagnosis of Hallucinations in Medical Text Summarization",
+          "abstract": "Hallucinations in large language models (LLMs) during summarization of patient-clinician dialogues pose significant risks to patient care and clinical decision-making. However, the phenomenon remains understudied in the clinical domain, with uncertainty surrounding the applicability of general-domain hallucination detectors. The rarity and randomness of hallucinations further complicate their investigation. In this paper, we conduct an evaluation of hallucination detection methods in the medical domain, and construct two datasets for the purpose: A fact-controlled Leave-N-out dataset -- generated by systematically removing facts from source dialogues to induce hallucinated content in summaries; and a natural hallucination dataset -- arising organically during LLM-based medical summarization. We show that general-domain detectors struggle to detect clinical hallucinations, and that performance on fact-controlled hallucinations does not reliably predict effectiveness on natural hallucinations. We then develop fact-based approaches that count hallucinations, offering explainability not available with existing methods. Notably, our LLM-based detectors, which we developed using fact-controlled hallucinations, generalize well to detecting real-world clinical hallucinations. This research contributes a suite of specialized metrics supported by expert-annotated datasets to advance faithful clinical summarization systems.",
+          "authors": [
+            "Suhas BN",
+            "Han-Chin Shing",
+            "Lei Xu",
+            "Mitch Strong",
+            "Jon Burnsky",
+            "Jessica Ofor",
+            "Jordan R. Mason",
+            "Susan Chen",
+            "Sundararajan Srinivasan",
+            "Chaitanya Shivade",
+            "Jack Moriarty",
+            "Joseph Paul Cohen"
+          ],
+          "year": 2025,
+          "citation_count": null,
+          "venue": "arXiv",
+          "url": "http://arxiv.org/abs/2506.00448v1",
+          "external_ids": {
+            "ArXiv": "2506.00448v1"
+          },
+          "fields_of_study": [
+            "cs.CL"
+          ],
+          "open_access_pdf_url": "https://arxiv.org/pdf/2506.00448v1.pdf"
+        },
+        "relevance_score": 22.5,
+        "matched_query_terms": [
+          "hallucination",
+          "language",
+          "large"
+        ],
+        "score_breakdown": {
+          "title_overlap": 0.0,
+          "abstract_overlap": 15.0,
+          "source_api_rank": 3.0,
+          "citation_signal": 0.0,
+          "recency_signal": 4.5
+        },
+        "rank": 10
+      }
+    ],
+    "selected_paper_ids": [
+      "ARXIV:2409.11353v3",
+      "ARXIV:2310.00259v3",
+      "ARXIV:2407.04693v2",
+      "ARXIV:2307.15343v2"
+    ]
+  },
+  "literature_review": {
+    "paper_summaries": [
+      {
+        "paper_id": "ARXIV:2409.11353v3",
+        "problem": "Hallucination in Large Language Models (LLMs)",
+        "method": "Introduces THaMES, an integrated framework for hallucination mitigation and evaluation.",
+        "key_findings": [
+          "THaMES automates test set creation from any corpus.",
+          "Evaluates models' ability to detect and reduce hallucinations across various tasks.",
+          "Commercial models benefit more from Retrieval Augmented Generation (RAG) than In-Context Learning (ICL).",
+          "Open-weight models gain more from ICL."
+        ],
+        "limitations": [
+          "Abstract does not specify the limitations of THaMES."
+        ],
+        "relevance_explanation": "THaMES provides a comprehensive solution for evaluating and mitigating hallucinations, addressing a significant gap in existing methods.",
+        "source_refs": [
+          "paper:ARXIV:2409.11353v3:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2310.00259v3",
+        "problem": "Challenges in hallucination detection for LLMs due to manual annotation costs.",
+        "method": "Proposes AutoHall for automatically constructing model-specific hallucination datasets.",
+        "key_findings": [
+          "AutoHall generates hallucination datasets based on existing fact-checking datasets.",
+          "Introduces a zero-resource detection method based on self-contradiction.",
+          "Empirical results show variations in hallucination types among models."
+        ],
+        "limitations": [
+          "Abstract does not detail the limitations of AutoHall."
+        ],
+        "relevance_explanation": "AutoHall addresses the cost and labor issues in dataset generation for hallucination detection, making it relevant for improving LLM reliability.",
+        "source_refs": [
+          "paper:ARXIV:2310.00259v3:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2407.04693v2",
+        "problem": "Limited scalability of hallucination detection and annotation datasets.",
+        "method": "Introduces ANAH-v2, an iterative self-training framework for scaling hallucination annotation.",
+        "key_findings": [
+          "ANAH-v2 scales up the annotation dataset and improves annotator accuracy.",
+          "Achieves state-of-the-art results on HaluEval and HalluQA with a 7B parameter annotator."
+        ],
+        "limitations": [
+          "Abstract does not specify the limitations of ANAH-v2."
+        ],
+        "relevance_explanation": "ANAH-v2 provides a scalable solution for hallucination annotation, enhancing the evaluation of LLMs.",
+        "source_refs": [
+          "paper:ARXIV:2407.04693v2:abstract"
+        ]
+      },
+      {
+        "paper_id": "ARXIV:2307.15343v2",
+        "problem": "Hallucinations in LLMs within the medical domain.",
+        "method": "Proposes Med-HALT, a benchmark and dataset for evaluating hallucinations in medical applications.",
+        "key_findings": [
+          "Med-HALT includes diverse tests for reasoning and memory-based hallucinations.",
+          "Evaluates leading LLMs, revealing performance differences.",
+          "Promotes transparency and reproducibility in LLM evaluation."
+        ],
+        "limitations": [
+          "Abstract does not detail the limitations of Med-HALT."
+        ],
+        "relevance_explanation": "Med-HALT specifically targets hallucinations in healthcare, contributing to safer LLM applications in medicine.",
+        "source_refs": [
+          "paper:ARXIV:2307.15343v2:abstract"
+        ]
+      }
+    ],
+    "comparison": {
+      "common_themes": [
+        "Focus on hallucination detection and mitigation in LLMs.",
+        "Development of datasets and benchmarks for evaluation.",
+        "Addressing the challenges of manual annotation and scalability."
+      ],
+      "methodological_differences": [
+        "THaMES offers an integrated framework, while AutoHall focuses on dataset generation.",
+        "ANAH-v2 employs an iterative self-training approach, contrasting with the automated methods of AutoHall.",
+        "Med-HALT is domain-specific, targeting medical applications."
+      ],
+      "evidence_gaps": [
+        "Limited discussion on the limitations of each proposed method.",
+        "Need for empirical validation of the proposed frameworks in real-world applications."
+      ],
+      "suggested_reading_order": [
+        "ARXIV:2409.11353v3",
+        "ARXIV:2407.04693v2",
+        "ARXIV:2310.00259v3",
+        "ARXIV:2307.15343v2"
+      ]
+    },
+    "topic_profile": {
+      "keywords": [
+        "hallucination",
+        "large language models",
+        "dataset generation",
+        "evaluation",
+        "mitigation"
+      ],
+      "fields": [
+        "Natural Language Processing",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Healthcare"
+      ],
+      "venue_fit_description": "The papers are suitable for venues focusing on AI, NLP, and machine learning, particularly those addressing challenges in LLMs."
+    },
+    "source_level": "abstract_only",
+    "source_labels": [
+      "paper:ARXIV:2307.15343v2:abstract",
+      "paper:ARXIV:2310.00259v3:abstract",
+      "paper:ARXIV:2407.04693v2:abstract",
+      "paper:ARXIV:2409.11353v3:abstract"
+    ]
+  },
+  "conference_recommendations": [
+    {
+      "conference_id": "acl",
+      "acronym": "ACL",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "fit_score": 85,
+      "confidence": "high",
+      "reasons": [
+        "Focus on natural language processing and evaluation, which aligns with the papers' emphasis on hallucination detection and mitigation in LLMs.",
+        "Strong relevance to dataset generation and benchmarks, as highlighted in the papers."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "natural language processing",
+        "NLP evaluation",
+        "dataset generation"
+      ],
+      "official_url": "https://www.aclweb.org/portal/acl",
+      "scope_source_url": "https://www.aclweb.org/portal/acl",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "emnlp",
+      "acronym": "EMNLP",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "fit_score": 80,
+      "confidence": "high",
+      "reasons": [
+        "Emphasis on empirical methods in natural language processing, which is central to the papers' methodologies.",
+        "Relevant topics include evaluation and datasets, directly connecting to the papers' contributions."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "empirical NLP",
+        "NLP evaluation",
+        "datasets"
+      ],
+      "official_url": "https://www.aclweb.org/portal/",
+      "scope_source_url": "https://www.aclweb.org/portal/",
+      "scope_verified_at": "2026-07-30"
+    },
+    {
+      "conference_id": "aaai",
+      "acronym": "AAAI",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "fit_score": 70,
+      "confidence": "medium",
+      "reasons": [
+        "Broad AI scope that includes natural language processing and machine learning, relevant to the papers' themes.",
+        "While not as focused as ACL or EMNLP, it still covers significant aspects of the research."
+      ],
+      "risks": [],
+      "evidence_topics": [
+        "artificial intelligence",
+        "natural language processing",
+        "machine learning"
+      ],
+      "official_url": "https://aaai.org/conference/aaai/",
+      "scope_source_url": "https://aaai.org/conference/aaai/",
+      "scope_verified_at": "2026-07-30"
+    }
+  ],
+  "guardrails": {
+    "summary_source_level": "abstract_only",
+    "acceptance_prediction": false,
+    "deadlines_included": false,
+    "disclaimer": "The comparison is based on abstracts, not full papers. Conference results are topical-fit suggestions only. Verify scope and deadlines on official conference sites."
+  }
+}
