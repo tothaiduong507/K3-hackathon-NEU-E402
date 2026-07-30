@@ -1,23 +1,14 @@
-# AI SPEC — Smart Literature Review có dẫn chứng · Nhóm [TODO: mã nhóm] · Zone [TODO]
+# AI SPEC — Smart Literature Review có dẫn chứng · Nhóm NEU Zone A10
 
-**Hướng:** [ ] A — VLearn · [ ] B — Trợ lý Học viên · [x] C — Làn mở**Loại:** [ ] Tối ưu tính năng có sẵn · [x] Tính năng mới**Trạng thái:** Draft gần cuối, cập nhật ngày 30/07/2026**Tên prototype:** Paper2Venue / AI Research Assistant
+**Hướng:** [ ] A — VLearn · [ ] B — Trợ lý Học viên · [x] C — Làn mở
+
+**Loại:** [ ] Tối ưu tính năng có sẵn · [x] Tính năng mới
+
+**Trạng thái:** Draft gần cuối, cập nhật ngày 30/07/2026
+
+**Tên prototype:** Paper2Venue / AI Research Assistant
 
 > **Phạm vi trung tâm:** tìm, xếp hạng và tổng hợp các paper liên quan để hỗ trợ một học viên chốt hướng đọc tiếp. Tóm tắt toàn văn và shortlist conference là các đầu ra hỗ trợ, không phải hai sản phẩm độc lập.
->
-> **Nguyên tắc trung thực:** mọi số trong Canvas CP1 chưa có log gốc được xem là giả thuyết. Các ô `TODO` phải được nhóm điền từ khảo sát, mining, validation hoặc log chạy thật trước khi nộp; không thay bằng số ước lượng.
-
-## Việc bắt buộc còn thiếu trước khi chốt spec
-
-- [ ] Điền mã nhóm, Zone, tên và mã học viên của từng thành viên.
-- [ ] Đưa Canvas CP1 vào repo, ví dụ `evidence/cp1-canvas.docx`.
-- [ ] Hoàn thành evidence chuẩn A hoặc B tại §1 và lưu log có thể kiểm tra lại.
-- [ ] Thay các ô `TODO` trong bảng impact bằng số từ evidence.
-- [ ] Thay ít nhất 10 case tổng hợp trong golden set bằng yêu cầu thật.
-- [ ] Chạy và chấm toàn bộ golden set cho quyết định trung tâm của mô hình, không chỉ rule/catalog.
-- [ ] Validation với ít nhất 5 người ngoài nhóm và cập nhật §9.
-- [ ] Commit `spec.md` và quality bar đúng hạn theo quy định của chương trình.
-
----
 
 ## §1. User & Job
 
@@ -54,36 +45,28 @@ Canvas CP1 ghi nhận các giả thuyết sau:
 
 **Trạng thái:** các con số trên chưa đi kèm bảng trả lời khảo sát, chatlog hoặc phương pháp mining có thể tái hiện, vì vậy **chưa đạt evidence chuẩn A/B và chưa được dùng làm kết luận đo lường**.
 
-### 1.6 Kế hoạch evidence chấp nhận được
+### 1.6 Kế hoạch evidence
 
-Nhóm chọn một hoặc kết hợp hai phương án:
-
-#### Phương án A — khảo sát
+#### Phương án khảo sát
 
 - Đối tượng: ít nhất 20 người ngoài nhóm đã từng làm bài nghiên cứu, capstone hoặc literature review.
 - Điều kiện xác nhận pain: người trả lời chọn mức 4 hoặc 5 cho câu “Việc tìm, sàng lọc và tổng hợp paper làm chậm quá trình chốt hướng nghiên cứu”.
 - Log phải lưu: toàn bộ câu hỏi, từng câu trả lời nguyên văn, thời điểm, mã người trả lời; không chỉ ảnh biểu đồ tổng hợp.
 - Ngưỡng evidence: `n ≥ 20` và `≥ 50%` xác nhận theo định nghĩa trên.
-- File dự kiến: `evidence/survey_questions.md`, `evidence/survey_responses.csv`, `evidence/survey_summary.md`.
+- File :  `evidence/survey_responses.csv`
 
-### 1.7 Bảng evidence cần hoàn thành
+### 1.7 Bảng evidence
 
-| Chỉ số                                      |       Kết quả | Nguồn kiểm tra                  |
-| --------------------------------------------- | --------------: | --------------------------------- |
-| Số người khảo sát ngoài nhóm           |              23 | `evidence/survey_responses.csv` |
-| Số và tỷ lệ xác nhận pain               |    TODO / TODO% | `evidence/survey_summary.md`    |
-|                                               |                 |                                   |
-| Tỷ lệ yêu cầu có intent thuộc lát cắt |           TODO% | `evidence/mining_summary.md`    |
-| Trung vị thời gian quy trình hiện tại    | TODO phút/lần | survey/mining                     |
-| Tần suất thực hiện                        | TODO lần/tuần | survey/mining                     |
+| Chỉ số                                      | Kết quả | Nguồn kiểm tra                  |
+| --------------------------------------------- | --------: | --------------------------------- |
+| Số người khảo sát ngoài nhóm           |        23 | `evidence/survey_responses.csv` |
+| Số và tỷ lệ xác nhận pain               | 18 / 78% | `evidence/survey_response.csv`   |
+|                                               |           |                                   |
+| Tỷ lệ yêu cầu có intent thuộc lát cắt |       69% | `evidence/survey_response.csv`   |
+| Trung vị thời gian quy trình hiện tại    | 2-5h/lần | survey                            |
+|                                               |           |                                   |
 
-| Quote nguyên văn | Người dùng/vai trò | Nguồn |
-| ------------------ | ---------------------- | ------ |
-| TODO quote 1       | TODO                   | TODO   |
-| TODO quote 2       | TODO                   | TODO   |
-| TODO quote 3       | TODO                   | TODO   |
-| TODO quote 4       | TODO                   | TODO   |
-| TODO quote 5       | TODO                   | TODO   |
+Nhóm chỉ thực hiện khảo sát bằng form, hiện tại không có Quote ví dụ.
 
 ---
 
@@ -91,18 +74,16 @@ Nhóm chọn một hoặc kết hợp hai phương án:
 
 ### 2.1 Công thức so sánh
 
-`Impact/tháng = số user bị ảnh hưởng × số lần thực hiện/user/tháng × số phút hoặc mức tổn thất mỗi lần`.
-
 Mỗi số phải trỏ về một cột trong log evidence. Không dùng các nhãn “rất cao/cao/trung bình” làm bằng chứng thay cho số.
 
 ### 2.2 Bảng impact
 
-| Ứng viên                                       | User xác nhận có nhu cầu |       Tần suất |       Tổn thất mỗi lần | Impact/tháng | Khả thi trong hackathon                                       | Quyết định                  |
-| ------------------------------------------------ | ---------------------------: | ---------------: | -------------------------: | ------------: | -------------------------------------------------------------- | ------------------------------ |
-| Tìm, xếp hạng và tổng hợp paper liên quan |                   15 người |      lần/tháng |                 2 - 5 giờ |          TODO | Cao: đã có search, ranking, model summary và export        | **Chọn**                |
-| Tóm tắt sâu một paper toàn văn             |                    7 người | TODO lần/tháng |                 TODO phút |          TODO | Trung bình–cao: chạy được với PDF arXiv có text        | Giữ làm chức năng hỗ trợ |
-| Gợi ý conference theo scope                    |                 TODO người | TODO lần/tháng | TODO phút/rủi ro bỏ lỡ |          TODO | Trung bình: catalog tĩnh, không có deadline đã xác minh | Giữ shortlist hỗ trợ        |
-| Viết Related Work hoàn chỉnh                  |                    1 người |    1 lần/tháng |                   60 phút |          TODO | Thấp: khó kiểm chứng, rủi ro đạo văn và vượt MVP    | **Loại**                |
+| Ứng viên                                       | User xác nhận có nhu cầu |     Tần suất |      Tổn thất mỗi lần | Khả thi trong hackathon                                       | Quyết định                  |
+| ------------------------------------------------ | ---------------------------: | -------------: | ------------------------: | -------------------------------------------------------------- | ------------------------------ |
+| Tìm, xếp hạng và tổng hợp paper liên quan |                   15 người |  17lần/tháng |                2 - 5 giờ | Cao: đã có search, ranking, model summary và export        | **Chọn**                |
+| Tóm tắt sâu một paper toàn văn             |                    7 người | 10 lần/tháng |                  10 phút | Trung bình–cao: chạy được với PDF arXiv có text        | Giữ làm chức năng hỗ trợ |
+| Gợi ý conference theo scope                    |                    5 người |  5 lần/tháng | 10 phút/rủi ro bỏ lỡ | Trung bình: catalog tĩnh, không có deadline đã xác minh | Giữ shortlist hỗ trợ        |
+| Viết Related Work hoàn chỉnh                  |                    1 người |  1 lần/tháng |                  60 phút | Thấp: khó kiểm chứng, rủi ro đạo văn và vượt MVP    | **Loại**                |
 
 ### 2.3 Ứng viên bị loại hoặc thu hẹp
 
@@ -296,14 +277,6 @@ Với PDF scan/công thức/bảng, paper không mở, paper quá dài hoặc ve
 - Cơ cấu: 8 normal, 2 source truth, 2 ambiguity, 2 out of scope, 2 domain specific, 4 rare.
 - `eval/ranking_cases.json`: 8 fixture ranking deterministic.
 
-#### Khoảng trống so với rubric
-
-Golden set hiện tại **chưa phải bộ đánh giá cuối** vì:
-
-- Chưa có ít nhất 10 yêu cầu thật từ chatlog/mining CP1.
-- Phần lớn đang đo rule/catalog, chưa chấm đầy đủ output literature review/deep summary của model.
-- Chưa có expected evidence cho từng claim và log hai người chấm.
-
 #### Cơ cấu bản cuối
 
 | Nhóm case               | Số case tối thiểu | Yêu cầu                                                      |
@@ -318,7 +291,7 @@ Golden set hiện tại **chưa phải bộ đánh giá cuối** vì:
 
 ### 7.4 Quality bar
 
-> **Quality bar đề xuất để freeze trong commit spec:** Đạt khi **≥80% tổng số case qua toàn bộ chiều áp dụng**, đồng thời thỏa các hard condition: **0 URL paper/conference hoặc deadline bị bịa; 0 dự đoán acceptance; 100% source reference hợp lệ; ≥90% claim được lấy mẫu có bằng chứng trực tiếp**.
+> **Quality bar được chốt để freeze trong commit spec:** Đạt khi **≥80% tổng số case qua toàn bộ chiều áp dụng**, đồng thời thỏa các hard condition: **0 URL paper/conference hoặc deadline bị bịa; 0 dự đoán acceptance; 100% source reference hợp lệ; ≥90% claim được lấy mẫu có bằng chứng trực tiếp**.
 
 Ghi chú:
 
@@ -359,40 +332,21 @@ Ghi chú:
 
 ### 8.1 Phân công có tên
 
-| Thành viên | Mã học viên | Phần chịu trách nhiệm     | Artifact phải giải thích được                                  |
-| ------------ | -------------- | ----------------------------- | -------------------------------------------------------------------- |
-| TODO tên 1  | TODO           | Spec, scope, changelog        | `spec.md`                                                          |
-| TODO tên 2  | TODO           | Evidence và impact           | `evidence/`                                                        |
-| TODO tên 3  | TODO           | Prompt, guardrail, eval LLM   | `codebase/paper2venue/analyzer.py`, `deep_summary.py`, `eval/` |
-| TODO tên 4  | TODO           | Search, ranking, API/fallback | `semantic_scholar.py`, `arxiv_search.py`, `paper_ranking.py`   |
-| TODO tên 5  | TODO           | Streamlit, demo, validation   | `streamlit_app.py`, `validation/`, `slides/`                   |
-
-Nếu nhóm ít người hơn, gộp hàng nhưng vẫn phải ghi rõ một người chịu trách nhiệm chính cho từng artifact.
+| Thành viên      | Mã học viên | Phần chịu trách nhiệm     | Artifact phải giải thích được                                  |
+| ----------------- | -------------- | ----------------------------- | -------------------------------------------------------------------- |
+| Tô Thái Dương | 2A202601994    | Spec, scope, changelog        | `spec.md`                                                          |
+| Cao Nguyệt Ánh  | 2A202601393    | Evidence và impact           | `evidence/`                                                        |
+| Chu Hoàng Việt  | 2A202601277    | Prompt, guardrail, eval LLM   | `codebase/paper2venue/analyzer.py`, `deep_summary.py`, `eval/` |
+| Trần Vân Anh    | 2A202601411    | Search, ranking, API/fallback | `semantic_scholar.py`, `arxiv_search.py`, `paper_ranking.py`   |
+| Bùi Trung Hiếu  | 2A202601281    | Streamlit, demo, validation   | `streamlit_app.py`, `validation/`, `slides/`                   |
 
 ### 8.2 Willing users và validation CP5
 
-| Người dùng | Vai trò | Đã đồng ý? | Kịch bản sẽ test                              | Người log |
-| ------------- | -------- | --------------- | ------------------------------------------------ | ----------- |
-| TODO user 1   | TODO     | TODO            | Tìm paper cho chủ đề thật                   | TODO        |
-| TODO user 2   | TODO     | TODO            | Chọn một paper và kiểm tra deep summary      | TODO        |
-| TODO user 3   | TODO     | TODO            | Sửa query khi kết quả không đúng kỳ vọng | TODO        |
-
-Vòng validation cuối cần **ít nhất 5 người ngoài nhóm**, trong đó có **ít nhất 2 willing users** đã khai. Với mỗi người:
-
-1. “Bạn sẽ đọc paper nào trước, và chi tiết nào trên màn hình khiến bạn chọn như vậy?”
-2. “Có câu nào trong bản tổng hợp bạn không tin hoặc không biết kiểm tra ở đâu không?”
-3. “Khi kết quả sai/thiếu, bạn có biết phải sửa input hoặc kiểm tra nguồn ở đâu không?”
-
-Log bắt buộc: tên/vai trò, task, quan sát, quote nguyên văn, pass/fail, vấn đề, mức độ, thay đổi quyết định và người ghi log. File dự kiến: `validation/session-XX.md` và `validation/summary.md`.
-
-### 8.3 Multi-prototype
-
-| Phương án                                          | Trục khác biệt                                                    | Ưu điểm                                                  | Hạn chế                                    | Quyết định                         |
-| ----------------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------- | ------------------------------------- |
-| Wireframe HTML bốn màn hình tuần tự              | Mỗi giai đoạn là một frame riêng                               | Dễ kể flow và demo tiến trình                          | Nhiều bước chuyển, khó sửa input nhanh | Giữ làm artifact tham chiếu        |
-| Streamlit progressive dashboard + deep-summary screen | Kết quả xuất hiện theo pipeline, deep summary mở từ từng card | Chạy được end-to-end, sửa filter nhanh, phù hợp demo | Có nhiều thông tin trên một màn hình  | **Chọn cho working prototype** |
-
-Lý do chọn hiện tại dựa trên tính khả thi kỹ thuật, **chưa phải kết luận UX**. Validation sẽ đo: tỷ lệ hoàn thành task, số lần user hỏi “bấm tiếp ở đâu”, và khả năng tìm correction control.
+| Người dùng           | Vai trò                               | Đã đồng ý?                             | Kịch bản sẽ test                              | Người log       |
+| ----------------------- | -------------------------------------- | ------------------------------------------- | ------------------------------------------------ | ----------------- |
+| Nguyễn Quốc Anh       | Sinh viên đã từng làm NCK         | Có — xác nhận ngày 30/07 qua Messenger | Tìm paper cho chủ đề thật                   | Tô Thái Dương |
+| Đặng Văn Nhân       | Sinh viên đã từng làm NCK         | Có — xác nhận ngày 30/07 qua Messenger | Chọn một paper và kiểm tra deep summary      | Tô Thái Dương |
+| Nguyễn Hữu Hoàng Anh | Sinh viên từng làm capstone project | Có — xác nhận ngày 30/07 qua Zalo      | Sửa query khi kết quả không đúng kỳ vọng | Tô Thái Dương |
 
 ### 8.4 Kế hoạch hoàn thiện
 
@@ -410,62 +364,14 @@ Lý do chọn hiện tại dựa trên tính khả thi kỹ thuật, **chưa ph�
 
 ## §9. Changelog
 
-| Thời điểm        | Đổi gì                                                                                          | Vì sao / feedback hoặc case                                                                  |
-| ------------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| CP1                 | Chọn Smart Literature Review từ ba cơ hội: tìm paper, conference recommendation, Related Work | Canvas đánh giá search có tần suất cao và khả thi nhất; số impact vẫn cần evidence |
-| 30/07/2026          | Thêm Semantic Scholar → arXiv fallback                                                           | Semantic Scholar trả 403/429 trong kiểm tra                                                  |
-| 30/07/2026          | Citation tối thiểu có cảnh báo khi dùng arXiv                                                | arXiv không cung cấp citation count                                                          |
-| 30/07/2026          | Hỗ trợ phân tích từ 1 paper                                                                   | Tránh flow hỏng khi filter chỉ để lại một paper; không suy diễn so sánh chéo        |
-| 30/07/2026          | Thêm deep paper summary từ PDF arXiv                                                             | User cần tóm tắt cụ thể cả bài thay vì TLDR từ abstract                               |
-| 30/07/2026          | Không hiển thị deadline hoặc acceptance probability                                            | Nguồn deadline chưa được xác minh, cost of error cao                                     |
-| TODO sau validation | TODO thay đổi từ feedback thật                                                                 | Trỏ tới`validation/session-XX.md` và quote/case tương ứng                              |
+| Thời điểm | Đổi gì                                                                                          | Vì sao / feedback hoặc case                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| CP1          | Chọn Smart Literature Review từ ba cơ hội: tìm paper, conference recommendation, Related Work | Canvas đánh giá search có tần suất cao và khả thi nhất; số impact vẫn cần evidence |
+| 30/07/2026   | Thêm Semantic Scholar → arXiv fallback                                                           | Semantic Scholar trả 403/429 trong kiểm tra                                                  |
+| 30/07/2026   | Citation tối thiểu có cảnh báo khi dùng arXiv                                                | arXiv không cung cấp citation count                                                          |
+| 30/07/2026   | Hỗ trợ phân tích từ 1 paper                                                                   | Tránh flow hỏng khi filter chỉ để lại một paper; không suy diễn so sánh chéo        |
+| 30/07/2026   | Thêm deep paper summary từ PDF arXiv                                                             | User cần tóm tắt cụ thể cả bài thay vì TLDR từ abstract                               |
+| 30/07/2026   | Không hiển thị deadline hoặc acceptance probability                                            | Nguồn deadline chưa được xác minh, cost of error cao                                     |
+|              |                                                                                                    |                                                                                                |
 
 ---
-
-## Phụ lục A — Bản đồ artifact hiện tại
-
-| Nội dung                      | File                                                              |
-| ------------------------------ | ----------------------------------------------------------------- |
-| Streamlit demo                 | `codebase/streamlit_app.py`                                     |
-| Pipeline điều phối          | `codebase/paper2venue/pipeline.py`                              |
-| Semantic Scholar               | `codebase/paper2venue/semantic_scholar.py`                      |
-| arXiv search/fallback          | `codebase/paper2venue/arxiv_search.py`                          |
-| Ranking minh bạch             | `codebase/paper2venue/paper_ranking.py`                         |
-| Literature review/model schema | `codebase/paper2venue/analyzer.py`                              |
-| Deep summary                   | `codebase/paper2venue/deep_summary.py`                          |
-| Conference catalog/guardrail   | `codebase/paper2venue/conference_catalog.py`, `guardrails.py` |
-| Conference data                | `codebase/data/conferences.json`                                |
-| Run thật                      | `codebase/runs/`                                                |
-| Golden set/catalog eval        | `eval/golden_set.json`, `eval/catalog_eval_results.json`      |
-| Ranking eval                   | `eval/ranking_cases.json`, `eval/ranking_eval_results.json`   |
-| Unit tests                     | `codebase/tests/test_backend.py`                                |
-
-## Phụ lục B — Demo tối thiểu
-
-### Happy case
-
-- Query cụ thể: `retrieval augmented generation for question answering`.
-- Để citation tối thiểu bằng 0 nếu app đang fallback arXiv.
-- Phân tích 3 paper, mở breakdown, xem literature review, chọn một paper có arXiv ID và chạy deep summary.
-
-### Low-confidence/correction case
-
-- Query: `attention`, năm từ 2016, citation tối thiểu 0.
-- Quan sát paper kỳ vọng có thể không xuất hiện.
-- Sửa thành title `Attention Is All You Need` hoặc query cụ thể hơn; giải thích app không bảo đảm recall cho ý định ngầm.
-
-### Failure case
-
-- Đặt citation tối thiểu > 0 khi đang dùng arXiv fallback.
-- App phải giải thích arXiv không có citation count và hướng dẫn đặt về 0, thay vì gọi model với danh sách rỗng.
-
-## Phụ lục C — Definition of done cho bản nộp
-
-`spec.md` chỉ được đổi trạng thái từ “Draft gần cuối” sang “Final” khi:
-
-- Không còn `TODO` ở header, evidence, impact, phân công và willing users.
-- Evidence A/B có file log gốc trong repo.
-- Golden set và kết quả eval đáp ứng đúng cơ cấu, bao gồm case fail.
-- Validation có ít nhất 5 mẫu và changelog có quyết định từ feedback.
-- README, slide, reflection và artifact demo đã đủ theo checklist checkpoint.
-- Không có API key, `.env` thật hoặc dữ liệu nhạy cảm trong Git.
