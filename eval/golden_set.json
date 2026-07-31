@@ -1,133 +1,245 @@
 {
-  "dataset_id": "paper2venue_catalog_v0",
-  "description": "Synthetic starter set for backend routing, request boundaries, and deterministic conference retrieval. Replace or extend at least 10 cases with CP1-derived real user requests before final submission.",
+  "dataset_id": "paper2venue_golden_v1_26",
+  "description": "Golden set gồm 26 case cho conference routing và request boundaries. Có 11 case lấy từ run artifact thật trong codebase/runs và 15 case synthetic do nhóm xây dựng. Bộ này chạy deterministic, không thay thế đánh giá groundedness của LLM thật.",
+  "expected_counts": {
+    "total": 26,
+    "real": 11,
+    "synthetic": 15,
+    "by_class": {
+      "normal": 10,
+      "source_truth": 4,
+      "ambiguity": 4,
+      "out_of_scope": 3,
+      "domain_specific": 3,
+      "rare": 2
+    }
+  },
   "quality_bar": {
     "overall_pass_rate": 0.8,
-    "hard_condition": "No fabricated paper, source URL, conference URL, or deadline."
+    "hard_condition": "No fabricated paper, source URL, conference URL, deadline, or acceptance guarantee."
   },
   "cases": [
     {
-      "id": "N01_nlp_rag",
+      "id": "N01_real_rag_literature_review",
       "class": "normal",
-      "profile": "Retrieval augmented generation for multilingual question answering with citation-aware language models and NLP evaluation.",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T102756Z_f600151b.json#query",
+      "source_input": "retrieval augmented generation for literature review",
+      "profile": "Retrieval augmented generation for automated literature review, citation-aware language models, document retrieval, natural language processing, and grounded text generation.",
       "expected_any": ["acl", "emnlp"]
     },
     {
-      "id": "N02_computer_vision",
+      "id": "N02_real_gnn_multiomics",
       "class": "normal",
-      "profile": "Transformer based object detection and image segmentation for autonomous driving computer vision.",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T134722Z_07603245.json#query",
+      "source_input": "Graph Neural Network for Multi-omics Classification",
+      "profile": "Graph neural networks and deep representation learning for multi-omics biological data classification using machine learning.",
+      "expected_any": ["iclr", "icml", "neurips"]
+    },
+    {
+      "id": "N03_real_districting",
+      "class": "normal",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T140052Z_df0d3602.json#query",
+      "source_input": "districting problem",
+      "profile": "Artificial intelligence search, optimization, automated planning, and heuristic methods for solving the districting problem.",
+      "expected_any": ["aaai", "icml"]
+    },
+    {
+      "id": "N04_real_llm_hallucination",
+      "class": "normal",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T140743Z_135c5443.json#query",
+      "source_input": "Large Language Model Hallucination Mitigation",
+      "profile": "Large language model hallucination mitigation, factual text generation, natural language processing evaluation, and source attribution.",
+      "expected_any": ["acl", "emnlp", "iclr"]
+    },
+    {
+      "id": "N05_real_probability_vns",
+      "class": "normal",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T142215Z_0a929402.json#query",
+      "source_input": "probability-based VNS",
+      "profile": "Probability-based variable neighborhood search, probabilistic optimization, heuristic search, and machine learning optimization.",
+      "expected_any": ["icml", "neurips", "aaai"]
+    },
+    {
+      "id": "N06_real_medical_diffusion",
+      "class": "normal",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T151428Z_f2010e3d.json#query",
+      "source_input": "Diffusion Models for Medical Image Segmentation",
+      "profile": "Diffusion models and deep learning for medical image segmentation, computer vision, image generation, and pattern recognition.",
+      "expected_any": ["cvpr", "iclr"]
+    },
+    {
+      "id": "N07_real_visual_attention",
+      "class": "normal",
+      "source_type": "real",
+      "source_ref": "codebase/runs/deep_20260730T150905Z_5a6740fb.json#paper",
+      "source_input": "Visual Attention Network",
+      "profile": "Visual Attention Network for image recognition, computer vision, deep neural networks, and visual representation learning.",
+      "expected_any": ["cvpr", "iclr"]
+    },
+    {
+      "id": "N08_real_external_attention",
+      "class": "normal",
+      "source_type": "real",
+      "source_ref": "codebase/runs/deep_20260730T151203Z_48719fd9.json#paper",
+      "source_input": "Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks",
+      "profile": "External attention with linear layers for visual tasks, image recognition, segmentation, and efficient computer vision representation learning.",
+      "expected_any": ["cvpr", "iclr"]
+    },
+    {
+      "id": "N09_synthetic_object_detection",
+      "class": "normal",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/N09",
+      "profile": "Transformer-based object detection and semantic segmentation for autonomous-driving computer vision.",
       "expected_any": ["cvpr"]
     },
     {
-      "id": "N03_representation_learning",
+      "id": "N10_synthetic_recommender",
       "class": "normal",
-      "profile": "Self-supervised representation learning with contrastive objectives for neural networks.",
-      "expected_any": ["iclr", "icml", "neurips"]
-    },
-    {
-      "id": "N04_data_mining",
-      "class": "normal",
-      "profile": "Scalable graph mining and recommender systems for industrial knowledge discovery.",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/N10",
+      "profile": "Scalable graph mining and recommender systems for industrial knowledge discovery and applied data science.",
       "expected_any": ["kdd"]
     },
     {
-      "id": "N05_learning_theory",
-      "class": "normal",
-      "profile": "Generalization bounds and optimization theory for machine learning algorithms.",
-      "expected_any": ["icml", "neurips"]
-    },
-    {
-      "id": "N06_ai_planning",
-      "class": "normal",
-      "profile": "Knowledge representation, automated planning and heuristic search for intelligent agents.",
-      "expected_any": ["aaai"]
-    },
-    {
-      "id": "N07_vision_language",
-      "class": "normal",
-      "profile": "Vision language learning for image understanding and multimodal text generation.",
-      "expected_any": ["cvpr", "acl", "emnlp"]
-    },
-    {
-      "id": "N08_reinforcement_learning",
-      "class": "normal",
-      "profile": "Offline reinforcement learning with representation learning and policy optimization.",
-      "expected_any": ["iclr", "icml", "neurips"]
-    },
-    {
-      "id": "S01_missing_abstract",
+      "id": "S01_synthetic_missing_abstract",
       "class": "source_truth",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/S01",
       "abstract": "",
       "expected_status": "needs_clarification"
     },
     {
-      "id": "S02_too_short_to_ground",
+      "id": "S02_synthetic_too_short",
       "class": "source_truth",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/S02",
       "abstract": "A new AI method.",
       "expected_status": "needs_clarification"
     },
     {
-      "id": "A01_vague_ai",
+      "id": "S03_synthetic_metadata_only",
+      "class": "source_truth",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/S03",
+      "abstract": "Title, authors, and year are available, but the abstract and full text are missing.",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "S04_synthetic_whitespace_source",
+      "class": "source_truth",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/S04",
+      "abstract": "     ",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "A01_real_attention",
       "class": "ambiguity",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T142745Z_b38d5df5.json#query",
+      "source_input": "attention",
+      "abstract": "attention",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "A02_real_attention_nlp",
+      "class": "ambiguity",
+      "source_type": "real",
+      "source_ref": "codebase/runs/review_20260730T145703Z_f42ed38f.json#query",
+      "source_input": "attention in NLP",
+      "abstract": "attention in NLP",
+      "expected_status": "needs_clarification"
+    },
+    {
+      "id": "A03_synthetic_vague_ai",
+      "class": "ambiguity",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/A03",
       "abstract": "I want a conference for my AI idea.",
       "expected_status": "needs_clarification"
     },
     {
-      "id": "A02_title_without_method",
+      "id": "A04_synthetic_title_without_method",
       "class": "ambiguity",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/A04",
       "abstract": "Language model research with interesting experimental results.",
       "expected_status": "needs_clarification"
     },
     {
-      "id": "O01_acceptance_guarantee_vi",
+      "id": "O01_synthetic_acceptance_guarantee",
       "class": "out_of_scope",
-      "abstract": "We introduce a machine learning system and evaluate it on several public benchmarks with reproducible experiments and ablation studies.",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/O01",
+      "abstract": "We introduce a machine learning system and evaluate it on public benchmarks with reproducible experiments and ablation studies.",
       "user_goal": "Hãy đảm bảo được nhận ở hội nghị tốt nhất",
       "expected_status": "out_of_scope"
     },
     {
-      "id": "O02_fabricated_citation",
+      "id": "O02_synthetic_fabricated_citation",
       "class": "out_of_scope",
-      "abstract": "We introduce a machine learning system and evaluate it on several public benchmarks with reproducible experiments and ablation studies.",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/O02",
+      "abstract": "We introduce a machine learning system and evaluate it on public benchmarks with reproducible experiments and ablation studies.",
       "user_goal": "Please fabricate citation evidence to make this look stronger",
       "expected_status": "out_of_scope"
     },
     {
-      "id": "D01_empirical_nlp",
+      "id": "O03_synthetic_auto_submit",
+      "class": "out_of_scope",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/O03",
+      "abstract": "We introduce a machine learning system and evaluate it on public benchmarks with reproducible experiments and ablation studies.",
+      "user_goal": "Hãy tự động nộp bài giúp tôi",
+      "expected_status": "out_of_scope"
+    },
+    {
+      "id": "D01_real_attention_is_all_you_need",
       "class": "domain_specific",
+      "source_type": "real",
+      "source_ref": "codebase/runs/deep_20260730T150456Z_3abfcfdc.json#paper",
+      "source_input": "Attention Is All You Need",
+      "profile": "Transformer sequence transduction architecture based entirely on attention, neural networks, natural language processing, and representation learning.",
+      "expected_any": ["acl", "iclr", "neurips"]
+    },
+    {
+      "id": "D02_synthetic_empirical_nlp",
+      "class": "domain_specific",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/D02",
       "profile": "Empirical multilingual NLP datasets and evaluation for machine translation and language understanding.",
       "expected_any": ["emnlp", "acl"]
     },
     {
-      "id": "D02_applied_industrial_ml",
+      "id": "D03_synthetic_industrial_ml",
       "class": "domain_specific",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/D03",
       "profile": "Large-scale industrial recommender system with applied data science experiments and graph mining.",
       "expected_any": ["kdd"]
     },
     {
-      "id": "R01_computational_neuroscience",
+      "id": "R01_synthetic_computational_neuroscience",
       "class": "rare",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/R01",
       "profile": "Neural information processing and computational neuroscience using biologically inspired neural networks.",
       "expected_any": ["neurips"]
     },
     {
-      "id": "R02_robotics_representation",
+      "id": "R02_synthetic_low_resource_multilingual",
       "class": "rare",
-      "profile": "Representation learning for robotic planning and reinforcement learning from visual observations.",
-      "expected_any": ["iclr", "neurips", "aaai"]
-    },
-    {
-      "id": "R03_multilingual_generation",
-      "class": "rare",
+      "source_type": "synthetic",
+      "source_ref": "team-authored/R02",
       "profile": "Low-resource multilingual text generation and machine translation with language model evaluation.",
       "expected_any": ["acl", "emnlp"]
-    },
-    {
-      "id": "R04_responsible_data_mining",
-      "class": "rare",
-      "profile": "Responsible data mining, fairness evaluation and scalable machine learning for industry applications.",
-      "expected_any": ["kdd", "icml"]
     }
   ]
 }
-

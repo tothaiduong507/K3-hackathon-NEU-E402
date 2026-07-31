@@ -1,0 +1,16 @@
+﻿run_id,paper_title,claim_type,claim,source_refs_from_model,rater_1,rater_2,final_status
+deep_20260730T150456Z_3abfcfdc,Attention Is All You Need,contribution,Đề xuất mô hình Transformer hoàn toàn dựa trên cơ chế chú ý.,p.1,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T150456Z_3abfcfdc,Attention Is All You Need,contribution,Chứng minh rằng Transformer có thể đạt được chất lượng dịch tốt hơn với thời gian huấn luyện ngắn hơn.,p.1,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T150456Z_3abfcfdc,Attention Is All You Need,result,"Mô hình Transformer (mô hình lớn) đạt điểm BLEU 28.4 cho tiếng Anh-Đức và 41.0 cho tiếng Anh-Pháp, vượt qua các mô hình trước đó.",p.8,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T150456Z_3abfcfdc,Attention Is All You Need,result,Transformer đạt kết quả tốt nhất trong các nhiệm vụ dịch thuật tiếng Anh-Đức và tiếng Anh-Pháp WMT 2014.,p.10,UNSUPPORTED,UNSUPPORTED,UNSUPPORTED
+deep_20260730T150456Z_3abfcfdc,Attention Is All You Need,takeaway,Transformer là mô hình chuyển đổi chuỗi đầu tiên hoàn toàn dựa trên sự chú ý.,p.10,PARTIAL,SUPPORTED,PARTIAL
+deep_20260730T150905Z_5a6740fb,Visual Attention Network,contribution,Đề xuất cơ chế chú ý lớn (LKA) cho các tác vụ thị giác.,p.1,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T150905Z_5a6740fb,Visual Attention Network,contribution,Phát triển Mạng Chú Ý Hình Ảnh (VAN) dựa trên LKA.,p.1,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T150905Z_5a6740fb,Visual Attention Network,result,VAN-B6 đạt 87.8% độ chính xác trên ImageNet.,p.1; p.4,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T150905Z_5a6740fb,Visual Attention Network,result,VAN-B6 thiết lập hiệu suất tốt nhất mới cho phân đoạn toàn cảnh với 58.2 PQ.,p.1; p.9,PARTIAL,UNSUPPORTED,UNSUPPORTED
+deep_20260730T150905Z_5a6740fb,Visual Attention Network,takeaway,VAN vượt trội hơn các mạng CNN và ViT có kích thước tương tự trong nhiều tác vụ.,p.1,SUPPORTED,PARTIAL,SUPPORTED
+deep_20260730T151203Z_48719fd9,Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks,contribution,Đề xuất cơ chế chú ý bên ngoài với hai lớp tuyến tính và hai lớp chuẩn hóa.,p.1,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T151203Z_48719fd9,Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks,contribution,Kết hợp cơ chế đa đầu vào vào chú ý bên ngoài.,p.1,SUPPORTED,SUPPORTED,SUPPORTED
+deep_20260730T151203Z_48719fd9,Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks,result,Chú ý bên ngoài cung cấp độ chính xác tốt hơn chú ý tự thân trên tập dữ liệu PASCAL VOC.,p.4,SUPPORTED,PARTIAL,SUPPORTED
+deep_20260730T151203Z_48719fd9,Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks,result,Kết quả Top1 accuracy cho các phương pháp trên ImageNet dao động từ 63.2% đến 81.9%.,p.5,UNSUPPORTED,UNSUPPORTED,UNSUPPORTED
+deep_20260730T151203Z_48719fd9,Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks,takeaway,Chú ý bên ngoài có thể thay thế cho tự chú ý trong các kiến trúc phổ biến hiện có.,p.1,SUPPORTED,SUPPORTED,SUPPORTED

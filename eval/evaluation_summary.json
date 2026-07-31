@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-07-30T18:48:05.743967+00:00",
+  "evaluation_scope": "deterministic unit, catalog guardrail, ranking; manual groundedness is prepared but not yet reviewed",
+  "quality_bar": 0.8,
+  "unit_tests": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "status": "PASS",
+    "exit_code": 0,
+    "artifact": "eval/unit_test_results.txt"
+  },
+  "golden_eval": {
+    "dataset_id": "paper2venue_golden_v1_26",
+    "total": 26,
+    "passed": 25,
+    "failed": 1,
+    "pass_rate": 0.9615384615384616,
+    "quality_bar": 0.8,
+    "status": "PASS",
+    "real_source_cases": 11,
+    "synthetic_cases": 15,
+    "by_class": {
+      "ambiguity": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0
+      },
+      "domain_specific": {
+        "passed": 3,
+        "total": 3,
+        "pass_rate": 1.0
+      },
+      "normal": {
+        "passed": 10,
+        "total": 10,
+        "pass_rate": 1.0
+      },
+      "out_of_scope": {
+        "passed": 3,
+        "total": 3,
+        "pass_rate": 1.0
+      },
+      "rare": {
+        "passed": 2,
+        "total": 2,
+        "pass_rate": 1.0
+      },
+      "source_truth": {
+        "passed": 3,
+        "total": 4,
+        "pass_rate": 0.75
+      }
+    },
+    "by_source_type": {
+      "real": {
+        "passed": 11,
+        "total": 11,
+        "pass_rate": 1.0
+      },
+      "synthetic": {
+        "passed": 14,
+        "total": 15,
+        "pass_rate": 0.9333333333333333
+      }
+    },
+    "artifact": "eval/catalog_eval_results.json"
+  },
+  "ranking_eval": {
+    "dataset_id": "smart_literature_review_ranking_v0",
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "quality_bar": 0.8,
+    "status": "PASS",
+    "artifact": "eval/ranking_eval_results.json"
+  },
+  "live_deep_runs": {
+    "total_runs": 3,
+    "completed_runs": 3,
+    "claims_prepared": 15,
+    "claims_reviewed": 15,
+    "groundedness_status": "COMPLETED",
+    "label_counts": {
+      "PARTIAL": 1,
+      "SUPPORTED": 11,
+      "UNSUPPORTED": 3
+    },
+    "strict_groundedness_rate": 0.7333333333333333,
+    "supported_or_partial_rate": 0.8,
+    "rater_agreements": 11,
+    "rater_disagreements": 4,
+    "rater_agreement_rate": 0.7333333333333333,
+    "artifact": "eval/groundedness_review.csv",
+    "runs": [
+      {
+        "run_id": "deep_20260730T150456Z_3abfcfdc",
+        "paper_title": "Attention Is All You Need",
+        "status": "completed",
+        "model": "gpt-4o-mini",
+        "pdf_pages_extracted": 15,
+        "pdf_pages_total": 15,
+        "claims_selected_for_review": 5,
+        "source_file": "codebase/runs/deep_20260730T150456Z_3abfcfdc.json"
+      },
+      {
+        "run_id": "deep_20260730T150905Z_5a6740fb",
+        "paper_title": "Visual Attention Network",
+        "status": "completed",
+        "model": "gpt-4o-mini",
+        "pdf_pages_extracted": 12,
+        "pdf_pages_total": 12,
+        "claims_selected_for_review": 5,
+        "source_file": "codebase/runs/deep_20260730T150905Z_5a6740fb.json"
+      },
+      {
+        "run_id": "deep_20260730T151203Z_48719fd9",
+        "paper_title": "Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks",
+        "status": "completed",
+        "model": "gpt-4o-mini",
+        "pdf_pages_extracted": 11,
+        "pdf_pages_total": 11,
+        "claims_selected_for_review": 5,
+        "source_file": "codebase/runs/deep_20260730T151203Z_48719fd9.json"
+      }
+    ]
+  },
+  "overall_status": "PASS_DETERMINISTIC_REVIEW_COMPLETED",
+  "limitations": [
+    "Golden and ranking evaluation do not measure live LLM groundedness.",
+    "Golden set includes team-authored synthetic cases.",
+    "Conference coverage is limited to the local catalog.",
+    "Strict groundedness counts only SUPPORTED; PARTIAL is reported separately."
+  ]
+}
